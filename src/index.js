@@ -7,6 +7,8 @@ import FindProjects from "./pages/FindProjects/FindProjects";
 import Profile from "./pages/Profile/Profile";
 import PageOutline from "./pages/PageOutline";
 import Login from "./pages/User/login";
+import Project from "./pages/Project/Project";
+import { getProject } from "./utils/getProject";
 
 // These routes are the ones that appear on the header
 export const primaryRoutes = [
@@ -26,7 +28,6 @@ export const primaryRoutes = [
     element: <Profile />,
   },
 ];
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,6 +35,14 @@ const router = createBrowserRouter([
     // errorElement: <ErrorPage />,
     children: [
       ...primaryRoutes,
+      {
+        name: "Project",
+        path: "/projects/:projectId",
+        element: <Project />,
+        loader: ({ params }) => {
+          return getProject(params.projectId);
+        },
+      },
       {
         name: "Login",
         path: "/login/",

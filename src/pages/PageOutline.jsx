@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Box } from "@mui/system";
 import CssBaseline from "@mui/material/CssBaseline";
 
@@ -30,6 +30,9 @@ const PageOutline = () => {
         "Roboto",
         "sans-serif",
       ].join(","),
+      h1: {
+        lineHeight: "1",
+      },
     },
   });
 

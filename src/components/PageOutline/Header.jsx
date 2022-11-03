@@ -13,16 +13,16 @@ import { primaryRoutes as routes } from "../..";
 
 const Header = (props) => {
   return (
-    <AppBar position="static" elevation={0}>
+    <AppBar position="static"  elevation={0}>
       <CssBaseline />
-
       <Container
         maxWidth="false"
         sx={{
+          top: 0,
           height: props.height,
           position: "fixed",
           backgroundColor: "black",
-          zIndex: 1,
+          zIndex: 100,
         }}
       >
         <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
@@ -51,10 +51,10 @@ const Header = (props) => {
                 style={{ textDecoration: "none" }}
                 tabIndex="-1"
               >
-                {({ isActive }) => (
+                {() => (
                   <Button
                     color={
-                      isActive && window.location.pathname === path
+                      window.location.pathname === path
                         ? "primary"
                         : "secondary"
                     }

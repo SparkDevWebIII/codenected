@@ -18,8 +18,12 @@ const MenuProps = {
   },
 };
 
-export default function TagsDropdown({ label, options, checkedOptions, setCheckedOptions }) {
-
+export default function TagsDropdown({
+  label,
+  options,
+  checkedOptions,
+  setCheckedOptions,
+}) {
   const handleChange = (event) => {
     const {
       target: { value },
@@ -31,27 +35,25 @@ export default function TagsDropdown({ label, options, checkedOptions, setChecke
   };
 
   return (
-    <div>
-      <FormControl sx={{ m: 1, width: 300 }}>
-        <InputLabel id="multiple-checkbox-label">{label}</InputLabel>
-        <Select
-          labelId="multiple-checkbox-label"
-          id="multiple-checkbox"
-          multiple
-          value={checkedOptions}
-          onChange={handleChange}
-          input={<OutlinedInput label={label} />}
-          renderValue={(selected) => selected.join(", ")}
-          MenuProps={MenuProps}
-        >
-          {options.map((option) => (
-            <MenuItem key={option} value={option}>
-              <Checkbox checked={checkedOptions.indexOf(option) > -1} />
-              <ListItemText primary={option} />
-            </MenuItem>
-          ))}
-        </Select>
-      </FormControl>
-    </div>
+    <FormControl sx={{ m: 1, width: 300 }}>
+      <InputLabel id="multiple-checkbox-label">{label}</InputLabel>
+      <Select
+        labelId="multiple-checkbox-label"
+        id="multiple-checkbox"
+        multiple
+        value={checkedOptions}
+        onChange={handleChange}
+        input={<OutlinedInput label={label} />}
+        renderValue={(selected) => selected.join(", ")}
+        MenuProps={MenuProps}
+      >
+        {options.map((option) => (
+          <MenuItem key={option} value={option}>
+            <Checkbox checked={checkedOptions.indexOf(option) > -1} />
+            <ListItemText primary={option} />
+          </MenuItem>
+        ))}
+      </Select>
+    </FormControl>
   );
 }
