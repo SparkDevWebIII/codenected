@@ -1,0 +1,92 @@
+
+a:visited {
+  color: black;
+}
+a:link {
+  color: black;
+}
+
+
+
+.header {
+
+  a:hover {
+    color: purple;
+  }
+  text-align: left;
+  position: fixed;
+  z-index: 10;
+  background-color: #161616;
+  
+  display: grid;
+  height: 60px;
+  width: 100%;
+  grid-template-columns: 5% 45% 50%;
+  grid-template-rows: 100%;
+  img {
+    grid-column: 1;
+    align-self: center;
+    justify-self: left;
+    padding-left: 5px;
+  }
+   h1 {
+    align-self: center;
+    text-align: left;
+    color: white;
+   }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    NavLink {
+      color: white;
+    }
+    .profileImg {
+      width: 50px;
+    }
+  }
+  .drawerButton {
+    height: 30px;
+    grid-column: 2;
+    justify-self: right;
+    align-self: center;
+
+    padding-inline: 8px;
+    margin-right: 10px;
+
+    border: #d4d4d4;
+    border-width: 1px;
+    border-radius: 4px;
+    border-style: solid;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .MuiDrawer-paper {
+    margin-top: 60px;
+    .profileImg {
+      padding-top: 15px;
+      position: relative;
+      left: -420px;
+      width: 50px;
+    }
+    a {
+      font-size: 15px;
+      padding: 15px;
+      padding-block: 10px;
+      &:nth-of-type(4) {
+        border: transparent;
+        border-bottom: #d4d4d4;
+        border-width: 1px;
+        border-style: solid;
+      }
+    }
+  }
+}
+
+
+.active {
+  text-decoration: underline orange;
+}
