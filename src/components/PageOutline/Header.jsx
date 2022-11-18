@@ -13,7 +13,7 @@ import { primaryRoutes as routes } from "../..";
 
 const Header = (props) => {
   return (
-    <AppBar position="static"  elevation={0}>
+    <AppBar position="static" elevation={0}>
       <CssBaseline />
       <Container
         maxWidth="false"
@@ -43,7 +43,13 @@ const Header = (props) => {
             CodeNected
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+              justifyContent: "flex-end",
+            }}
+          >
             {routes.map(({ name, path }) => (
               <NavLink
                 key={name}
@@ -72,7 +78,7 @@ const Header = (props) => {
               style={{ textDecoration: "none" }}
               tabIndex="-1"
             >
-              <Button variant="outlined">LOGIN</Button>
+              <Button variant="contained">Sign In</Button>
             </NavLink>
           </Box>
         </Toolbar>

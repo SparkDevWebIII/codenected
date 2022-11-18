@@ -56,7 +56,7 @@ const FindProjects = () => {
           py: 5,
         }}
       >
-        <Grid item justifyContent="center" xs={12} sm={12} md={12}>
+        <Grid item justifyContent="center">
           <Typography variant="h1">Projects</Typography>
         </Grid>
         <Grid
@@ -66,9 +66,6 @@ const FindProjects = () => {
           justifyContent="center"
           alignItems="center"
           spacing={5}
-          xs={12}
-          sm={12}
-          md={12}
         >
           <Grid item>
             <TagsDropdown
