@@ -69,6 +69,9 @@ const Groups = () => {
         alignItems="stretch"
         className="bodySection"
       >
+        <Grid className="Dummy" item xs={12}>
+          xs=12
+        </Grid>
         <Grid className="Dummy" item xs={4}>
           xs=4
         </Grid>
