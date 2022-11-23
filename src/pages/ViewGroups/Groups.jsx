@@ -5,6 +5,9 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import styles from "./Groups.scss";
+import LearnMoreButton from "./LearnMoreButton";
+import GroupImage from "../../Assets/GroupImage.png";
+import codenectedBackground from "../../Assets/codenectedBackground.png";
 
 const info = [
   {
@@ -62,6 +65,19 @@ const info = [
 const Groups = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
+      <Box
+        xs={12}
+        class="Header"
+        style={{
+          backgroundImage: `url(${codenectedBackground})`,
+          backgroundSize: "cover",
+          left: 0,
+          top: 0,
+          height: "350px",
+        }}
+      >
+        Projects
+      </Box>
       <Grid
         container
         spacing={1}
@@ -69,9 +85,6 @@ const Groups = () => {
         alignItems="stretch"
         className="bodySection"
       >
-        <Grid className="Dummy" item xs={12}>
-          xs=12
-        </Grid>
         <Grid className="Dummy" item xs={4}>
           xs=4
         </Grid>
