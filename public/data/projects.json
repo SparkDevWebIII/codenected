@@ -1,6 +1,6 @@
 [
   {
-    "projectId": 1,
+    "project_id": "1",
     "title": "Codenected",
     "summary": "lorem impsum",
     "location": "Miami, FL",
@@ -48,7 +48,7 @@
     ]
   },
   {
-    "projectId": 2,
+    "project_id": "2",
     "title": "Make My Day!",
     "summary": "A stress-free learning environment for instructors and students. One question a day.",
     "location": "Fort Lauderdale, FL",
@@ -124,7 +124,7 @@
     ]
   },
   {
-    "projectId": 3,
+    "project_id": "3",
     "title": "Churn Detection Modeling",
     "summary": "Combating customer churn for for IT software provider Kaseya.",
     "location": "Omaha, NE",
