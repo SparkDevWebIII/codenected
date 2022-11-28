@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@mui/material";
+import styles from './ButtonStyles.scss'
 
 const LearnMoreButton = () => {
   return (

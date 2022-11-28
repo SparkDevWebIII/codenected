@@ -3,14 +3,15 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import LearnMoreButton from "./LearnMoreButton";
+import LearnMoreButton from "../Button/LearnMoreButton";
 import Typography from "@mui/material/Typography";
 import { flexbox } from "@mui/system";
 import Grid from "@mui/material/Grid";
-import GroupImage from "../../Assets/GroupImage.png";
+import GroupImage from "../../../Assets/GroupImage.png";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { Button } from "@mui/material";
+import styles from './GroupCardStyles.scss'
 
 export default function GroupdCard({
   id,

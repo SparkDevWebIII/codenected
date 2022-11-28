@@ -1,13 +1,16 @@
 import React from "react";
-import GroupdCard from "./GroupCard";
+import GroupdCard from "../Group_Card/GroupCard";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-import styles from "./Groups.scss";
-import LearnMoreButton from "./LearnMoreButton";
-import GroupImage from "../../Assets/GroupImage.png";
-import codenectedBackground from "../../Assets/codenectedBackground.png";
+import LearnMoreButton from "../Button/LearnMoreButton"
+import styles from './GroupsStyles.scss'
+import codenectedBackground from "../../../Assets/codenectedBackground.png";
+import SearchBar from "../Search_Bar/SearchBar";
+
+
+
 
 const info = [
   {
@@ -73,10 +76,11 @@ const Groups = () => {
           backgroundSize: "cover",
           left: 0,
           top: 0,
-          height: "350px",
+          height: "450px",
         }}
       >
-        Projects
+        <p className="title">CodeNect With A Group</p>
+        <SearchBar/>
       </Box>
       <Grid
         container
@@ -85,7 +89,7 @@ const Groups = () => {
         alignItems="stretch"
         className="bodySection"
       >
-        <Grid className="Dummy" item xs={4}>
+        <Grid className="Dummy" item xs={4} justifyContent="center">
           xs=4
         </Grid>
         <Grid

@@ -7,8 +7,7 @@ import FindProjects from "./pages/FindProjects/FindProjects";
 import Profile from "./pages/Profile/Profile";
 import PageOutline from "./pages/PageOutline";
 import Login from "./pages/User/login";
-import GroupdCard from "./pages/ViewGroups/GroupCard";
-import Groups from "./pages/ViewGroups/Groups";
+import Groups from "./pages/ViewGroups/Group_Page/Groups";
 
 
 // These routes are the ones that appear on the header
