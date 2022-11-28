@@ -36,8 +36,8 @@ projectData.forEach(function(projectDetail) {
   dynamodb.put(params, (err, data) => {
     if (err)
       console.error("Unable to load data into Projects table",
-                    projects.title, ". Error: ", JSON.stringify(err, null, 2))
+                    projectDetail.title, ". Error: ", JSON.stringify(err, null, 2))
     else
-      console.log("Added", projects.title, "to project table.")
+      console.log("Added", projectDetail.title, "to project table.")
   });
 });
