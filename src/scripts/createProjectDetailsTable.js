@@ -12,11 +12,11 @@ const params = {
     // Partition Key
     { AttributeName: "project_id", KeyType: "HASH" },
     // Sort Keys
-    { AttributeName: "name", KeyType: "RANGE"}  
+    { AttributeName: "title", KeyType: "RANGE"}  
   ],
   AttributeDefinitions: [
     { AttributeName: "project_id", AttributeType: "S" },
-    { AttributeName: "name", AttributeType: "S" },
+    { AttributeName: "title", AttributeType: "S" },
   ],
  
   ProvisionedThroughput: {
