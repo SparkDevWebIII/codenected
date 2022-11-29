@@ -1,80 +1,206 @@
 [
-    {
-        "project_id":"1",
-        "title": "hello",
-        "description": "",
-        "location": "",
-        "url": "",
-        "startDate": "2019-01-01",
-        "endDate": "2019-12-31",
-        "status": "Active",
-        "manager": "",
-        "technologyUsed": ["React.js", "Node.js", "MongoDB", "Express.js", "AWS", "Next.js"],
-        "image": "",
-        "imageAlt": "",
-        "projectDetails": "",
-        "leadership":[
-            {
-                "projectLeader": "",
-                "projectLeaderID": ""
-            },
-            {
-                "projectLeader": "",
-                "projectLeaderID": ""
-            },
-            {
-                "projectLeader": "",
-                "projectLeaderID": ""
-            }
-        ],
-        "members": [
-            {
-                "projectTeamMember": "",
-                "projectTeamMemberID": "1"
-            },
-            {
-                "projectTeamMember": "",
-                "projectTeamMemberID": "2"
-            }
+  {
+    "project_id": "2",
+    "title": "Gene Pool",
+    "summary": "We are looking for UX researchers to help us understand the needs of our users and improve our services for genetic testing kits.",
+    "location": "Miami, FL",
+    "dateCreated": "February 14 2022",
+    "email": "miamigenepool@gmail.com",
+    "githubRepo": "https://www.github.com/",
+    "concept": "Gene Pool is an organization that is trying to create a service for genetic testing kits. Our team's main service is receiving DNA (molecules that form the building blocks of genes) and analyzing them to share with other organizations or a singular person. This information can help further understand our genetics as humans along with assisting in halting any negative effects.",
+    "goal": "Our goal as of now is to complete more research as effectively as possible. We are trying to find solutions for unknown diagnoses along with comprehending diagnoses and genes that may assist us in different forms. With the information we currently have we are struggling to analyze the information properly. We are looking to find research about genetics in addition to effectively sorting this information on a database.",
+    "currentsystem": "Currently we have a system that logs information on Google Excel and Documents. We are looking to track this information on another private database. In addition with hosting this information we are looking for research to be conducted, especially with creating charts and finding patterns within diagnoses.",
+    "technologies": ["Excel", "Gmail API", "Django", "Bootstrap"],
+    "rolesNeeded": ["UX Research", "Backend Developer"],
+    "members": [
+      { "name": "Rajiv Chevannes", "role": "Developer" },
+      { "name": "Danny Lawrence", "role": "Developer" }
+    ],
+    "projectProgression": [
+      {
+        "phase": "UI/UX Phase",
+        "percentageDone": 0.2,
+        "phaseSteps": ["Research", "Ideating", "Prototyping"]
+      },
+      {
+        "phase": "Backend Phase",
+        "percentageDone": 0.4,
+        "phaseSteps": [
+          "Database Models",
+          "User Authentication",
+          "Question/Answer Forms",
+          "API Endpoints",
+          "Email Notification"
         ]
-    },
-    {
-        "project_id":"2",
-        "title": "hello2",
-        "description": "",
-        "location": "",
-        "url": "",
-        "startDate": "2019-01-01",
-        "endDate": "2019-12-31",
-        "status": "Active",
-        "manager": "",
-        "technologyUsed": ["React.js", "Node.js", "MongoDB", "Express.js", "AWS", "Next.js"],
-        "image": "",
-        "imageAlt": "",
-        "projectDetails": "",
-        "leadership":[
-            {
-                "projectLeader": "",
-                "projectLeaderID": ""
-            },
-            {
-                "projectLeader": "",
-                "projectLeaderID": ""
-            },
-            {
-                "projectLeader": "",
-                "projectLeaderID": ""
-            }
-        ],
-        "members": [
-            {
-                "projectTeamMember": "",
-                "projectTeamMemberID": "1"
-            },
-            {
-                "projectTeamMember": "",
-                "projectTeamMemberID": "2"
-            }
+      }
+    ]
+  },
+  {
+    "project_id": "3",
+    "title": "My Coffee Cup",
+    "summary": "We are looking for web developers to help us redesign out coffee shop website",
+    "location": "Miami, FL",
+    "dateCreated": "July 15th 2022",
+    "email": "mycoffeecup@gmail.com",
+    "githubRepo": "https://www.github.com/",
+    "concept": "My Coffee Cup is a coffee store based around central Miami Florida. We create specialty coffee that can be roasted, brewed, and even shipped out to local areas. We believe that creating a more appealing and welcoming website will be able to give us new attractions and connections allowing us to bring in new members to try out our coffee. ",
+    "goal": "The goal for this project is to create a full stack web development program for My Coffee Cup. We expect to have this project fully automated and allow for online purchases to be made fluidly. On top of allowing online purchases we would like a welcoming web page that increases customer flow.",
+    "currentsystem": "We had a rough start on our website We are coffee makers and we simply don't specialize in technology. Luckily we have been able to find a strong team that allowed us to make a functioning website. Our website isn't very appealing nor can you create online orders, but we do have a menu and information about our coffee shop. We hope we can find developers to enhance our website.",
+    "technologies": [
+      "Django",
+      "Material UI",
+      "Bootstrap",
+      "MySQL",
+      "AngularJS"
+    ],
+    "rolesNeeded": ["Full Stack Developer", "UX Researcher"],
+    "projectProgression": [
+      {
+        "phase": "UX Phase",
+        "percentageDone": 0.6,
+        "phaseSteps": ["Research", "Ideating", "Prototyping"]
+      },
+      {
+        "phase": "Frontend Phase",
+        "percentageDone": 0.4,
+        "phaseSteps": [
+          "Database Models",
+          "High Level Designs",
+          "Convert to React"
         ]
-    }
+      },
+      {
+        "phase": "Backend Phase",
+        "percentageDone": 0.2,
+        "phaseSteps": [
+          "Database Models",
+          "User Authentication",
+          "Online Order Form",
+          "API Endpoints"
+        ]
+      }
+    ]
+  },
+  {
+    "project_id": "4",
+    "title": "Designer Santa",
+    "summary": "Christmas is around the corner and we are looking for designers to help us improve our Jingle Ball website experience.",
+    "location": "Kendall, FL",
+    "dateCreated": "November 4th, 2022",
+    "email": "designersanta@outlook.com",
+    "githubRepo": "https://www.github.com/",
+    "concept": "Designer is a company that creates affordable Christmas goods, while giving toys and warm clothes to the less fortunate. We sell many products such as Christmas lights, clothes, socks and may other goodies. From the profit we make from selling these products we give back to people who are in need of warm clothes!",
+    "goal": "We are currently looking for web designers to help us redefine our website. We would like to make a site that allows for a fully functioning site that gives users an opportunity to purchase our products, while understanding our goal to raise awareness for people in need. In addition to raising awareness we would like to make a fundraiser on our website that gives straight back to people in need. .",
+    "currentsystem": "Currently we have a very outdated website. We have very little colors and very little images and it looks simply bland. Sometimes the servers go down when too many users are on the website and the online store function doesn’t work. The only use for our current website is to give information on our team.",
+    "technologies": ["Excel", "Gmail API", "Django", "Bootstrap"],
+    "rolesNeeded": ["UX Research", "Full Stack Developer"],
+    "members": [
+      { "name": "Rajiv Chevannes", "role": "Developer" },
+      { "name": "Danny Lawrence", "role": "Developer" }
+    ],
+    "projectProgression": [
+      {
+        "phase": "UI/UX Phase",
+        "percentageDone": 0.7,
+        "phaseSteps": ["Research", "Ideating", "Prototyping"]
+      },
+      {
+        "phase": "Front-end Phase",
+        "percentageDone": 0.3,
+        "phaseSteps": [
+          "Database Models",
+          "User Authentication",
+          "Donation System",
+          "API Endpoints"
+        ]
+      }
+    ]
+  },
+  {
+    "project_id": "5",
+    "title": "Funny Money",
+    "summary": "Saving money can be a struggle. We are looking for developers to help us design an app to save money.",
+    "location": "FIU, FL",
+    "dateCreated": "August 3rd 2022",
+    "email": "fiufunnymoney@gmail.com",
+    "githubRepo": "https://www.github.com/",
+    "concept": "Many college students end up in debt that may never be paid off. Having loans breathing down your neck simply is not fun. That’s why we made Funny Money! We are an organization at FIU with over 100 members trying to promote the importance of being financially literate. We provide ways and connections for students to reach out and be informed with better financial choices and opportunities!",
+    "goal": "We are currently looking for web designers to help us create an app. We would like to make an application that allows for a fully functioning app that gives users an opportunity to track their purchases. This app will calculate the essential purchases and nonessential purchases. Along with this students can account for their income and limit their expenses to reach a certain amount of money invested or saved to reach financial independence or a goal!",
+    "currentsystem": "We currently do not have any application. But we do have a website that informs students at FIU about resources on financial literacy. This website is not interactive at all, it can’t be used to contact any members on the board, it’s purpose is to simply inform students on information",
+    "technologies": ["Excel", "Gmail API", "Django", "Bootstrap"],
+    "rolesNeeded": ["UX Research", "Full Stack Developer"],
+    "members": [
+      { "name": "Rajiv Chevannes", "role": "Developer" },
+      { "name": "Danny Lawrence", "role": "Developer" }
+    ],
+    "projectProgression": [
+      {
+        "phase": "UI/UX Phase",
+        "percentageDone": 0.5,
+        "phaseSteps": ["Research", "Interviewing", "Ideating", "Prototyping"]
+      },
+      {
+        "phase": "Front-End Phase",
+        "percentageDone": 0.3,
+        "phaseSteps": [
+          "Database Models",
+          "High Level Design",
+          "Convert to React"
+        ]
+      }
+      {
+        "phase": "Back-End Phase",
+        "percentageDone": 0.5,
+        "phaseSteps": [
+          "Database Models",
+          "User Authentication",
+          "API Endpoints"
+        ]
+      }
+    ]
+  },
+  {
+    "project_id": "6",
+    "title": "Go Miami!",
+    "summary": "The city of Miami is looking for enthusiastic coders to develop a website to encourage students get into tech",
+    "location": "Miami, FL",
+    "dateCreated": "May 26th 2022",
+    "githubRepo": "https://www.github.com/",
+    "concept": "Many students don’t know what they want to do, this may lead them to settle for a degree they aren’t very interested in. On top of this, the field of technology is in dire need of innovators to create, design, and build code. These two problems can be solved by Go Miami! Go Miami is a team that advocates for finding local talent within young students to develop a path in coding. ",
+    "goal": "We are currently looking for web designers to help us create a website that encourages students to get involved in coding. Coding is the future, everyone should know how to create! Within this website we want to show off methods that students can utilize to break into technology, In addition we would like a feature that connects students with groups that have similar interests, and mentors!",
+    "currentsystem": "We currently do not have any sorty of website that introduces students to technology. On the contrary, we have a community of people that these students can connect with on the website. These include recruiters from local and big companies, teachers from different schools, and students that are interested in breaking into tech.",
+    "technologies": ["Streamlit", "Scikit-learn", "MatPlotLib"],
+    "rolesNeeded": ["UX Research", "Full Stack Developer"],
+    "members": [
+      { "name": "Kumail Kazmi", "role": "Developer" },
+      { "name": "Corey Duke", "role": "Developer" }
+    ],
+    "projectProgression": [
+      {
+        "phase": "UX Phase",
+        "percentageDone": 0.8,
+        "phaseSteps": ["Research", "Interviewing", "Ideating", "Prototyping"]
+      },
+      {
+        "phase": "Frontend Phase",
+        "percentageDone": 0.6,
+        "phaseSteps": [
+          "Database Models",
+          "High Level Designs",
+          "Convert to React"
+        ]
+      },
+      {
+        "phase": "Backend Phase",
+        "percentageDone": 0.4,
+        "phaseSteps": [
+          "Database Models",
+          "User Authentication",
+          "Question/Answer Forms",
+          "API Endpoints",
+          "Email Notification"
+        ]
+      }
+    ]
+  }
 ]
