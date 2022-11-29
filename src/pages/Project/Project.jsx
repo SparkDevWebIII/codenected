@@ -2,7 +2,6 @@ import React from "react";
 import { useLoaderData } from "react-router";
 import { Box } from "@mui/system";
 import { Typography, Link } from "@mui/material";
-import defaultprojectimage from "../../assets/defaultprojectimage.png";
 import { useTheme } from "@mui/material/styles";
 import DateRangeIcon from "@mui/icons-material/DateRange";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -47,7 +46,7 @@ const Project = () => {
               height: overviewHeight,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
-              backgroundImage: `url(${defaultprojectimage}), linear-gradient(#eb01a5, #d13531)`,
+              backgroundImage: `url(assets/defaultprojectimage.png), linear-gradient(#eb01a5, #d13531)`,
               backgroundPosition: "center",
               opacity: 0.14,
             }}
