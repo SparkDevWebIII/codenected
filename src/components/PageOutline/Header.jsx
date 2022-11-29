@@ -15,14 +15,14 @@ const Header = (props) => {
   return (
     <AppBar position="static" elevation={0}>
       <CssBaseline />
-
       <Container
         maxWidth="false"
         sx={{
+          top: 0,
           height: props.height,
           position: "fixed",
           backgroundColor: "black",
-          zIndex: 1,
+          zIndex: 100,
         }}
       >
         <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
@@ -43,7 +43,13 @@ const Header = (props) => {
             CodeNected
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+              justifyContent: "flex-end",
+            }}
+          >
             {routes.map(({ name, path }) => (
               <NavLink
                 key={name}
@@ -51,10 +57,10 @@ const Header = (props) => {
                 style={{ textDecoration: "none" }}
                 tabIndex="-1"
               >
-                {({ isActive }) => (
+                {() => (
                   <Button
                     color={
-                      isActive && window.location.pathname === path
+                      window.location.pathname === path
                         ? "primary"
                         : "secondary"
                     }
@@ -72,7 +78,7 @@ const Header = (props) => {
               style={{ textDecoration: "none" }}
               tabIndex="-1"
             >
-              <Button variant="outlined">LOGIN</Button>
+              <Button variant="contained">Sign In</Button>
             </NavLink>
           </Box>
         </Toolbar>

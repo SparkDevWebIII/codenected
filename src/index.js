@@ -9,23 +9,42 @@ import PageOutline from "./pages/PageOutline";
 import Login from "./pages/User/login";
 import Groups from "./pages/ViewGroups/Group_Page/Groups";
 
+import Project from "./pages/Project/Project";
+import { getProject } from "./utils/getProject";
+import "typeface-roboto";
 
 // These routes are the ones that appear on the header
 export const primaryRoutes = [
   {
-    name: "Home",
-    path: "/",
-    element: <Home />,
-  },
-  {
     name: "Projects",
-    path: "/projects/",
-    element: <FindProjects />,
+    path: "/projects",
+    children: [
+      {
+        index: "true",
+        name: "Projects",
+        element: <FindProjects />,
+      },
+      {
+        name: "Project",
+        path: ":projectId",
+        element: <Project />,
+        loader: ({ params }) => {
+          return getProject(params.projectId);
+        },
+      },
+    ],
   },
   {
-    name: "Profile",
-    path: "/profile/",
-    element: <Profile />,
+    name: "Events",
+    path: "/events",
+  },
+  {
+    name: "Connect",
+    path: "/connect",
+  },
+  {
+    name: "About Us",
+    path: "/about",
   },
   {
     name: "Groups",
@@ -33,7 +52,6 @@ export const primaryRoutes = [
     element: <Groups/>,
   },
 ];
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -43,8 +61,18 @@ const router = createBrowserRouter([
       ...primaryRoutes,
       {
         name: "Login",
-        path: "/login/",
+        path: "/login",
         element: <Login />,
+      },
+      {
+        name: "Home",
+        path: "/",
+        element: <Home />,
+      },
+      {
+        name: "Profile",
+        path: "/profile",
+        element: <Profile />,
       },
     ],
   },
