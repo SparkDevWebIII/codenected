@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 import { Box } from "@mui/system";
 import CssBaseline from "@mui/material/CssBaseline";
 
-import Header from "../components/PageOutline/Header";
+import Header from "../components/PageOutline/Header"
 import Footer from "../components/PageOutline/Footer";
 
 const PageOutline = () => {
