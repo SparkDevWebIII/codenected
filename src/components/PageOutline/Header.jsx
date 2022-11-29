@@ -8,16 +8,19 @@ import "./Header.scss";
 export default function Header(props) {
   return (
     <div className="header">
-      <div className="logo_container">      <img src="assets/images/logo.png" alt="logo" className="logo" /></div>
-
+      <div className="logo_container">
+        {" "}
+        <img src="assets/images/logo.png" alt="logo" className="logo" />
+      </div>
 
       <div className="navbar">
-        <NavLink>Projects</NavLink>
-        <NavLink>Groups</NavLink>
-        <NavLink>Connect</NavLink>
-        <NavLink>About</NavLink>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
+        <NavLink to="/groups">Groups</NavLink>
+        <NavLink to="/connect">Connect</NavLink>
+        <NavLink to="/about">About</NavLink>
       </div>
-      <LoginButton link="" />
+      <LoginButton link="/register" />
     </div>
   );
 }
