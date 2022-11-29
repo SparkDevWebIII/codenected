@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
 
-import LoginButton from "../General/WhiteButton";
+import LoginButton from "../common/WhiteButton";
 
 import "./Header.scss";
 

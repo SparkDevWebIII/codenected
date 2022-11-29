@@ -1,5 +1,5 @@
 import React from "react";
-import GradientButton from "../General/GradientButton";
+import GradientButton from "../common/GradientButton";
 import Flickity from "react-flickity-component";
 
 import "./Events.scss";

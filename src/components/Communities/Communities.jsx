@@ -1,6 +1,6 @@
 import React from "react";
 import CommunityCard from "./CommunityCard/CommunityCard";
-import GradientButton from "../General/GradientButton";
+import GradientButton from "../common/GradientButton";
 
 import "./Communities.scss";
 

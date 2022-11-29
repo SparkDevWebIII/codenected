@@ -1,6 +1,6 @@
 import React from "react";
 
-import GradientButton from "../../General/GradientButton";
+import GradientButton from "../../common/GradientButton";
 import "./ProjectCard.scss";
 
 export default function ProjectCard(props) {

@@ -1,7 +1,7 @@
 import { selectUnstyledClasses } from "@mui/base";
 import React from "react";
 import { useState, useEffect } from "react";
-import GradientButton from "../General/GradientButton";
+import GradientButton from "../common/GradientButton";
 import "./IntroCarousel.scss";
 import { IDLE_FETCHER } from "@remix-run/router";
 
