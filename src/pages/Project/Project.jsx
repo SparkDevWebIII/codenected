@@ -26,10 +26,9 @@ const Project = () => {
           m: "auto",
           pt: "1.5em",
           px: "1.1em",
-          "& .MuiTypography-h1, .MuiTypography-subtitle1, .MuiTypography-h6, .MuiLink-root":
-            {
-              color: "#DBDBDB",
-            },
+          "& .MuiTypography-h1, .MuiTypography-subtitle1, .MuiTypography-h6, .MuiLink-root": {
+            color: "#DBDBDB",
+          },
         }}
       >
         <Box
