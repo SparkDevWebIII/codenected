@@ -75,22 +75,22 @@ const PageOutline = () => {
           },
         },
       },
-      MuiButton: {
-        variants: [
-          {
-            props: { variant: "contained" },
-            style: {
-              backgroundColor: "white",
-              color: "black",
-              borderRadius: 10,
-            },
-          },
-        ],
-      },
+      // MuiButton: {
+      //   variants: [
+      //     {
+      //       props: { variant: "contained" },
+      //       style: {
+      //         backgroundColor: "white",
+      //         color: "black",
+      //         borderRadius: 10,
+      //       },
+      //     },
+      //   ],
+      // },
       MuiChip: {
         styleOverrides: {
           root: {
-            color: "white",
+            // color: "white",
             backgroundColor: tertiary,
           },
         },
@@ -99,6 +99,13 @@ const PageOutline = () => {
         styleOverrides: {
           root: {
             color: "#A155A7",
+          },
+        },
+      },
+      MuiPaper: {
+        styleOverrides: {
+          root: {
+            backgroundColor: "black",
           },
         },
       },

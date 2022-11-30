@@ -8,7 +8,7 @@ import Profile from "./pages/Profile/Profile";
 import PageOutline from "./pages/PageOutline";
 import Login from "./pages/User/login";
 import Project from "./pages/Project/Project";
-import { getProject } from "./utils/getProject";
+import { getProject, getProjectList } from "./utils/projectQueries";
 import "typeface-roboto";
 
 // These routes are the ones that appear on the header
@@ -21,6 +21,9 @@ export const primaryRoutes = [
         index: "true",
         name: "Projects",
         element: <FindProjects />,
+        loader: () => {
+          return getProjectList();
+        },
       },
       {
         name: "Project",

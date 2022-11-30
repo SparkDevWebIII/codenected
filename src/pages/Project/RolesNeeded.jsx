@@ -19,6 +19,7 @@ const RolesNeeded = ({ roles }) => {
       <Typography variant="h2">Roles Needed</Typography>
       {roles.map(({ position, domain, description }) => (
         <PositionEntry
+          key={position}
           position={position}
           domain={domain}
           description={description}
