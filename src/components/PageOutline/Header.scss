@@ -1,0 +1,72 @@
+
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+body {
+  background: linear-gradient(180deg, #051625 0%, #132b41 49.48%, #051320 100%);
+}
+.header {
+  font-family: "Plus Jakarta Sans";
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  padding-right: 30px;
+
+  height: fit-content;
+
+  width: 100vw;
+
+  background: rgba($color: #000000, $alpha: 0.75);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  img {
+    align-self: left;
+  }
+  .logo_container {
+    flex-grow: 1;
+  }
+  .navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    a {
+      font-family: "Plus Jakarta Sans";
+      font-weight: 400;
+      font-size: 1.5rem;
+      background: linear-gradient(
+          90.05deg,
+          #24c9e6 3.74%,
+          rgba(36, 201, 230, 0) 98.09%
+        ),
+        linear-gradient(270.08deg, #cc11e3 0.09%, rgba(204, 17, 227, 0) 98.35%),
+        linear-gradient(270.1deg, #b303fb 1.42%, rgba(179, 3, 251, 0) 98.34%),
+        linear-gradient(90.03deg, #7f06f8 2.35%, rgba(127, 6, 248, 0) 101.53%);
+      background-size: 50% 0, 0 0.1em;
+      background-position: 100% 100%, 0 100%;
+      background-repeat: no-repeat;
+      transition: background-size 400ms;
+      margin-block: 5px;
+      margin-inline: 15px;
+      color: #cab7cf;
+    }
+    a:hover {
+      background-size: 0 0.1em, 100% 0.1em;
+    }
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .header {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+    .navbar {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+  }
+}

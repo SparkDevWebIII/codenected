@@ -1,0 +1,28 @@
+.login_button_container {
+  border-radius: 10px;
+  width: 106.31px;
+  height: 42px;
+
+  background: linear-gradient(to left, rgb(255, 255, 255) 50%, rgba(179, 1, 228, 0.5) 50%) right;
+  background-size: 200% 100%;
+  background-position: right;
+  transition: all 0.5s ease;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  .login_button_text {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 20px;
+
+    letter-spacing: 0.46px;
+    color: #3B364F;
+  }
+}
+.login_button_container:hover {
+  background-position: left;
+  .login_button_text {
+    color: white;
+  }
+}

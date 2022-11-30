@@ -1,90 +1,23 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
 
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
-import CssBaseline from "@mui/material/CssBaseline";
+import LoginButton from "../common/WhiteButton";
 
-import { primaryRoutes as routes } from "../..";
+import "./Header.scss";
 
-const Header = (props) => {
+export default function Header(props) {
   return (
-    <AppBar position="static" elevation={0}>
-      <CssBaseline />
-      <Container
-        maxWidth="false"
-        sx={{
-          top: 0,
-          height: props.height,
-          position: "fixed",
-          backgroundColor: "black",
-          zIndex: 100,
-        }}
-      >
-        <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: "flex",
-              fontWeight: 700,
-              letterSpacing: ".1rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            CodeNected
-          </Typography>
+    <div className="header">
+      <div className="logo_container">      <img src="assets/images/logo.png" alt="logo" className="logo" /></div>
 
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "none", md: "flex" },
-              justifyContent: "flex-end",
-            }}
-          >
-            {routes.map(({ name, path }) => (
-              <NavLink
-                key={name}
-                to={path}
-                style={{ textDecoration: "none" }}
-                tabIndex="-1"
-              >
-                {() => (
-                  <Button
-                    color={
-                      window.location.pathname === path
-                        ? "primary"
-                        : "secondary"
-                    }
-                  >
-                    {name}
-                  </Button>
-                )}
-              </NavLink>
-            ))}
-          </Box>
-          <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
-            <NavLink
-              key="Login"
-              to="/login/"
-              style={{ textDecoration: "none" }}
-              tabIndex="-1"
-            >
-              <Button variant="contained">Sign In</Button>
-            </NavLink>
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+
+      <div className="navbar">
+        <NavLink>Projects</NavLink>
+        <NavLink>Groups</NavLink>
+        <NavLink>Connect</NavLink>
+        <NavLink>About</NavLink>
+      </div>
+      <LoginButton link="" />
+    </div>
   );
-};
-
-export default Header;
+}
