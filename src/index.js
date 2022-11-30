@@ -8,7 +8,6 @@ import Profile from "./pages/Profile/Profile";
 import PageOutline from "./pages/PageOutline";
 import Login from "./pages/User/login";
 import Groups from "./pages/ViewGroups/Group_Page/Groups";
-
 import Project from "./pages/Project/Project";
 import { getProject } from "./utils/getProject";
 import "typeface-roboto";

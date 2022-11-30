@@ -6,7 +6,7 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import LearnMoreButton from "../Button/LearnMoreButton";
 import styles from "./GroupsStyles.scss";
-import codenectedBackground from "../../../Assets/codenectedBackground.png";
+
 import SearchBar from "../Search_Bar/SearchBar";
 import DropDown from "../DropDown/DropDown";
 
@@ -80,7 +80,7 @@ const Groups = () => {
         xs={12}
         class="Header"
         style={{
-          backgroundImage: `url(${codenectedBackground})`,
+          backgroundImage: `url("assets/images/codenectedBackground.png")` ,
           backgroundSize: "cover",
           left: 0,
           top: 0,

@@ -7,7 +7,6 @@ import LearnMoreButton from "../Button/LearnMoreButton";
 import Typography from "@mui/material/Typography";
 import { flexbox } from "@mui/system";
 import Grid from "@mui/material/Grid";
-import GroupImage from "../../../Assets/GroupImage.png";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { Button } from "@mui/material";
@@ -27,7 +26,7 @@ export default function GroupdCard({
         component="img"
         alt="Group Image"
         height="190"
-        image={GroupImage}
+        src="assets/images/GroupImage.png"
       />
       <CardContent>
         <Grid container>
