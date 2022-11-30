@@ -17,7 +17,7 @@ export default function ActionAreaCard({ title, summary, projectId }) {
         <CardMedia
           component="img"
           height="140"
-          image={require("../../assets/projecthero.jpg")}
+          src="assets/projecthero.jpg"
           alt="developers working"
         />
         <CardContent>
