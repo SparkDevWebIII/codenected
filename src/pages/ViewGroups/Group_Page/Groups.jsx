@@ -97,18 +97,10 @@ const Groups = () => {
         
         className="bodySection"
       >
-        <Grid className="Dummy" container  xs={2} justifyContent="center" >
-          <Grid xs={10}>
-            <DropDown />
-            <DropDown />
-            <DropDown />
-            <DropDown />
-            <DropDown />
-          </Grid>
-        </Grid>
+        
         <Grid
           container
-          xs={10}
+          xs={12}
           columnSpacing={4}
           rowSpacing={4}
           justifyContent="center"
