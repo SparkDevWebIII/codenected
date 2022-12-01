@@ -1,0 +1,15 @@
+[
+  {
+    "user_id": "2",
+    "name": "Fernando Azanza",
+    "about": "We are looking for UX researchers to help us understand the needs of our users and improve our services for genetic testing kits.",
+    "location": "Miami, FL",
+    "dateCreated": "February 14 2022",
+    "email": "miamigenepool@gmail.com",
+    "githubRepo": "https://www.github.com/",
+    "skills": ["Excel", "Gmail API", "Django", "Bootstrap"],
+    "projects": ["UX Research", "Backend Developer"],
+    "groups": ["UX Research", "Backend Developer"],
+    "userImage": "https://secure.meetupstatic.com/photos/member/7/6/7/8/member_267081632.jpeg"
+  }
+]
