@@ -1,9 +1,19 @@
+.login_button_a_tag {
+  text-decoration: none;
+}
+
 .login_button_container {
   border-radius: 10px;
-  width: 106.31px;
-  height: 42px;
+  width: 100%;
+  max-width: 106.31px;
+  height: 46px;
 
-  background: linear-gradient(to left, rgb(255, 255, 255) 50%, rgba(179, 1, 228, 0.5) 50%) right;
+  background: linear-gradient(
+      to left,
+      rgb(255, 255, 255) 50%,
+      rgba(179, 1, 228, 0.5) 50%
+    )
+    right;
   background-size: 200% 100%;
   background-position: right;
   transition: all 0.5s ease;
@@ -12,15 +22,16 @@
   align-items: center;
 
   .login_button_text {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-weight: bold;
     font-size: 20px;
 
     letter-spacing: 0.46px;
-    color: #3B364F;
+    color: #3b364f;
   }
 }
 .login_button_container:hover {
+  text-decoration: none;
   background-position: left;
   .login_button_text {
     color: white;

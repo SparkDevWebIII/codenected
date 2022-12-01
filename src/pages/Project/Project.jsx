@@ -18,7 +18,7 @@ const Project = () => {
 
   return (
     <>
-      {/* hero image */}
+      {/* Project Overview */}
       <Box
         sx={{
           // maxWidth: "1600px",
@@ -31,6 +31,10 @@ const Project = () => {
             },
         }}
       >
+        {/* setting a image with an opacity without affecting text color,
+        set a container with the color of the opacity and position relative,
+        set an element inside the container with the image, set position absolute, and opacity value 
+        set another element(where the text is written) inside the container with position relative */}
         <Box
           sx={{
             position: "relative",
@@ -40,6 +44,7 @@ const Project = () => {
         >
           <Box
             sx={{
+              // takes it out of the normal flow of elements and is placed behind the elements
               position: "absolute",
               left: 0,
               right: 0,
@@ -53,6 +58,7 @@ const Project = () => {
           />
           <Box
             sx={{
+              // important in keeping the text without opacity, not sure why
               position: "relative",
               height: overviewHeight,
               p: 2,
@@ -111,6 +117,7 @@ const Project = () => {
             </Box>
           </Box>
         </Box>
+        {/* section for jumping to a section in the page */}
         <Box
           sx={{
             height: "2.75em",
@@ -132,7 +139,7 @@ const Project = () => {
       </Box>
       <Box sx={{ maxWidth: "1475px", mx: "auto" }}>
         {/* this box below sets the spacing between project details, 
-      progress path, the horizontal divider and roles needed */}
+        progress path, the horizontal divider and roles needed */}
         <Box sx={{ py: "2.8125em", "& > *": { mb: "6.25em" } }}>
           <ProjectDetails
             concept={data.concept}

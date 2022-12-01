@@ -23,26 +23,26 @@ export default function TagsDropdown({
   options,
   checkedOptions,
   setCheckedOptions,
+  width = "100%",
+  sx,
 }) {
-  const handleChange = (event) => {
-    const {
-      target: { value },
-    } = event;
-    setCheckedOptions(
-      // On autofill we get a stringified value.
-      typeof value === "string" ? value.split(",") : value
-    );
-  };
-
   return (
-    <FormControl sx={{ m: 1, width: 300 }}>
+    <FormControl sx={{ my: 1, width: width, ...sx }}>
       <InputLabel id="multiple-checkbox-label">{label}</InputLabel>
       <Select
         labelId="multiple-checkbox-label"
         id="multiple-checkbox"
         multiple
         value={checkedOptions}
-        onChange={handleChange}
+        onChange={(e) => {
+          const {
+            target: { value },
+          } = e;
+          setCheckedOptions(
+            // On autofill we get a stringified value.
+            typeof value === "string" ? value.split(",") : value
+          );
+        }}
         input={<OutlinedInput label={label} />}
         renderValue={(selected) => selected.join(", ")}
         MenuProps={MenuProps}

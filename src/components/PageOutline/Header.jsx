@@ -1,26 +1,62 @@
-import React, { useState } from "react";
-import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
-
+import React from "react";
+import { NavLink } from "react-router-dom";
+import DrawerToggleButton from "./DrawerToggleButton";
 import LoginButton from "../common/WhiteButton";
+import Backdrop from "./Backdrop";
 
 import "./Header.scss";
 
 export default function Header(props) {
-  return (
-    <div className="header">
-      <div className="logo_container">
-        {" "}
-        <img src="assets/images/logo.png" alt="logo" className="logo" />
-      </div>
+  const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
 
-      <div className="navbar">
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
-        <NavLink to="/groups">Groups</NavLink>
-        <NavLink to="/connect">Connect</NavLink>
-        <NavLink to="/about">About</NavLink>
+  const toggleDrawer = (open) => (event) => {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
+
+    setIsDrawerOpen(open);
+  };
+
+  return (
+    <>
+      {isDrawerOpen && <Backdrop closeDrawer={toggleDrawer(false)} />}
+      <div className="header">
+        <div className="logo_container">
+          {" "}
+          <img src="assets/images/logo.png" alt="logo" className="logo" />
+        </div>
+
+        {/* the two containers below appears on smaller screens */}
+        <div className="login-button-mobile">
+          <LoginButton link="/register" />
+        </div>
+        <div className="toggle-button-container">
+          <DrawerToggleButton
+            toggleDrawer={toggleDrawer((prevState) => !prevState)}
+          />
+        </div>
+
+        <div className="navbar">
+          {/* login-button-desktop disappears on smaller screens */}
+          <div className="login-button-desktop">
+            <LoginButton link="/register" />
+          </div>
+          <div
+            className={`navbar__pages ${
+              isDrawerOpen ? "navbar__pages--opened" : "navbar__pages--collapse"
+            }`}
+          >
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/projects">Projects</NavLink>
+            <NavLink to="/groups">Groups</NavLink>
+            <NavLink to="/connect">Connect</NavLink>
+            <NavLink to="/about">About</NavLink>
+          </div>
+        </div>
       </div>
-      <LoginButton link="/register" />
-    </div>
+    </>
   );
 }
