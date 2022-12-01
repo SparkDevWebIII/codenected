@@ -39,7 +39,8 @@ function a11yProps(index) {
 //   title: "Project Details",
 //   component: <ProjectDetails />
 // }
-export default function GeneralTabs({ tabs, tabPadding = 10 }) {
+
+export default function GeneralTabs({ tabs, tabMarginLeft }) {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -49,7 +50,7 @@ export default function GeneralTabs({ tabs, tabPadding = 10 }) {
   return (
     <Box sx={{ width: "100%" }}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-        <Tabs value={value} sx={{ px: tabPadding }} onChange={handleChange} aria-label="general tabs">
+        <Tabs value={value} onChange={handleChange} aria-label="general tabs" sx={{ml: `${tabMarginLeft}`}}>
           {tabs.map(({ title }, index) => (
             <Tab label={title} key={title} {...a11yProps(index)} />
           ))}
