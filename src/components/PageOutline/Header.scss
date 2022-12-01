@@ -25,6 +25,7 @@
   img {
     align-self: left;
   }
+
   .navbar {
     display: flex;
     align-items: center;
@@ -57,17 +58,20 @@
   }
 }
 .logo_container {
-  margin-right: 1rem;
+  margin-right: 2rem;
   margin-top: 0.35rem;
 }
 .toggle-button-container {
   display: none;
 }
+.login-button-desktop,
+.login-button-mobile {
+  text-decoration: none;
+}
 .login-button-mobile {
   width: 60px;
   display: none;
   margin-left: auto;
-  text-decoration: none;
   .login_button_text {
     font-size: 1em;
   }

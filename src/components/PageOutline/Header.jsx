@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
+import React from "react";
+import { NavLink } from "react-router-dom";
 import DrawerToggleButton from "./DrawerToggleButton";
 import LoginButton from "../common/WhiteButton";
 import Backdrop from "./Backdrop";
@@ -10,7 +10,6 @@ export default function Header(props) {
   const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
 
   const toggleDrawer = (open) => (event) => {
-    console.log("lol");
     if (
       event.type === "keydown" &&
       (event.key === "Tab" || event.key === "Shift")

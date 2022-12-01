@@ -5,6 +5,7 @@ import TagsDropdown from "../../components/common/TagsDropdown";
 import ActionAreaCard from "../../components/common/ActionAreaCard";
 import { Typography, Box, Button } from "@mui/material";
 import SearchBar from "./SearchBar";
+import ProjectCard from "../../components/FeaturedProjects/ProjectCard/ProjectCard";
 
 // filters
 const industries = [
@@ -45,6 +46,27 @@ const technologies = [
 ];
 
 const FindProjects = () => {
+  // const poo = fetch(
+  //   "https://r7fu8gohdd.execute-api.us-east-1.amazonaws.com/projectDetail",
+  //   {
+  //     mode: "cors",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //       Accept: "application/json",
+  //     },
+  //   }
+  // )
+  //   .then((response) => {
+  //     console.log(response);
+  //     return response.json();
+  //   })
+  //   .then((json) => {
+  //     console.log("yo");
+  //     return json;
+  //   })
+  //   .catch(console.log("poop"));
+  // console.log(poo);
+
   // layout
   const theme = useTheme();
   const headerSearchBarHeight = "150px";
@@ -211,13 +233,21 @@ const FindProjects = () => {
             setCheckedOptions={setCheckedTech}
           />
         </Box>
-        <Box sx={{ display: "flex", flexDirection: "column", mx: 1 }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            // width: "100%",
+            mx: 1,
+          }}
+        >
           {/* Search Bar */}
           <SearchBar query={query} setQuery={setQuery} />
           {/* Project Cards */}
           <Box
             sx={{
               display: "grid",
+              gap: 2,
               width: {
                 // when screen size < 900px, make the layout of project cards as wide as the screen
                 xs: "100%",
@@ -230,28 +260,52 @@ const FindProjects = () => {
               },
             }}
           >
-            {filteredProjects.map(({ title, summary, projectId }, index) => {
-              return (
-                <ActionAreaCard
-                  key={index}
-                  title={title}
-                  summary={summary}
-                  projectId={projectId}
-                  // NOTE: any changes to size, margins, padding here should
-                  // also be done to the other ActionAreaCard when filteredProjects.length === 0 below.
-                  sx={{
-                    // 360 x 300 aspect ratio, from figma specifications
-                    aspectRatio: "1.2/1",
-                    // used maxWidth for responsive design
-                    maxWidth: {
-                      xs: "100%",
-                      md: cardWidth,
-                    },
-                    p: 1,
-                  }}
-                />
-              );
-            })}
+            {filteredProjects.map(
+              ({ title, summary, location, projectId, members }, index) => {
+                return (
+                  <Box
+                    sx={{
+                      "& .card_container": {
+                        mx: 0,
+                        width: "100%",
+                        // 360 x 300 aspect ratio, from figma specifications
+                        height: "auto",
+                        aspectRatio: {
+                          xs: "1.2/1",
+                          md: "1.2/1",
+                        },
+                        // used maxWidth for responsive design
+                        maxWidth: {
+                          xs: "100%",
+                          md: cardWidth,
+                        },
+                        "& > img": {
+                          height: "45%",
+                        },
+                        "& .content_container": {
+                          mx: { xs: "30px", sm: "15px", md: "30px" },
+                          "& a": {
+                            scale: { xs: "0.6", sm: "0.45" },
+                          },
+                        },
+                        "& .card_header": {
+                          fontSize: "1.5em",
+                        },
+                      },
+                    }}
+                    key={index}
+                  >
+                    <ProjectCard
+                      name={title}
+                      location={location}
+                      members={members.length}
+                      description={summary}
+                      projectId={projectId}
+                    />
+                  </Box>
+                );
+              }
+            )}
             {filteredProjects.length === 0 && (
               <>
                 <Box sx={{ width: "100%" }}>
