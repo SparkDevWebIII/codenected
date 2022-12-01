@@ -1,9 +1,7 @@
 .intro_container {
-
   .carousel_container {
     position: relative;
     overflow: hidden;
-    top: -80px;
     max-width: 99.1vw;
     height: 110vh;
     display: flex;
@@ -48,9 +46,18 @@
       font-family: "Source Sans Pro";
       font-weight: 400;
       font-size: clamp(20px, 2vw, 3.5vw);
-    
+
       line-height: 60px;
       color: #e5cee9;
+    }
+    h1,
+    h3 {
+      animation: textFade ease 2s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+    h3 {
+      animation-delay: 0.75s;
     }
   }
 
@@ -61,23 +68,12 @@
     z-index: 10;
     top: -650px;
     left: 50vw;
-    animation:bounce 1.5s infinite;
+    animation: bounce 1.5s infinite;
   }
   .fade_out {
     opacity: 0;
     transition: opacity 1s ease forwards;
-
   }
-}
-
-h1,
-h3 {
-  animation: textFade ease 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-h3 {
-  animation-delay: 0.75s;
 }
 
 @keyframes textFade {
@@ -91,7 +87,8 @@ h3 {
   }
 }
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotate(-90deg) translate(0);
   }
   50% {

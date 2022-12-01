@@ -74,7 +74,6 @@ const FindProjects = () => {
       (checkedTech.length === 0 ||
         checkedTech.some((val) => project.technologies.includes(val)))
     ) {
-      console.log(project.title);
       //returns filtered array
       return project;
     }
@@ -82,11 +81,6 @@ const FindProjects = () => {
   });
 
   const clearFilters = () => {
-    console.log(query);
-    console.log(checkedIndustries);
-    console.log(checkedRoles);
-    console.log(checkedLocations);
-    console.log(checkedTech);
     setQuery("");
     setCheckedIndustries([]);
     setCheckedRoles([]);
