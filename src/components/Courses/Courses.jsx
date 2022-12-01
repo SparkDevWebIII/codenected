@@ -1,5 +1,5 @@
 import React from "react";
-import GradientButton from "../common/GradientButton";
+import PlainButton from "../common/PlainButton";
 import Flickity from "react-flickity-component";
 
 import "./Courses.scss";
@@ -57,7 +57,7 @@ export default function Courses() {
 
       <div className="course_info_2">
         {" "}
-        <GradientButton scale="0.6">Learn More!</GradientButton>
+        <PlainButton scale="0.6">Learn More!</PlainButton>
         <div className="course_info_2_sub">
           {" "}
           <p>

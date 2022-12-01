@@ -39,10 +39,11 @@ export default function People() {
 
   const mappedMembers = data.map((member) => (
     <MemberCard
-      key={member.id}
+      member_id={member.id}
       name={member.name}
       role={member.role}
       img={member.img}
+      
     ></MemberCard>
   ));
 
@@ -53,7 +54,7 @@ export default function People() {
         <div className="memberheadings_container">
           {" "}
           <h3>Members</h3>
-          <a href="">See all</a>
+          <a href="/connect">See all</a>
         </div>
 
         <div className="mapped_members">{mappedMembers}</div>

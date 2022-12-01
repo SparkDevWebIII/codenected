@@ -1,10 +1,9 @@
 import React from "react";
 
-import GradientButton from "../../common/GradientButton";
+import PlainButton from "../../common/PlainButton";
 
 import "./CommunityCard.scss";
 export default function CommunityCard(props) {
-
   return (
     <div className="community_card_container">
       <img src={props.splash} alt="" />
@@ -12,12 +11,20 @@ export default function CommunityCard(props) {
         {" "}
         <h2>{props.name}</h2>
         <p>{props.description}</p>{" "}
-        <GradientButton scale="0.5" top="-86px" left="-40px" link="">
+        <PlainButton
+          scale="0.5"
+          top="-86px"
+          left="-40px"
+          link={`communities/${props.community_id}`}
+        >
           Learn More!
-        </GradientButton>
+        </PlainButton>
         <div className="community_members_container">
           {" "}
-          <img src="/assets/images/members.png" alt="" />
+          <a href={`/communities/${props.community_id}`}>
+            {" "}
+            <img src="/assets/images/members.png" alt="" />
+          </a>
           <span>{props.members}</span>
         </div>
       </div>

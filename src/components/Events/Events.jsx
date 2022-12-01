@@ -1,5 +1,5 @@
 import React from "react";
-import GradientButton from "../common/GradientButton";
+import PlainButton from "../common/PlainButton";
 import Flickity from "react-flickity-component";
 
 import "./Events.scss";
@@ -57,7 +57,7 @@ export default function Events() {
             <h4>$</h4>
             <span className="event_header_text">{info.prizes} in prizes</span>
           </div>
-          <GradientButton scale="0.5" left="-20px">Learn More!</GradientButton>
+          <PlainButton scale="0.5" left="-20px">Learn More!</PlainButton>
         </div>
         <p>{info.desc}</p>
       </div>

@@ -1,5 +1,5 @@
 export const getProject = (projectId) => {
-  return fetch("./../data/projects.json", {
+  return fetch("https://r7fu8gohdd.execute-api.us-east-1.amazonaws.com/projectCards", {
     headers: {
       "Content-Type": "application/json",
       Accept: "application/json",
