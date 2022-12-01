@@ -14,7 +14,7 @@ const projectData = JSON.parse(
 
 projectData.forEach(function(projects) {
   const params = {
-    TableName: "projects",
+    TableName: "projectCards",
     Item: {
       project_id: projects.project_id,
       title: projects.title,
