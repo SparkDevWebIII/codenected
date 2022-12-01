@@ -37,7 +37,7 @@ const params = {
   },
 };
 
-dynamodb.createTable(params, function (err, data) {
+dynamodb.createTable(params, function(err, data) {
   if (err)
     console.error("Unable to create table: ", JSON.stringify(err, null, 2));
   else

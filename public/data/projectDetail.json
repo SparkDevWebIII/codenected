@@ -2,6 +2,9 @@
   {
     "project_id": "2",
     "title": "Gene Pool",
+    "projectImage": "image_url",
+    "projectImageAlt": "Gene Pool Hero Image",
+    "websiteUrl": "https://www.gene-pool.com",
     "summary": "We are looking for UX researchers to help us understand the needs of our users and improve our services for genetic testing kits.",
     "location": "Miami, FL",
     "dateCreated": "February 14 2022",
@@ -38,6 +41,9 @@
   {
     "project_id": "3",
     "title": "My Coffee Cup",
+    "projectImage": "image_url",
+    "projectImageAlt": "Gene Pool Hero Image",
+    "websiteUrl": "https://www.gene-pool.com",
     "summary": "We are looking for web developers to help us redesign out coffee shop website",
     "location": "Miami, FL",
     "dateCreated": "July 15th 2022",
@@ -84,6 +90,9 @@
   {
     "project_id": "4",
     "title": "Designer Santa",
+    "projectImage": "image_url",
+    "projectImageAlt": "Gene Pool Hero Image",
+    "websiteUrl": "https://www.gene-pool.com",
     "summary": "Christmas is around the corner and we are looking for designers to help us improve our Jingle Ball website experience.",
     "location": "Kendall, FL",
     "dateCreated": "November 4th, 2022",
@@ -119,6 +128,9 @@
   {
     "project_id": "5",
     "title": "Funny Money",
+    "projectImage": "image_url",
+    "projectImageAlt": "Gene Pool Hero Image",
+    "websiteUrl": "https://www.gene-pool.com",
     "summary": "Saving money can be a struggle. We are looking for developers to help us design an app to save money.",
     "location": "FIU, FL",
     "dateCreated": "August 3rd 2022",
@@ -162,6 +174,9 @@
   {
     "project_id": "6",
     "title": "Go Miami!",
+    "projectImage": "image_url",
+    "projectImageAlt": "Gene Pool Hero Image",
+    "websiteUrl": "https://www.gene-pool.com",
     "summary": "The city of Miami is looking for enthusiastic coders to develop a website to encourage students get into tech",
     "location": "Miami, FL",
     "dateCreated": "May 26th 2022",
