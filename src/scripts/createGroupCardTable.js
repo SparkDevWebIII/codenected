@@ -7,16 +7,16 @@ AWS.config.update({
 const dynamodb = new AWS.DynamoDB();
 
 const params = {
-  TableName: "groups",
+  TableName: "groupCards",
   KeySchema: [
     // Partition Key
     { AttributeName: "group_id", KeyType: "HASH" },
     // Sort Keys
-    { AttributeName: "name", KeyType: "RANGE"}  
+    { AttributeName: "title", KeyType: "RANGE"}  
   ],
   AttributeDefinitions: [
     { AttributeName: "group_id", AttributeType: "S" },
-    { AttributeName: "name", AttributeType: "S" }
+    { AttributeName: "title", AttributeType: "S" }
   ],
  
   ProvisionedThroughput: {
