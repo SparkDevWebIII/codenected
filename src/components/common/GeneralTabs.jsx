@@ -39,6 +39,7 @@ function a11yProps(index) {
 //   title: "Project Details",
 //   component: <ProjectDetails />
 // }
+
 export default function GeneralTabs({ tabs, tabMarginLeft }) {
   const [value, setValue] = React.useState(0);
 
