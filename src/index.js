@@ -8,7 +8,7 @@ import Profile from "./pages/Profile/Profile";
 import PageOutline from "./pages/PageOutline";
 import Login from "./pages/User/login";
 import Project from "./pages/Project/Project";
-import { getProject } from "./utils/getProject";
+import { getProject, getProjectList } from "./utils/projectQueries";
 import "typeface-roboto";
 import { getData } from "./utils/getData";
 import { json } from "react-router-dom";
@@ -23,6 +23,9 @@ export const primaryRoutes = [
         index: "true",
         name: "Projects",
         element: <FindProjects />,
+        loader: () => {
+          return getProjectList();
+        },
       },
       {
         name: "Project",
@@ -81,8 +84,4 @@ const router = createBrowserRouter([
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <RouterProvider forceRefresh={true} router={router} />
-  </React.StrictMode>
-);
+root.render(<RouterProvider forceRefresh={true} router={router} />);
