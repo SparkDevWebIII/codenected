@@ -8,77 +8,10 @@ import LearnMoreButton from "../Button/LearnMoreButton";
 import styles from "./GroupsStyles.scss";
 
 import SearchBar from "../Search_Bar/SearchBar";
+//import SearchBar from "../../FindProjects/SearchBar";
+
 import DropDown from "../DropDown/DropDown";
 import { useLoaderData } from "react-router-dom";
-
-// const info = [
-//   {
-//     id: 1,
-//     name: "Project1",
-//     description:
-//       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-//     splash:
-//       "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
-//     location: "Miami, FL",
-//     members: 12,
-//     website: 'https://www.youtube.com/'
-//   },
-//   {
-//     id: 2,
-//     name: "Project2",
-//     description:
-//       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-//     splash:
-//       "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
-//     location: "Miami, FL",
-//     members: 12,
-//     website: 'https://www.youtube.com/'
-//   },
-//   {
-//     id: 3,
-//     name: "Project3",
-//     description:
-//       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-//     splash:
-//       "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
-//     location: "Miami, FL",
-//     members: 12,
-//     website: 'https://www.youtube.com/'
-//   },
-//   {
-//     id: 4,
-//     name: "Project4",
-//     description:
-//       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-//     splash:
-//       "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
-//     location: "Miami, FL",
-//     members: 12,
-//     website: 'https://www.youtube.com/'
-//   },
-//   {
-//     id: 4,
-//     name: "Project4",
-//     description:
-//       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-//     splash:
-//       "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
-//     location: "Miami, FL",
-//     members: 12,
-//     website: 'https://www.youtube.com/'
-//   },
-//   {
-//     id: 4,
-//     name: "Project4",
-//     description:
-//       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
-//     splash:
-//       "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
-//     location: "Miami, FL",
-//     members: 12,
-//     website: 'https://www.youtube.com/'
-//   },
-// ];
 
 const Groups = () => {
   const data = useLoaderData();
@@ -101,14 +34,23 @@ const Groups = () => {
       </Box>
       <Grid container spacing={1} columnSpacing={1} className="bodySection">
         <Grid
+          sx={{ pl: 6 }}
           container
           xs={12}
           columnSpacing={4}
           rowSpacing={4}
-          justifyContent="center"
+          justifyContent="start"
         >
           {data.map(
-            ({ group_id, title, description, splash, members, location, link }) => {
+            ({
+              group_id,
+              title,
+              description,
+              splash,
+              members,
+              location,
+              link,
+            }) => {
               return (
                 <Grid item xs="auto" justifyContent="flex-end">
                   <GroupdCard

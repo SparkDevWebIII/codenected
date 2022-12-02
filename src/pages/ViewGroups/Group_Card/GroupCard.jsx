@@ -10,7 +10,7 @@ import Grid from "@mui/material/Grid";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { Button } from "@mui/material";
-import styles from './GroupCardStyles.scss'
+import styles from "./GroupCardStyles.scss";
 
 export default function GroupdCard({
   group_id,
@@ -18,10 +18,10 @@ export default function GroupdCard({
   description,
   members,
   location,
-  link
+  link,
 }) {
   return (
-    <Card sx={{ maxWidth: 380, maxHeight:450 }}  className="groupCard">
+    <Card sx={{ maxWidth: 380, maxHeight: 450 }} className="groupCard">
       <CardMedia
         component="img"
         alt="Group Image"
@@ -45,18 +45,20 @@ export default function GroupdCard({
               <AccountCircleIcon />
               {members} members
             </Typography>
-            <LearnMoreButton link={link}/>
+            <LearnMoreButton link={link} />
           </Grid>
           <Grid item xs={8}>
-            <Typography variant="body2" color="text.secondary" overflowY='hidden'>
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              overflowY="hidden"
+            >
               {description}
             </Typography>
           </Grid>
         </Grid>
       </CardContent>
-      <CardActions>
-
-      </CardActions>
+      <CardActions></CardActions>
     </Card>
   );
 }
