@@ -59,7 +59,7 @@
     "location": "Miami",
     "members": "41",
     "description": "Empowering diverse students to launch successful careers in tech. Coming soon to a campus near you! Brought to you by UPE",
-    "imageUrl": "",
+    "imageUrl": "https://i.imgur.com/vYI7GVI.png",
     "link": "https://www.linkedin.com/company/initofficial/"
   },
   {
@@ -121,7 +121,7 @@
     "title": "Google Developer Club",
     "location": "Miami Dade-County, FIU",
     "members": "1164",
-    "description": "Our mission is to train thousands of student developers to work with their communities to solve real-life problems. By joining DSC, you’ll grow your knowledge in a peer-to-peer learning environment and build solutions for local businesses and your community. Students of ALL majors with an interest in growing as a developer are welcomed!",
+    "description": "Our mission is to train thousands of student developers to work with their communities to solve real-life problems. By joining DSC, you'll grow your knowledge in a peer-to-peer learning environment and build solutions for local businesses and your community. Students of ALL majors with an interest in growing as a developer are welcomed!",
     "imageUrl": "https://i.imgur.com/XqRm0Zx.png",
     "link": "https://gdsc.community.dev/florida-international-university/"
   },

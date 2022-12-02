@@ -239,7 +239,18 @@
     "goal": "We are currently looking for web designers to help us create a website that encourages students to get involved in coding. Coding is the future, everyone should know how to create! Within this website we want to show off methods that students can utilize to break into technology, In addition we would like a feature that connects students with groups that have similar interests, and mentors!",
     "currentsystem": "We currently do not have any sorty of website that introduces students to technology. On the contrary, we have a community of people that these students can connect with on the website. These include recruiters from local and big companies, teachers from different schools, and students that are interested in breaking into tech.",
     "technologies": ["Streamlit", "Scikit-learn", "MatPlotLib"],
-    "rolesNeeded": ["UX Researcher", "Full Stack Developer"],
+    "rolesNeeded": [
+      {
+        "position": "Software Developer",
+        "domain": "Software Development",
+        "description": "The software developer is responsible for the development of the software. They are responsible for the design, implementation, and testing of the software. They are also responsible for the documentation of the software."
+      },
+      {
+        "position": "Software Tester",
+        "domain": "Software Development",
+        "description": "The software tester is responsible for the testing of the software. They are responsible for the testing of the software and the documentation of the testing results. They are also responsible for the testing environment."
+      }
+    ],
     "members": [
       { "name": "Kumail Kazmi", "role": "Developer" },
       { "name": "Corey Duke", "role": "Developer" }
