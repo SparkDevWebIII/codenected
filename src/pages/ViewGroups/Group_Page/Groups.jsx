@@ -42,7 +42,7 @@ const Groups = () => {
         xs={12}
         class="Header"
         style={{
-          backgroundImage: `url("assets/images/codenectedBackground.png")`,
+          backgroundImage: `url("/assets/images/codenectedBackground.png")`,
           backgroundSize: "cover",
           left: 0,
           top: 0,
