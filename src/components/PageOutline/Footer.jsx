@@ -1,95 +1,110 @@
-import React from 'react';
-import { createTheme } from '@mui/material/styles';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
-import Link from '@mui/material/Link';
-import Box from '@mui/material/Box';
+import React from "react";
+// import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
+import { useTheme } from "@mui/material/styles";
+import {
+  AppBar,
+  Box,
+  Toolbar,
+  Typography,
+  Container,
+  Button,
+  CssBaseline,
+} from "@mui/material";
+import { NavLink } from "react-router-dom";
+import { primaryRoutes as routes } from "../..";
+import HorizontalDivider from "../design/HorizontalDivider";
 
-const theme = createTheme();
-
-function Copyright(props) {
+const Footer = () => {
+  const theme = useTheme();
   return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-				CodeNected
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
-
-const footers = [
-	{
-		title: 'Company',
-		description: ['Team', 'History', 'Contact us', 'Locations'],
-	},
-	{
-		title: 'Features',
-		description: [
-			'Cool stuff',
-			'Random feature',
-			'Team feature',
-			'Developer stuff',
-			'Another one',
-		],
-	},
-	{
-		title: 'Resources',
-		description: [
-			'Resource',
-			'Resource name',
-			'Another resource',
-			'Final resource',
-		],
-	},
-	{
-		title: 'Legal',
-		description: ['Privacy policy', 'Terms of use'],
-	},
-];
-
-function Footer() {
-	return (
-		<React.Fragment>
-			<Container maxWidth="md" component="footer" 
+    <Container
+      component="footer"
+      maxWidth={false}
       sx={{
-        borderTop: `1px solid ${theme.palette.divider}`,
-        marginTop: theme.spacing(8),
-        paddingTop: theme.spacing(3),
-        paddingBottom: theme.spacing(3),
-        [theme.breakpoints.up('sm')]: {
-          paddingTop: theme.spacing(6),
-          paddingBottom: theme.spacing(6),
+        opacity: .7,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        pt: "2em",
+        backgroundColor: "black",
+        "& > *": {
+          mb: "2rem",
         },
       }}
+    >
+      <Box component="a" href="/#" sx={{ mb: "1rem" }}>
+        {/* <Typography
+          component="a"
+          sx={{
+            color: "inherit",
+            textDecoration: "none",
+            fontSize: "2.25em",
+            fontWeight: 500,
+          }}
+          href="/#"
+        >
+          CodeNected
+        </Typography> */}
+        <img
+          src="https://imgur.com/1SAVxx0.png"
+          href="/#"
+          alt="Codenected logo"
+        />
+      </Box>
+
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column", sm: "row" },
+          flexGrow: 1,
+          justifyContent: "center",
+          alignContent: "center",
+          gap: { xs: "1rem", sm: "2rem" },
+        }}
       >
-				<Grid container spacing={4} justify="space-evenly">
-					{footers.map((footer) => (
-						<Grid item xs={6} sm={3} key={footer.title}>
-							<Typography variant="h6" color="textPrimary" gutterBottom>
-								{footer.title}
-							</Typography>
-							<ul>
-								{footer.description.map((item) => (
-									<li key={item}>
-										<Link href="#" variant="subtitle1" color="textSecondary">
-											{item}
-										</Link>
-									</li>
-								))}
-							</ul>
-						</Grid>
-					))}
-				</Grid>
-				<Box mt={5}>
-					<Copyright />
-				</Box>
-			</Container>
-		</React.Fragment>
-	);
-}
+        {routes.map(({ name, path }) => (
+          <NavLink
+            key={name}
+            to={path}
+            // style instead of sx because NavLink is not mui
+            style={{
+              textDecoration: "none",
+            }}
+            tabIndex="-1"
+          >
+            {() => (
+              <Typography
+                sx={{
+                  textAlign: "center",
+                  color: "white",
+                  // color: theme.components.MuiSvgIcon.styleOverrides.root.color,
+                  transition: "all 400ms ease",
+                  "&:hover": { color: theme.palette.primary.main },
+                }}
+                color="primary"
+              >
+                {name}
+              </Typography>
+            )}
+          </NavLink>
+        ))}
+      </Box>
+
+      {/* <div className="footer__socials">
+        <a href="https://linkedin.com">
+          <AiOutlineLinkedin />
+        </a>
+        <a href="https://github.com">
+          <AiOutlineGithub />
+        </a>
+      </div> */}
+      <HorizontalDivider />
+
+      <Box>
+        <small>&copy; CodeNected. All rights reserved.</small>
+      </Box>
+    </Container>
+  );
+};
 
 export default Footer;

@@ -1,0 +1,15 @@
+.communities_container {
+  display: block;
+  max-height: 675px;
+  .communities_card_container {
+    background: rgba(255, 255, 255, 0.45);
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    width: 838px;
+    max-width: 98vw;
+    height: 575px;
+    display: inline-flex;
+    justify-content: center;
+  }
+}
