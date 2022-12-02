@@ -10,17 +10,16 @@ export default function Header(props) {
     <div className="header">
       <div className="logo_container">
         {" "}
-        <img src="assets/images/logo.png" alt="logo" className="logo" />
+        <NavLink to="/"><img src="assets/images/logo.png" alt="logo" className="logo" /></NavLink>
       </div>
 
       <div className="navbar">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/projects">Projects</NavLink>
-        <NavLink to="/groups">Groups</NavLink>
-        <NavLink to="/connect">Connect</NavLink>
+        <NavLink to="/events">Events</NavLink>
         <NavLink to="/about">About</NavLink>
       </div>
-      <LoginButton link="/register" />
+      <LoginButton link="/login" />
     </div>
   );
 }

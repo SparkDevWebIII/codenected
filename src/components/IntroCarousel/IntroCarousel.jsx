@@ -49,13 +49,12 @@ export default function IntroCarousel() {
       window.removeEventListener("scroll", updatePos);
     };
   });
-
   const renderArrow = () => {
     return (
       <img
         className="intro_arrow"
         src="assets/images/leftchevron.png"
-        style={{ opacity: opacity }}
+        style={{ opacity: opacity}}
       ></img>
     );
   };
@@ -69,7 +68,7 @@ export default function IntroCarousel() {
           A space to create and find local group projects while gaining
           knowledge and connections on the way!
         </h3>
-        <GradientButton top="-700px" left="100px" link="">
+        <GradientButton top="-700px" left="100px" link="/login">
           Get Started
         </GradientButton>
         {renderArrow()}
