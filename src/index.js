@@ -10,6 +10,8 @@ import Login from "./pages/User/login";
 import Project from "./pages/Project/Project";
 import { getProject } from "./utils/getProject";
 import "typeface-roboto";
+import { getData } from "./utils/getData";
+import { json } from "react-router-dom";
 
 // These routes are the ones that appear on the header
 export const primaryRoutes = [
@@ -61,6 +63,13 @@ const router = createBrowserRouter([
         name: "Home",
         path: "/",
         element: <Home />,
+        loader: async function n({ params }) {
+          return json({
+            res1: await getData("projectCards"),
+            res2: await getData("memberscards"),
+            res3: await getData("groupcards"),
+          });
+        },
       },
       {
         name: "Profile",

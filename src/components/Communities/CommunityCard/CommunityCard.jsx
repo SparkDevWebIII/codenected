@@ -15,13 +15,13 @@ export default function CommunityCard(props) {
           scale="0.5"
           top="-86px"
           left="-40px"
-          link={`communities/${props.community_id}`}
+          link={`communities/${props.group_id}`}
         >
           Learn More!
         </PlainButton>
         <div className="community_members_container">
           {" "}
-          <a href={`/communities/${props.community_id}`}>
+          <a href={`communities/${props.group_id}`}>
             {" "}
             <img src="/assets/images/members.png" alt="" />
           </a>

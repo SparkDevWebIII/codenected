@@ -3,46 +3,15 @@ import MemberCard from "./MemberCard/MemberCard";
 
 import "./People.scss";
 
-export default function People() {
-  const data = [
-    {
-      id: 0,
-      name: "John Smith",
-      role: "CEO",
-      img: "assets/images/Avatar.png",
-    },
-    {
-      id: 1,
-      name: "John Smith",
-      role: "CEO",
-      img: "assets/images/Avatar.png",
-    },
-    {
-      id: 2,
-      name: "John Smith",
-      role: "CEO",
-      img: "assets/images/Avatar.png",
-    },
-    {
-      id: 3,
-      name: "John Smith",
-      role: "CEO",
-      img: "assets/images/Avatar.png",
-    },
-    {
-      id: 4,
-      name: "John Smith",
-      role: "CEO",
-      img: "assets/images/Avatar.png",
-    },
-  ];
-
-  const mappedMembers = data.map((member) => (
+export default function People(props) {
+  const data = props.data;
+  
+  const mappedMembers = data.slice(0,5).map((member) => (
     <MemberCard
-      member_id={member.id}
+      member_id={member.member_id}
       name={member.name}
-      role={member.role}
-      img={member.img}
+      role={member.position}
+      img={member.profileImage}
       
     ></MemberCard>
   ));

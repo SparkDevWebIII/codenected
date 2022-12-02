@@ -2,7 +2,7 @@
   width: 478px;
   height: 430px;
   border-radius: 48px;
-  margin-inline:1vw;
+  margin-inline: 1vw;
   background: linear-gradient(
     90.48deg,
     #5b5379 1.83%,
@@ -21,22 +21,28 @@
     border-top-right-radius: 48px;
   }
   .content_container {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
-
+    h2 {
+      font-family: "Source Sans Pro";
+      text-align: center;
+      margin-block: 10px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32.5207px;
+      line-height: 19px;
+      color: #ebf7f9;
+    }
+    .proj_card_subcontainer {
+      display: flex;
+      margin-block: 25px;
+      margin-left: 2%;
+    }
     .left_content {
       width: 200px;
-      padding-left: 8%;
-      h2 {
-        margin-block: 10%;
-        font-family: "Source Sans Pro";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32.5207px;
-        line-height: 19px;
-        color: #ebf7f9;
-      }
+      padding-left: 10%;
+
       .loc_container,
       .mem_container {
         display: flex;
