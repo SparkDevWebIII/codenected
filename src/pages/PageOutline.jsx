@@ -9,7 +9,8 @@ import Header from "../components/PageOutline/Header";
 import Footer from "../components/PageOutline/Footer";
 
 const PageOutline = () => {
-  const headerHeight = "66px";
+  // this headerHeight should be the same as the height in header.scss
+  const headerHeight = "80px";
   const tertiary = "#1976D2";
 
   // This makes the website dark mode
@@ -75,22 +76,9 @@ const PageOutline = () => {
           },
         },
       },
-      MuiButton: {
-        variants: [
-          {
-            props: { variant: "contained" },
-            style: {
-              backgroundColor: "white",
-              color: "black",
-              borderRadius: 10,
-            },
-          },
-        ],
-      },
       MuiChip: {
         styleOverrides: {
           root: {
-            color: "white",
             backgroundColor: tertiary,
           },
         },
@@ -102,6 +90,13 @@ const PageOutline = () => {
           },
         },
       },
+      MuiPaper: {
+        styleOverrides: {
+          root: {
+            backgroundColor: "black",
+          },
+        },
+      },
     },
   });
 
@@ -110,7 +105,7 @@ const PageOutline = () => {
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
         <Header height={headerHeight} />
-        <Box id="detail" sx={{ mt: headerHeight }}>
+        <Box id="detail" sx={{ minHeight: "100vh", mt: headerHeight }}>
           <Outlet />
         </Box>
         <Footer />

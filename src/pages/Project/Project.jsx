@@ -2,7 +2,6 @@ import React from "react";
 import { useLoaderData } from "react-router";
 import { Box } from "@mui/system";
 import { Typography, Link } from "@mui/material";
-import defaultprojectimage from "../../assets/defaultprojectimage.png";
 import { useTheme } from "@mui/material/styles";
 import DateRangeIcon from "@mui/icons-material/DateRange";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -13,13 +12,13 @@ import RolesNeeded from "./RolesNeeded";
 import ProjectProgression from "./ProjectProgression";
 
 const Project = () => {
-  const overviewHeight = "350px";
+  const overviewHeight = { xs: "500px", md: "350px" };
   const theme = useTheme();
   const data = useLoaderData();
 
   return (
     <>
-      {/* hero image */}
+      {/* Project Overview */}
       <Box
         sx={{
           // maxWidth: "1600px",
@@ -32,6 +31,10 @@ const Project = () => {
             },
         }}
       >
+        {/* setting a image with an opacity without affecting text color,
+        set a container with the color of the opacity and position relative,
+        set an element inside the container with the image, set position absolute, and opacity value 
+        set another element(where the text is written) inside the container with position relative */}
         <Box
           sx={{
             position: "relative",
@@ -41,19 +44,22 @@ const Project = () => {
         >
           <Box
             sx={{
+              // takes it out of the normal flow of elements and is placed behind the elements
               position: "absolute",
               left: 0,
               right: 0,
               height: overviewHeight,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
-              backgroundImage: `url(${defaultprojectimage}), linear-gradient(#eb01a5, #d13531)`,
+              // project image
+              backgroundImage: `url(${data.projectImage}), linear-gradient(#eb01a5, #d13531)`,
               backgroundPosition: "center",
               opacity: 0.14,
             }}
           />
           <Box
             sx={{
+              // important in keeping the text without opacity, not sure why
               position: "relative",
               height: overviewHeight,
               p: 2,
@@ -65,10 +71,10 @@ const Project = () => {
             <Typography
               variant="subtitle1"
               sx={{
-                fontSize: "1.5em",
+                fontSize: { xs: "1.2em", lg: "1.5em" },
                 fontWeight: 500,
                 mt: "0.4em",
-                mx: "3.3em",
+                mx: { xs: "1em", md: "3.3em" },
               }}
             >
               {data.summary}
@@ -78,6 +84,8 @@ const Project = () => {
                 position: "absolute",
                 bottom: 15,
                 mx: "3.3em",
+                display: "flex",
+                flexDirection: { xs: "column", md: "row" },
                 "& > *": {
                   display: "inline",
                   mr: "1.25em",
@@ -112,17 +120,20 @@ const Project = () => {
             </Box>
           </Box>
         </Box>
+        {/* section for jumping to a section in the page */}
         <Box
           sx={{
-            height: "2.75em",
+            height: { xs: "6.8em", sm: "2.75em" },
             backgroundColor: theme.palette.primary.main,
             color: "white",
             px: "3.625em",
             py: "0.75em",
+            display: "flex",
+            alignItems: "center",
+            flexDirection: { xs: "column", sm: "row" },
             "& .MuiLink-root": {
               fontSize: "1.25em",
               mr: 2,
-              lineHeight: "0.5em",
             },
           }}
         >
@@ -133,7 +144,7 @@ const Project = () => {
       </Box>
       <Box sx={{ maxWidth: "1475px", mx: "auto" }}>
         {/* this box below sets the spacing between project details, 
-      progress path, the horizontal divider and roles needed */}
+        progress path, the horizontal divider and roles needed */}
         <Box sx={{ py: "2.8125em", "& > *": { mb: "6.25em" } }}>
           <ProjectDetails
             concept={data.concept}

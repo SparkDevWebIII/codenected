@@ -1,0 +1,38 @@
+.button_container {
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 225px;
+  height: 65px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+
+  background: linear-gradient(
+      90.05deg,
+      #24c9e6 3.74%,
+      rgba(36, 201, 230, 0) 98.09%
+    ),
+    linear-gradient(270.08deg, #cc11e3 0.09%, rgba(204, 17, 227, 0) 98.35%),
+    linear-gradient(270.1deg, #b303fb 1.42%, rgba(179, 3, 251, 0) 98.34%),
+    linear-gradient(90.03deg, #7f06f8 2.35%, rgba(127, 6, 248, 0) 101.53%),
+    white 50%;
+  background-size: 200% 100%;
+  background-position: 75% 75%;
+  transition: all 0.5s ease;
+
+  .button_text {
+    color: #e5cee9;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+
+.button_container:hover {
+  background-position: 25% 25%;
+}
