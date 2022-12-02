@@ -247,7 +247,7 @@ const FindProjects = () => {
             }}
           >
             {filteredProjects.map(
-              ({ title, summary, location, project_id, members }, index) => {
+              ({ title, imageUrl, summary, location, project_id, members }, index) => {
                 return (
                   <Box
                     sx={{
@@ -282,10 +282,11 @@ const FindProjects = () => {
                     key={index}
                   >
                     <ProjectCard
-                      name={title}
+                      title={title}
                       location={location}
-                      members={members.length}
-                      description={summary}
+                      imageUrl={imageUrl}
+                      members={members}
+                      summary={summary}
                       projectId={project_id}
                     />
                   </Box>
