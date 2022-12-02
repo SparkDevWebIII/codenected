@@ -1,82 +1,83 @@
 [
-    {
-        "group_id": "1",
-        "title": "CodePath Students",
-        "location": "Online",
-        "members": "9",
-        "description": "We are a group of passionate students who support themselves doing codepath coursework. If you are a codepath student who is looking to improve your work on a group, join us!",
-        "link":"https://www.democracylab.org/groups/29"
-    },
-    {
-        "group_id": "2",
-        "title": "Jacksonville help",
-        "location": "Online",
-        "members": "5",
-        "description": "Set on helping  Jacksonville and the rest of Florida area through a diverse and inclusive group of volunteers. By working to put civic oriented, open source technologies to work, in service of our local communities.",
-        "link":"https://www.democracylab.org/groups/33"
-    },
-    {
-        "group_id": "3",
-        "title": "Code for Orlando",
-        "location": "Orlando, FL, USA",
-        "members": "5",
-        "description": "Code for Orlando helps residents and community partners use technology to address issues in Orlando and surrounding regions.",
-        "link":"https://www.democracylab.org/groups/27"
-    },
-    {
-        "group_id": "4",
-        "title": "Tampa Coding",
-        "location": "Online",
-        "members": "11",
-        "description": "Tampa Coding is a community of coders, programmers, and developers who are building Tampa with our skills. We are looking for students who want to use their coding skills to build projects for Tampa",
-        "link":"https://www.democracylab.org/groups/5"
-    },
-    {
-        "group_id": "5",
-        "title": "Fort Lauderdale Tech",
-        "location": "For Lauderdale FL",
-        "members": "",
-        "description": "We want to empower young talent in south florida. Our mission is to give our students the opportunity to grow and develop into successful professionals, hosting workshops and connecting them with mentors!!",
-        "link":"https://www.democracylab.org/groups/10"
-    },
-    {
-        "group_id": "6",
-        "title": "Bustin.tech",
-        "location": "Tallahassee",
-        "members": "8",
-        "description": "Bustin.tech is a career-focused company that helps students who want to become developers. We do this by providing the necessary skills to become a developer, and by creating an ecosystem of empowerment that allows young talent to learn and grow in their craft.",
-        "link":"https://www.democracylab.org/groups/12"
-    },
-    {
-        "group_id": "7",
-        "title": "Lyst",
-        "location": "Lyst",
-        "members": "4",
-        "description": "Lyst brings together civic-minded volunteers who build digital products, programs and services for the Boca Raton community.",
-        "link":"https://www.democracylab.org/groups/17"
-    },
-    {
-        "group_id": "8",
-        "title": "Init",
-        "location": "Miami",
-        "members": "4",
-        "description": "Empowering diverse students to launch successful careers in tech. Coming soon to a campus near you! Brought to you by UPE",
-        "link":""
-    },
-    {
-        "group_id": "9",
-        "title": "Deco.org",
-        "location": "Tallahassee",
-        "members": "6",
-        "description": "We volunteer to help design, develop, and improve civic systems in Tallahassee. Whether you are a professional coder or a community member with an idea, everyone interested in making Tallahassee better is welcome!",
-        "link":"https://www.democracylab.org/groups/8"
-    },
-    {
-        "group_id": "10",
-        "title": "Unix",
-        "location": "Orlando",
-        "members": "9",
-        "description": "At UNIX, we believe that all people have the power to change their own lives and the world around them. We're looking to help young entrepreneurs build their businesses and create a community of like-minded thinkers who want to make a difference in the world.",
-        "link":""
-    }
+  {
+    "group_id": "1",
+    "title": "CodePath Students",
+    "location": "Online",
+    "members": "9",
+    "description": "We are a group of passionate students who support themselves doing codepath coursework. If you are a codepath student who is looking to improve your work on a group, join us!",
+    "imageUrl": "https://s3.amazonaws.com/codepath-group-images/1.jpg",
+    "link": "https://www.democracylab.org/groups/29"
+  },
+  {
+    "group_id": "2",
+    "title": "Jacksonville help",
+    "location": "Online",
+    "members": "5",
+    "description": "Set on helping  Jacksonville and the rest of Florida area through a diverse and inclusive group of volunteers. By working to put civic oriented, open source technologies to work, in service of our local communities.",
+    "link": "https://www.democracylab.org/groups/33"
+  },
+  {
+    "group_id": "3",
+    "title": "Code for Orlando",
+    "location": "Orlando, FL, USA",
+    "members": "5",
+    "description": "Code for Orlando helps residents and community partners use technology to address issues in Orlando and surrounding regions.",
+    "link": "https://www.democracylab.org/groups/27"
+  },
+  {
+    "group_id": "4",
+    "title": "Tampa Coding",
+    "location": "Online",
+    "members": "11",
+    "description": "Tampa Coding is a community of coders, programmers, and developers who are building Tampa with our skills. We are looking for students who want to use their coding skills to build projects for Tampa",
+    "link": "https://www.democracylab.org/groups/5"
+  },
+  {
+    "group_id": "5",
+    "title": "Fort Lauderdale Tech",
+    "location": "For Lauderdale FL",
+    "members": "",
+    "description": "We want to empower young talent in south florida. Our mission is to give our students the opportunity to grow and develop into successful professionals, hosting workshops and connecting them with mentors!!",
+    "link": "https://www.democracylab.org/groups/10"
+  },
+  {
+    "group_id": "6",
+    "title": "Bustin.tech",
+    "location": "Tallahassee",
+    "members": "8",
+    "description": "Bustin.tech is a career-focused company that helps students who want to become developers. We do this by providing the necessary skills to become a developer, and by creating an ecosystem of empowerment that allows young talent to learn and grow in their craft.",
+    "link": "https://www.democracylab.org/groups/12"
+  },
+  {
+    "group_id": "7",
+    "title": "Lyst",
+    "location": "Lyst",
+    "members": "4",
+    "description": "Lyst brings together civic-minded volunteers who build digital products, programs and services for the Boca Raton community.",
+    "link": "https://www.democracylab.org/groups/17"
+  },
+  {
+    "group_id": "8",
+    "title": "Init",
+    "location": "Miami",
+    "members": "4",
+    "description": "Empowering diverse students to launch successful careers in tech. Coming soon to a campus near you! Brought to you by UPE",
+    "link": ""
+  },
+  {
+    "group_id": "9",
+    "title": "Deco.org",
+    "location": "Tallahassee",
+    "members": "6",
+    "description": "We volunteer to help design, develop, and improve civic systems in Tallahassee. Whether you are a professional coder or a community member with an idea, everyone interested in making Tallahassee better is welcome!",
+    "link": "https://www.democracylab.org/groups/8"
+  },
+  {
+    "group_id": "10",
+    "title": "Unix",
+    "location": "Orlando",
+    "members": "9",
+    "description": "At UNIX, we believe that all people have the power to change their own lives and the world around them. We're looking to help young entrepreneurs build their businesses and create a community of like-minded thinkers who want to make a difference in the world.",
+    "link": ""
+  }
 ]

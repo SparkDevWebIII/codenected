@@ -34,10 +34,10 @@ memberData.forEach(function(memberDetail) {
     if (err)
       console.error(
         "Unable to load data into table",
-        memberDetail.title,
+        memberDetail.name,
         ". Error: ",
         JSON.stringify(err, null, 2)
       );
-    else console.log("Added", memberDetail.title, "to table.");
+    else console.log("Added", memberDetail.name, "to table.");
   });
 });

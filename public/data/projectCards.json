@@ -3,6 +3,8 @@
     "project_id": "1",
     "title": "Make My Day",
     "summary": "A stress-free learning environment for instructors and students. One question a day.",
+    "rolesNeeded": "Frontend Developer, Backend Developer, UI/UX Designer",
+    "technologies": ["Excel", "Gmail API", "Django", "Bootstrap"],
     "location": "Miami, FL",
     "members": "10",
     "domain": "Web Development",
@@ -12,14 +14,24 @@
     "project_id": "2",
     "title": "Gene pool",
     "summary": "We are looking for UX researchers to help us understand the needs of our users and improve our services for genetic testing kits",
+    "rolesNeeded": ["Backend Developer"],
+    "technologies": ["Excel", "Gmail API", "Django", "Bootstrap"],
     "location": "Doral, FL",
     "members": "10",
-    "domain": "Web Development",
+    "domain": "AI",
     "image": "https://i.imgur.com/1ZQ3Z4r.png"
   },
   {
     "project_id": "3",
     "title": "My Coffee Cup",
+    "rolesNeeded": ["Full Stack Developer"],
+    "technologies": [
+      "Django",
+      "Material UI",
+      "Bootstrap",
+      "MySQL",
+      "AngularJS"
+    ],
     "summary": "We are looking for web developers to help us redesign out coffee shop website.",
     "location": "Miami, FL",
     "members": "10",
@@ -29,6 +41,8 @@
   {
     "project_id": "4",
     "title": "Designer Santa",
+    "rolesNeeded": ["UX Researcher", "Full Stack Developer"],
+    "technologies": ["Excel", "Gmail API", "Django", "Bootstrap"],
     "summary": "Christmas is around the corner and we are looking for designers to help us improve our Jingle Ball website experience.",
     "location": "Kendall, FL",
     "members": "1",
@@ -38,15 +52,19 @@
   {
     "project_id": "5",
     "title": "Funny Money",
+    "rolesNeeded": ["UX Researcher", "Full Stack Developer"],
+    "technologies": ["Excel", "Gmail API", "Django", "Bootstrap"],
     "summary": "Saving money can be a struggle. We are looking for front end developers to help us design an app to save money.",
     "location": "FIU, FL",
     "members": "5",
-    "domain": "App development",
+    "domain": "App Development",
     "image": "https://i.imgur.com/1ZQ3Z4r.png"
   },
   {
     "project_id": "6",
     "title": "Project Go Miami!",
+    "rolesNeeded": ["UX Researcher", "Full Stack Developer"],
+    "technologies": ["Streamlit", "Scikit-learn", "MatPlotLib"],
     "summary": "The city of Miami is looking for enthusiastic coders to develop a website to encourage students get into tech",
     "location": "Miami, FL",
     "members": "20",
@@ -57,6 +75,14 @@
     "project_id": "7",
     "title": "Your Boo in Miami",
     "summary": "Are you looking for true love in Miami? Me too! Help us develop a dating app to find real love in our city of Miami.",
+    "rolesNeeded": ["UX Researcher", "Full Stack Developer"],
+    "technologies": [
+      "Django",
+      "Material UI",
+      "Bootstrap",
+      "MySQL",
+      "AngularJS"
+    ],
     "location": "Doral, FL",
     "members": "10",
     "domain": "App Development",
@@ -65,6 +91,8 @@
   {
     "project_id": "8",
     "title": "Save the Turtles",
+    "rolesNeeded": ["UX Researcher", "Front End Developer"],
+    "technologies": ["Django", "Material UI", "Bootstrap"],
     "summary": "The turtles need our help! We are looking for back end developers to help on a project to detect littering on beaches.",
     "location": "Miami, FL",
     "members": "10",
@@ -74,7 +102,10 @@
   {
     "project_id": "9",
     "title": "Bob the Builder",
+    "rolesNeeded": ["UX Researcher", "Full Stack Developer"],
+    "technologies": ["Excel", "Bootstrap", "MySQL", "AngularJS"],
     "summary": "The Builder group in Miami is looking for talented product designers to help build a website for our new office in Miami",
+
     "location": "Miami, FL",
     "members": "4",
     "domain": "Web Development",
@@ -83,7 +114,16 @@
   {
     "project_id": "10",
     "title": "Dancing Queen",
+    "rolesNeeded": ["UX Researcher", "Full Stack Developer"],
+    "technologies": [
+      "Django",
+      "Material UI",
+      "Bootstrap",
+      "MySQL",
+      "AngularJS"
+    ],
     "summary": "We are looking for front end developers and UX/UI designers to help us build a virtual dance studio.",
+
     "location": "Virtual",
     "members": "8",
     "domain": "VR",
@@ -92,7 +132,10 @@
   {
     "project_id": "11",
     "title": "Viral Pox",
+    "rolesNeeded": ["UX Researcher", "Full Stack Developer"],
+    "technologies": ["Django", "Material UI", "Bootstrap", "AngularJS"],
     "summary": "Join us to create a game to fight viral diseases. Open to UI/UX designers, front end and back end designers. ",
+
     "location": "Miami, FL",
     "members": "20",
     "domain": "Game Development",
@@ -101,15 +144,19 @@
   {
     "project_id": "12",
     "title": "Project PinkPanther",
+    "rolesNeeded": ["UX Researcher", "Full Stack Developer"],
+    "technologies": ["Streamlit", "Scikit-learn", "MatPlotLib"],
     "summary": "We are a group of coders looking for other coders to join us on a project to create an application to strengthen your wifi",
     "location": "Brickell, FL",
     "members": "20",
-    "domain": "AR | Software Development | IT",
+    "domain": ["AR", "Software Development", "IT"],
     "image": "https://i.imgur.com/1ZQ3Z4r.png"
   },
   {
     "project_id": "13",
     "title": "My Cat Batman",
+    "rolesNeeded": ["UX Researcher", "Full Stack Developer"],
+    "technologies": ["Streamlit", "Scikit-learn", "Pytorch"],
     "summary": "We are a company of cat groomers looking to improve our public presence. Help us improve our website experience and understand our clients needs.",
     "location": "Kendall, FL",
     "members": "4",
@@ -119,24 +166,35 @@
   {
     "project_id": "14",
     "title": "PhyMath",
+    "technologies": ["Streamlit", "Scikit-learn", "MatPlotLib"],
+    "rolesNeeded": [
+      "UX Researcher",
+      "Full Stack Developer",
+      "Front End Developer",
+      "Back End Developer"
+    ],
     "summary": "PhyMath is a tutoring center for students looking for extra help with math and physics. Join our team of coders to bring our website to life.",
     "location": "FIU, FL",
     "members": "6",
-    "domain": "Web Development | App Development",
+    "domain": ["Web Development", "App Development"],
     "image": "https://i.imgur.com/1ZQ3Z4r.png"
   },
   {
     "project_id": "15",
     "title": "PieceOfCake",
+    "rolesNeeded": ["UX Researcher", "Full Stack Developer"],
+    "technologies": ["Django", "JavaScript"],
     "summary": "We are building a game for home bakers in Miami. Help us understand our users and code the website!",
     "location": "Miami, FL",
     "members": "7",
-    "domain": "VR | Web development | App development",
+    "domain": ["VR", "Web development", "App development"],
     "image": "https://i.imgur.com/1ZQ3Z4r.png"
   },
   {
     "project_id": "16",
     "title": "Piggy Kingdom",
+    "rolesNeeded": ["UX Researcher", "Full Stack Developer"],
+    "technologies": ["Django", "JavaScript"],
     "summary": "Piggy kingdom is looking for game developers to help us design the best game of the century.",
     "location": "Brickell, FL",
     "members": "36",
