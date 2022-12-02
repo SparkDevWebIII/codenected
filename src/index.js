@@ -6,7 +6,7 @@ import Home from "./pages/Home/Home";
 import FindProjects from "./pages/FindProjects/FindProjects";
 import Profile from "./pages/Profile/Profile";
 import PageOutline from "./pages/PageOutline";
-import Login from "./pages/User/Login";
+import Login from "./pages/Login/Login";
 import Groups from "./pages/ViewGroups/Group_Page/Groups";
 import About from "./pages/About/About";
 import Register from "./pages/User/Register";
