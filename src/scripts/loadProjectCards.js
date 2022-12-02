@@ -18,6 +18,8 @@ projectData.forEach(function(projects) {
     Item: {
       project_id: projects.project_id,
       title: projects.title,
+      rolesNeeded: projects.rolesNeeded,
+      technologies: projects.technologies,
       summary: projects.summary,
       location: projects.location,
       members: projects.members,
