@@ -1,0 +1,113 @@
+.register {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.register-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  margin-top: 2.5%;
+  height: 500px;
+
+  background: linear-gradient(
+    90.48deg,
+    #5b5379 1.83%,
+    #4a426f 22.5%,
+    #47425c 40.15%,
+    #4e476b 56.79%,
+    #47425c 73.93%,
+    #4d466b 93.09%
+  );
+
+  border-radius: 2.3%;
+}
+
+.boxTitleCodenected {
+  position: relative;
+  flex-direction: column;
+  top: 7%;
+  left: 17%;
+}
+
+.textTitleCodenected {
+  width: 50%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 220%;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: white;
+}
+
+.boxFirstName {
+  /* Auto layout */
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  left: -22%;
+  top: 10%;
+}
+
+.boxLastName {
+  /* Auto layout */
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  left: 18%;
+  top: -2%;
+}
+
+.boxGmail {
+  /* Auto layout */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  left: -22%;
+}
+
+.boxDOB {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  left: -22%;
+}
+
+.boxPassword {
+  /* Auto layout */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  left: -22%;
+}
+
+.TextUserHasAccount {
+  position: relative;
+  display: flex;
+  top: 0%;
+  left: -25%;
+  width: 100%;
+  font-size: smaller;
+  font-family: "Roboto";
+  font-style: normal;
+  text-transform: capitalize;
+  color: white;
+}
+
+.TextMakeAcc {
+  display: flex;
+  position: relative;
+  top: -3.7%;
+  left: 12%;
+  font-size: smaller;
+}
+
+.signUpButton {
+  display: flex;
+  top: 140%;
+}
