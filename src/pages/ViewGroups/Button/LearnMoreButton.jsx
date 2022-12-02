@@ -11,9 +11,10 @@ const LearnMoreButton = ({link}) => {
       variant="contained"
       size = "small"
       sx={{
+        mt:3,
         ":hover": {
           bgcolor: "#BF026D", // theme.palette.primary.main
-          color: "white",
+          color: "white",    
         },
       }}
       a target="_blank" rel="noopener noreferrer" href={link} 
