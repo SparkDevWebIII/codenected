@@ -1,7 +1,5 @@
 export const getProject = (project_id) => {
-  return fetch(
-    "https://r7fu8gohdd.execute-api.us-east-1.amazonaws.com/projectDetail"
-  )
+  return fetch("https://r7fu8gohdd.execute-api.us-east-1.amazonaws.com/projectDetail")
     .then((response) => response.json())
     .then((projects) => {
       return projects.filter((p) => {
@@ -12,15 +10,13 @@ export const getProject = (project_id) => {
 };
 
 export const getProjectList = () => {
-  return fetch(
-    "https://r7fu8gohdd.execute-api.us-east-1.amazonaws.com/projectCards"
-  )
+  return fetch("https://r7fu8gohdd.execute-api.us-east-1.amazonaws.com/projectCards")
     .then((response) => response.json())
     .then((json) => {
-      console.log(json);
       return json;
     });
 };
+
 // export const getProjectList = () => {
 //   return fetch("./../data/projects.json", {
 //     headers: {

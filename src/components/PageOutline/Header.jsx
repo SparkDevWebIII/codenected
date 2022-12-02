@@ -27,7 +27,7 @@ export default function Header(props) {
       <div className="header">
         <div className="logo_container">
           {" "}
-          <img src="https://imgur.com/1SAVxx0.png" alt="logo" className="logo" />
+          <img src="https://i.imgur.com/1SAVxx0.png" alt="logo" className="logo" />
         </div>
 
         {/* the two containers below appears on smaller screens */}
