@@ -1,56 +1,5 @@
 [
   {
-    "member_id": "13",
-    "name": "Corey Duke",
-    "about": "Hey! I am Corey, a software engineer and love to learn and develop with technologies that have the ability to enhance the lives of people. I am a passionate learner and love to share my knowledge with others. I am a tech enthusiast and love to dream of ways that we may use innovation to solve our most pressing challenges.",
-    "position": "Software Engineer",
-    "location": "Miami, FL",
-    "dateCreated": "2022-12-2",
-    "email": "cdukedev@gmail.com",
-    "githubRepo": "https://www.github.com/cdukedev",
-    "skills": [
-      "HTML",
-      "CSS",
-      "SCSS",
-      "JavaScript",
-      "React.js",
-      "Axios",
-      "Java",
-      "Python",
-      "Postman",
-      "Thunder Client",
-      "RESTApi's",
-      "MySQL",
-      "Express",
-      "Node.js",
-      "AWS",
-      "Google Developer Platform",
-      "Microsoft Azure",
-      "GitHub",
-      "GitFlow",
-      "Agile",
-      "Figma",
-      "Visual Studio Code",
-      "IntelliJ",
-      "Cypress.io",
-      "CI/CD",
-      "Kronos",
-      "Microsoft Office Suite"
-    ],
-    "projects": [
-      {
-        "project_id": "2",
-        "title": "Gene pool"
-      },
-      {
-        "project_id": "3",
-        "title": "My Coffee Cup"
-      }
-    ],
-    "groups": ["UPE"],
-    "profileImage": "https://secure.meetupstatic.com/photos/member/7/6/7/8/member_267081632.jpeg"
-  },
-  {
     "member_id": "1",
     "name": "Carlos Matheus",
     "about": "Hey! I am Carlos I am a Computer Science student graduating in Spring 2023. I am skilled in Html, CSS, JavaScript, React, Java, C++. Worked with both web-based, multi-threaded applications as well as front-end development using the latest web technologies.",
@@ -198,7 +147,7 @@
     "profileImage": "https://secure.meetupstatic.com/photos/member/7/6/7/8/member_267081632.jpeg"
   },
   {
-    "user_id": "2",
+    "member_id": "2",
     "name": "Fernando Azanza",
     "about": "Passionate about technology, innovation, and entrepreneurship, I am an International Computer Science student at Florida International University with the constant search to improve my abilities through hands-on experience. I'm an enthusiastic learner, I like creating things that have an impact, and most of all I enjoy it when I help others with my work.",
     "position": "UI-UX Designer",
@@ -219,7 +168,7 @@
   {
     "member_id": "7",
     "name": "Malaika Vaz",
-    "about": "needed",
+    "about": "Hi! My name is Malaika Vaz.  I am a UX designer  dedicated to designing with a focus on equity and disability inclusion. I started as a Biology major and then pivoted to UX design.  I love solving problems while bringing my own creative twist to it.  I am passionate about healthcare and education and hope to advance my UX career in the field of personal genomics.  I enjoy working in teams and build connections with people.",
     "position": "Software Engineer",
     "location": "Miami, FL",
     "dateCreated": "2022-12-2",
@@ -228,8 +177,12 @@
     "skills": ["Figma", "UI-UX"],
     "projects": [
       {
-        "project_id": "1",
-        "title": "Make My Day"
+        "project_id": "6",
+        "title": "Project Go Miami!"
+      },
+      {
+        "project_id": "13",
+        "title": "My Cat Batman"
       }
     ],
     "groups": ["UPE"],
@@ -332,14 +285,6 @@
       {
         "project_id": "12",
         "title": "Project PinkPanther"
-      },
-      {
-        "project_id": "13",
-        "title": "Project Go Miami!"
-      },
-      {
-        "project_id": "13",
-        "title": "My Cat Batman"
       }
     ],
     "groups": ["UPE"],
@@ -363,6 +308,57 @@
       {
         "project_id": "15",
         "title": "PieceOfCake"
+      }
+    ],
+    "groups": ["UPE"],
+    "profileImage": "https://secure.meetupstatic.com/photos/member/7/6/7/8/member_267081632.jpeg"
+  },
+  {
+    "member_id": "13",
+    "name": "Corey Duke",
+    "about": "Hey! I am Corey, a software engineer and love to learn and develop with technologies that have the ability to enhance the lives of people. I am a passionate learner and love to share my knowledge with others. I am a tech enthusiast and love to dream of ways that we may use innovation to solve our most pressing challenges.",
+    "position": "Software Engineer",
+    "location": "Miami, FL",
+    "dateCreated": "2022-12-2",
+    "email": "cdukedev@gmail.com",
+    "githubRepo": "https://www.github.com/cdukedev",
+    "skills": [
+      "HTML",
+      "CSS",
+      "SCSS",
+      "JavaScript",
+      "React.js",
+      "Axios",
+      "Java",
+      "Python",
+      "Postman",
+      "Thunder Client",
+      "RESTApi's",
+      "MySQL",
+      "Express",
+      "Node.js",
+      "AWS",
+      "Google Developer Platform",
+      "Microsoft Azure",
+      "GitHub",
+      "GitFlow",
+      "Agile",
+      "Figma",
+      "Visual Studio Code",
+      "IntelliJ",
+      "Cypress.io",
+      "CI/CD",
+      "Kronos",
+      "Microsoft Office Suite"
+    ],
+    "projects": [
+      {
+        "project_id": "2",
+        "title": "Gene pool"
+      },
+      {
+        "project_id": "3",
+        "title": "My Coffee Cup"
       }
     ],
     "groups": ["UPE"],

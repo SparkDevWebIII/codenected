@@ -44,7 +44,7 @@
   {
     "member_id": "7",
     "name": "Malaika Vaz",
-    "position": "Software Engineer",
+    "position": "UX-UI",
     "location": "Miami, FL",
     "profileImage": "https://secure.meetupstatic.com/photos/member/7/6/7/8/member_267081632.jpeg"
   },
@@ -80,6 +80,13 @@
     "member_id": "12",
     "name": "Nicole Gentil",
     "position": "Software Engineer",
+    "location": "Miami, FL",
+    "profileImage": "https://secure.meetupstatic.com/photos/member/7/6/7/8/member_267081632.jpeg"
+  },
+  {
+    "member_id": "13",
+    "name": "Corey Duke",
+    "position": "Project Manager",
     "location": "Miami, FL",
     "profileImage": "https://secure.meetupstatic.com/photos/member/7/6/7/8/member_267081632.jpeg"
   }
