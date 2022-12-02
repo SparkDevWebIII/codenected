@@ -22,7 +22,7 @@ export default function GroupdCard({
   link,
 }) {
   return (
-    <Card sx={{ maxWidth: 380, maxHeight: 450 }} className="groupCard">
+    <Card sx={{ maxWidth: 380, maxHeight: 450, borderRadius: '32px' }} className="groupCard">
       <CardMedia
         component="img"
         alt="Group Image"
