@@ -14,13 +14,11 @@ const ProjectDetails = ({
   const theme = useTheme();
 
   return (
-    <Grid container id="project-details">
-      <Grid item xs={8}>
+    <Grid container id="project-details" sx={{ px: "4.25em" }} spacing={4}>
+      <Grid item xs={12} md={8}>
         <ContentContainer
           sx={{
             minHeight: "600px",
-            ml: "4.25em",
-            mr: "3.75em",
             "& .MuiTypography-h2, .MuiTypography-body1": {
               mb: "0.75em",
             },
@@ -37,17 +35,23 @@ const ProjectDetails = ({
             Technologies Used
           </Typography>
           {technologies.map((tech) => (
-            <Chip sx={{ mt: "0.625em", mr: "1.55em" }} label={tech} />
+            <Chip
+              sx={{ mt: "0.625em", mr: "1.55em" }}
+              label={tech}
+              key={tech}
+            />
           ))}
         </ContentContainer>
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={12} md={4}>
         <Box
           sx={{
             height: "600px",
             position: "relative",
             overflow: "hidden",
-            mr: "4.25em",
+            // concerning 900px screen sizes and smaller
+            display: "block",
+            mx: "auto",
           }}
         >
           <ContentContainer
@@ -65,8 +69,8 @@ const ProjectDetails = ({
               Members
             </Typography>
             <Box>
-              {members.map(({ name, role }) => (
-                <MemberEntry name={name} role={role} />
+              {members.map(({ name, role }, index) => (
+                <MemberEntry name={name} role={role} key={index} />
               ))}
             </Box>
           </ContentContainer>

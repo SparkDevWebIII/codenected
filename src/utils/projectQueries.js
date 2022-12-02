@@ -12,3 +12,16 @@ export const getProject = (projectId) => {
       })[0];
     });
 };
+
+export const getProjectList = () => {
+  return fetch("./../data/projects.json", {
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+  })
+    .then((response) => response.json())
+    .then((json) => {
+      return json;
+    });
+};

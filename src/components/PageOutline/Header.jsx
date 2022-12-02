@@ -1,90 +1,62 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import DrawerToggleButton from "./DrawerToggleButton";
+import LoginButton from "../common/WhiteButton";
+import Backdrop from "./Backdrop";
 
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
-import CssBaseline from "@mui/material/CssBaseline";
+import "./Header.scss";
 
-import { primaryRoutes as routes } from "../..";
+export default function Header(props) {
+  const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
 
-const Header = (props) => {
+  const toggleDrawer = (open) => (event) => {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
+
+    setIsDrawerOpen(open);
+  };
+
   return (
-    <AppBar position="static" elevation={0}>
-      <CssBaseline />
-      <Container
-        maxWidth="false"
-        sx={{
-          top: 0,
-          height: props.height,
-          position: "fixed",
-          backgroundColor: "black",
-          zIndex: 100,
-        }}
-      >
-        <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: "flex",
-              fontWeight: 700,
-              letterSpacing: ".1rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            CodeNected
-          </Typography>
+    <>
+      {isDrawerOpen && <Backdrop closeDrawer={toggleDrawer(false)} />}
+      <div className="header">
+        <div className="logo_container">
+          {" "}
+          <img src="assets/images/logo.png" alt="logo" className="logo" />
+        </div>
 
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "none", md: "flex" },
-              justifyContent: "flex-end",
-            }}
+        {/* the two containers below appears on smaller screens */}
+        <div className="login-button-mobile">
+          <LoginButton link="/register" />
+        </div>
+        <div className="toggle-button-container">
+          <DrawerToggleButton
+            toggleDrawer={toggleDrawer((prevState) => !prevState)}
+          />
+        </div>
+
+        <div className="navbar">
+          {/* login-button-desktop disappears on smaller screens */}
+          <div className="login-button-desktop">
+            <LoginButton link="/register" />
+          </div>
+          <div
+            className={`navbar__pages ${
+              isDrawerOpen ? "navbar__pages--opened" : "navbar__pages--collapse"
+            }`}
           >
-            {routes.map(({ name, path }) => (
-              <NavLink
-                key={name}
-                to={path}
-                style={{ textDecoration: "none" }}
-                tabIndex="-1"
-              >
-                {() => (
-                  <Button
-                    color={
-                      window.location.pathname === path
-                        ? "primary"
-                        : "secondary"
-                    }
-                  >
-                    {name}
-                  </Button>
-                )}
-              </NavLink>
-            ))}
-          </Box>
-          <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
-            <NavLink
-              key="Login"
-              to="/login/"
-              style={{ textDecoration: "none" }}
-              tabIndex="-1"
-            >
-              <Button variant="contained">Sign In</Button>
-            </NavLink>
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/projects">Projects</NavLink>
+            <NavLink to="/groups">Groups</NavLink>
+            <NavLink to="/connect">Connect</NavLink>
+            <NavLink to="/about">About</NavLink>
+          </div>
+        </div>
+      </div>
+    </>
   );
-};
-
-export default Header;
+}

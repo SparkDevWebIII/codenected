@@ -2,18 +2,31 @@
   {
     "projectId": 1,
     "title": "Codenected",
+    "domains": ["Web Development", "UI/UX"],
     "summary": "lorem impsum",
-    "location": "Miami, FL",
+    "location": "New York City, NY",
     "dateCreated": "November 1, 2022",
     "githubRepo": "https://www.github.com/",
     "concept": "Lorem Ipsum",
     "goal": "n/a",
     "currentsystem": "n/a",
-    "technologies": ["React.js", "Node.js", "Sass", "Material UI"],
+    "technologies": ["React", "Node", "Sass", "Material UI"],
     "rolesNeeded": [
-      "Frontend Developer",
-      "Backend Developer",
-      "AWS Cloud Practitioner"
+      {
+        "position": "Frontend Developer",
+        "domain": "Software Development",
+        "description": "lorem ipsum"
+      },
+      {
+        "position": "Backend Developer",
+        "domain": "Software Development",
+        "description": "lorem ipsum"
+      },
+      {
+        "position": "AWS Cloud Practitioner",
+        "domain": "IT",
+        "description": "lorem ipsum"
+      }
     ],
     "members": [
       { "name": "Rajiv Chevannes", "role": "Developer" },
@@ -50,8 +63,9 @@
   {
     "projectId": 2,
     "title": "Make My Day!",
+    "domains": ["Web Development"],
     "summary": "A stress-free learning environment for instructors and students. One question a day.",
-    "location": "Fort Lauderdale, FL",
+    "location": "Miami, FL",
     "dateCreated": "July 2, 2022",
     "githubRepo": "https://www.github.com/",
     "concept": "Students in a class get one question a day by email or SMS or WhatsApp from their instructor at a time of their choice (e.g., morning 8 AM). By taking few minutes every day to answer one question, they improve their skills steadily throughout the semester. The questions are relevant to what is going on in class that week. If they give a correct answer, the system reinforces their answer and gives them more details. Otherwise, it tells when why they are wrong and tells them more information about the correct answer. There may also be optional reading material on the question for the student to learn more. ",
@@ -68,7 +82,7 @@
     ],
     "rolesNeeded": [
       {
-        "position": "Fullstack Developer",
+        "position": "Full stack Developer",
         "domain": "Software Development",
         "description": "Streamline our current React app and launch new features like a simplified household questionnaire, new policy reform creator, and front-end part of a sign-in experience.Please include a link to your resume and/or GitHub account when reaching out."
       },
@@ -105,7 +119,7 @@
         "phase": "Frontend Phase",
         "percentageDone": 0.6,
         "phaseSteps": [
-          "Database Models",
+          "Low Level Designs",
           "High Level Designs",
           "Convert to React"
         ]
@@ -126,6 +140,7 @@
   {
     "projectId": 3,
     "title": "Churn Detection Modeling",
+    "domains": ["Machine Learning"],
     "summary": "Combating customer churn for for IT software provider Kaseya.",
     "location": "Omaha, NE",
     "dateCreated": "January 12, 2022",
@@ -136,7 +151,7 @@
     "technologies": ["Streamlit", "Scikit-learn", "MatPlotLib"],
     "rolesNeeded": [
       {
-        "position": "Data Analysis",
+        "position": "Data Analyst",
         "domain": "Researcher",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       },
@@ -175,6 +190,230 @@
           "API Endpoints",
           "Email Notification"
         ]
+      }
+    ]
+  },
+  {
+    "projectId": 4,
+    "title": "Project 4",
+    "domains": ["Agriculture"],
+    "summary": "summary",
+    "location": "Miami, FL",
+    "dateCreated": "January 1, 2022",
+    "githubRepo": "https://www.github.com/",
+    "concept": "concept",
+    "goal": "goal",
+    "currentsystem": "current system",
+    "technologies": ["tech 1", "tech 2", "tech 3"],
+    "rolesNeeded": [
+      {
+        "position": "position",
+        "domain": "domain",
+        "description": "description"
+      }
+    ],
+    "members": [{ "name": "member", "role": "role" }],
+    "projectProgression": [
+      {
+        "phase": "UX Phase",
+        "percentageDone": 1,
+        "phaseSteps": ["Research", "Ideating", "Prototyping"]
+      }
+    ]
+  },
+  {
+    "projectId": 5,
+    "title": "Project 5",
+    "domains": ["Agriculture"],
+    "summary": "summary",
+    "location": "Miami, FL",
+    "dateCreated": "January 1, 2022",
+    "githubRepo": "https://www.github.com/",
+    "concept": "concept",
+    "goal": "goal",
+    "currentsystem": "current system",
+    "technologies": ["tech 1", "tech 2", "tech 3"],
+    "rolesNeeded": [
+      {
+        "position": "position",
+        "domain": "domain",
+        "description": "description"
+      }
+    ],
+    "members": [{ "name": "member", "role": "role" }],
+    "projectProgression": [
+      {
+        "phase": "UX Phase",
+        "percentageDone": 1,
+        "phaseSteps": ["Research", "Ideating", "Prototyping"]
+      }
+    ]
+  },
+  {
+    "projectId": 6,
+    "title": "Project 6",
+    "domains": ["Agriculture"],
+    "summary": "summary",
+    "location": "Miami, FL",
+    "dateCreated": "January 1, 2022",
+    "githubRepo": "https://www.github.com/",
+    "concept": "concept",
+    "goal": "goal",
+    "currentsystem": "current system",
+    "technologies": ["tech 1", "tech 2", "tech 3"],
+    "rolesNeeded": [
+      {
+        "position": "position",
+        "domain": "domain",
+        "description": "description"
+      }
+    ],
+    "members": [{ "name": "member", "role": "role" }],
+    "projectProgression": [
+      {
+        "phase": "UX Phase",
+        "percentageDone": 1,
+        "phaseSteps": ["Research", "Ideating", "Prototyping"]
+      }
+    ]
+  },
+  {
+    "projectId": 7,
+    "title": "Project 7",
+    "domains": ["Agriculture"],
+    "summary": "summary",
+    "location": "Miami, FL",
+    "dateCreated": "January 1, 2022",
+    "githubRepo": "https://www.github.com/",
+    "concept": "concept",
+    "goal": "goal",
+    "currentsystem": "current system",
+    "technologies": ["tech 1", "tech 2", "tech 3"],
+    "rolesNeeded": [
+      {
+        "position": "position",
+        "domain": "domain",
+        "description": "description"
+      }
+    ],
+    "members": [{ "name": "member", "role": "role" }],
+    "projectProgression": [
+      {
+        "phase": "UX Phase",
+        "percentageDone": 1,
+        "phaseSteps": ["Research", "Ideating", "Prototyping"]
+      }
+    ]
+  },
+  {
+    "projectId": 8,
+    "title": "Project 8",
+    "domains": ["Agriculture"],
+    "summary": "summary",
+    "location": "Miami, FL",
+    "dateCreated": "January 1, 2022",
+    "githubRepo": "https://www.github.com/",
+    "concept": "concept",
+    "goal": "goal",
+    "currentsystem": "current system",
+    "technologies": ["tech 1", "tech 2", "tech 3"],
+    "rolesNeeded": [
+      {
+        "position": "position",
+        "domain": "domain",
+        "description": "description"
+      }
+    ],
+    "members": [{ "name": "member", "role": "role" }],
+    "projectProgression": [
+      {
+        "phase": "UX Phase",
+        "percentageDone": 1,
+        "phaseSteps": ["Research", "Ideating", "Prototyping"]
+      }
+    ]
+  },
+  {
+    "projectId": 9,
+    "title": "Project 9",
+    "domains": ["Agriculture"],
+    "summary": "summary",
+    "location": "Miami, FL",
+    "dateCreated": "January 1, 2022",
+    "githubRepo": "https://www.github.com/",
+    "concept": "concept",
+    "goal": "goal",
+    "currentsystem": "current system",
+    "technologies": ["tech 1", "tech 2", "tech 3"],
+    "rolesNeeded": [
+      {
+        "position": "position",
+        "domain": "domain",
+        "description": "description"
+      }
+    ],
+    "members": [{ "name": "member", "role": "role" }],
+    "projectProgression": [
+      {
+        "phase": "UX Phase",
+        "percentageDone": 1,
+        "phaseSteps": ["Research", "Ideating", "Prototyping"]
+      }
+    ]
+  },
+  {
+    "projectId": 10,
+    "title": "Project 10",
+    "domains": ["Agriculture"],
+    "summary": "summary",
+    "location": "Miami, FL",
+    "dateCreated": "January 1, 2022",
+    "githubRepo": "https://www.github.com/",
+    "concept": "concept",
+    "goal": "goal",
+    "currentsystem": "current system",
+    "technologies": ["tech 1", "tech 2", "tech 3"],
+    "rolesNeeded": [
+      {
+        "position": "position",
+        "domain": "domain",
+        "description": "description"
+      }
+    ],
+    "members": [{ "name": "member", "role": "role" }],
+    "projectProgression": [
+      {
+        "phase": "UX Phase",
+        "percentageDone": 1,
+        "phaseSteps": ["Research", "Ideating", "Prototyping"]
+      }
+    ]
+  },
+  {
+    "projectId": 11,
+    "title": "Project 11",
+    "domains": ["Agriculture"],
+    "summary": "summary",
+    "location": "New York City, NY",
+    "dateCreated": "January 1, 2022",
+    "githubRepo": "https://www.github.com/",
+    "concept": "concept",
+    "goal": "goal",
+    "currentsystem": "current system",
+    "technologies": ["Django", "tech 1", "tech 2", "tech 3"],
+    "rolesNeeded": [
+      {
+        "position": "position",
+        "domain": "domain",
+        "description": "description"
+      }
+    ],
+    "members": [{ "name": "member", "role": "role" }],
+    "projectProgression": [
+      {
+        "phase": "UX Phase",
+        "percentageDone": 1,
+        "phaseSteps": ["Research", "Ideating", "Prototyping"]
       }
     ]
   }

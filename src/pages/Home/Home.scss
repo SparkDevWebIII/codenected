@@ -1,0 +1,9 @@
+.inline_components {
+    display: flex;
+}
+
+@media only screen and (max-width: 830px) {
+    .inline_components {
+        display: block;
+    }
+  }

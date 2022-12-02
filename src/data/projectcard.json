@@ -1,0 +1,42 @@
+[
+  {
+    "id": 0,
+    "name": "Project 1",
+    "splash": "assets/images/hero1.png",
+    "location": "Miami, FL",
+    "members": 12,
+    "description": "We are looking for coders with little experience who want to get involved in a local project that is super cool!"
+  },
+  {
+    "id": 1,
+    "name": "Project 2",
+    "splash": "assets/images/hero1.png",
+    "location": "Miami, FL",
+    "members": 12,
+    "description": "We are looking for coders with little experience who want to get involved in a local project that is super cool!"
+  },
+  {
+    "id": 2,
+    "name": "Project 3",
+    "splash": "assets/images/hero1.png",
+    "location": "Miami, FL",
+    "members": 12,
+    "description": "We are looking for coders with little experience who want to get involved in a local project that is super cool!"
+  },
+  {
+    "id": 3,
+    "name": "Project 4",
+    "splash": "assets/images/hero1.png",
+    "location": "Miami, FL",
+    "members": 12,
+    "description": "We are looking for coders with little experience who want to get involved in a local project that is super cool!"
+  },
+  {
+    "id": 4,
+    "name": "Project 5",
+    "splash": "assets/images/hero1.png",
+    "location": "Miami, FL",
+    "members": 12,
+    "description": "We are looking for coders with little experience who want to get involved in a local project that is super cool!"
+  }
+]
