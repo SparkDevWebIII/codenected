@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import GroupdCard from "../Group_Card/GroupCard";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -14,25 +14,17 @@ import DropDown from "../DropDown/DropDown";
 import { useLoaderData } from "react-router-dom";
 import Search from "@mui/icons-material/Search";
 
-
-
-
-
 const Groups = () => {
   const [query, setQuery] = useState("");
   const groups = useLoaderData();
 
   const filteredGroups = groups.filter((group) => {
-    if (
-      group.title.toLowerCase().includes(query.toLowerCase())
-    ) {
+    if (group.title.toLowerCase().includes(query.toLowerCase())) {
       //returns filtered array
       return group;
     }
     return false;
   });
-
-
 
   const data = useLoaderData();
   console.log(data);
@@ -50,7 +42,10 @@ const Groups = () => {
         }}
       >
         <p className="title">CodeNect With A Group</p>
-        <SearchBar query={query} setQuery={setQuery} />
+        <Box sx={{width:1/2, mx:'auto'}}>
+        <SearchBar query={query} setQuery={setQuery}/>
+        </Box>
+        
       </Box>
       <Grid container spacing={1} columnSpacing={1} className="bodySection">
         <Grid
@@ -72,7 +67,6 @@ const Groups = () => {
               link,
             }) => {
               return (
-             
                 <Grid item xs="auto" justifyContent="flex-end">
                   <GroupdCard
                     title={title}
