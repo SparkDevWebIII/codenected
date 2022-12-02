@@ -36,15 +36,15 @@ export const primaryRoutes = [
     ],
   },
   {
-    name: "Events",
-    path: "/events",
+    name: "Groups",
+    path: "/groups",
   },
   {
     name: "Connect",
     path: "/connect",
   },
   {
-    name: "About Us",
+    name: "About",
     path: "/about",
   },
 ];
