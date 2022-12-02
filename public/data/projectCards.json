@@ -1,16 +1,5 @@
 [
   {
-    "project_id": "1",
-    "title": "Make My Day",
-    "summary": "A stress-free learning environment for instructors and students. One question a day.",
-    "rolesNeeded": "Frontend Developer, Backend Developer, UI/UX Designer",
-    "technologies": ["Excel", "Gmail API", "Django", "Bootstrap"],
-    "location": "Miami, FL",
-    "members": "10",
-    "domain": "Web Development",
-    "image": "https://i.imgur.com/1ZQ3Z4r.png"
-  },
-  {
     "project_id": "2",
     "title": "Gene pool",
     "summary": "We are looking for UX researchers to help us understand the needs of our users and improve our services for genetic testing kits",
@@ -19,7 +8,7 @@
     "location": "Doral, FL",
     "members": "10",
     "domain": "AI",
-    "image": "https://i.imgur.com/1ZQ3Z4r.png"
+    "image": "https://i.imgur.com/bCJfPiL.png"
   },
   {
     "project_id": "3",
@@ -36,7 +25,7 @@
     "location": "Miami, FL",
     "members": "10",
     "domain": "Web Development",
-    "image": "https://i.imgur.com/1ZQ3Z4r.png"
+    "image": "https://i.imgur.com/uSGPh6n.png"
   },
   {
     "project_id": "4",
@@ -47,7 +36,7 @@
     "location": "Kendall, FL",
     "members": "1",
     "domain": "Web Development",
-    "image": "https://i.imgur.com/1ZQ3Z4r.png"
+    "image": "https://i.imgur.com/WrFZrAy.png"
   },
   {
     "project_id": "5",
@@ -58,7 +47,7 @@
     "location": "FIU, FL",
     "members": "5",
     "domain": "App Development",
-    "image": "https://i.imgur.com/1ZQ3Z4r.png"
+    "image": "https://i.imgur.com/Ej9kxbB.png"
   },
   {
     "project_id": "6",
@@ -69,7 +58,7 @@
     "location": "Miami, FL",
     "members": "20",
     "domain": "Web Development",
-    "image": "https://i.imgur.com/1ZQ3Z4r.png"
+    "image": "https://i.imgur.com/5bowvcP.png"
   },
   {
     "project_id": "7",
@@ -86,7 +75,7 @@
     "location": "Doral, FL",
     "members": "10",
     "domain": "App Development",
-    "image": "https://i.imgur.com/1ZQ3Z4r.png"
+    "image": "https://i.imgur.com/oacv8xM.png"
   },
   {
     "project_id": "8",
@@ -97,7 +86,7 @@
     "location": "Miami, FL",
     "members": "10",
     "domain": "Web Development",
-    "image": "https://i.imgur.com/1ZQ3Z4r.png"
+    "image": "https://i.imgur.com/U7ytYBD.png"
   },
   {
     "project_id": "9",
@@ -109,7 +98,7 @@
     "location": "Miami, FL",
     "members": "4",
     "domain": "Web Development",
-    "image": "https://i.imgur.com/1ZQ3Z4r.png"
+    "image": "https://i.imgur.com/bjhdR0d.png"
   },
   {
     "project_id": "10",
@@ -127,7 +116,7 @@
     "location": "Virtual",
     "members": "8",
     "domain": "VR",
-    "image": "https://i.imgur.com/1ZQ3Z4r.png"
+    "image": "https://i.imgur.com/A1Jw6Iy.png"
   },
   {
     "project_id": "11",
@@ -139,7 +128,7 @@
     "location": "Miami, FL",
     "members": "20",
     "domain": "Game Development",
-    "image": "https://i.imgur.com/1ZQ3Z4r.png"
+    "image": "https://i.imgur.com/6ODyDTZ.png"
   },
   {
     "project_id": "12",
@@ -150,7 +139,7 @@
     "location": "Brickell, FL",
     "members": "20",
     "domain": ["AR", "Software Development", "IT"],
-    "image": "https://i.imgur.com/1ZQ3Z4r.png"
+    "image": "https://i.imgur.com/JMjwopZ.png"
   },
   {
     "project_id": "13",
@@ -161,7 +150,7 @@
     "location": "Kendall, FL",
     "members": "4",
     "domain": "Web Development",
-    "image": "https://i.imgur.com/1ZQ3Z4r.png"
+    "image": "https://i.imgur.com/EjcigxP.png"
   },
   {
     "project_id": "14",
@@ -177,7 +166,7 @@
     "location": "FIU, FL",
     "members": "6",
     "domain": ["Web Development", "App Development"],
-    "image": "https://i.imgur.com/1ZQ3Z4r.png"
+    "image": "https://i.imgur.com/cgpxqdD.png"
   },
   {
     "project_id": "15",
@@ -188,7 +177,7 @@
     "location": "Miami, FL",
     "members": "7",
     "domain": ["VR", "Web development", "App development"],
-    "image": "https://i.imgur.com/1ZQ3Z4r.png"
+    "image": "https://i.imgur.com/6dyzPvC.png"
   },
   {
     "project_id": "16",
@@ -199,6 +188,6 @@
     "location": "Brickell, FL",
     "members": "36",
     "domain": "Game Development",
-    "image": "https://i.imgur.com/1ZQ3Z4r.png"
+    "image": "https://i.imgur.com/2JYcYe2.png"
   }
 ]
