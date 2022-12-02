@@ -11,6 +11,7 @@ import Groups from "./pages/ViewGroups/Group_Page/Groups";
 import Project from "./pages/Project/Project";
 import { getProject, getProjectList } from "./utils/projectQueries";
 import "typeface-roboto";
+import { getGroupCards, getGroupList } from "./utils/groupQueries";
 
 // These routes are the ones that appear on the header
 export const primaryRoutes = [
@@ -51,7 +52,10 @@ export const primaryRoutes = [
   {
     name: "Groups",
     path: "/groups/",
-    element: <Groups/>,
+    element: <Groups />,
+    loader: () => {
+      return getGroupList();
+    },
   },
 ];
 const router = createBrowserRouter([

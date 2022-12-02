@@ -13,15 +13,15 @@ import { Button } from "@mui/material";
 import styles from './GroupCardStyles.scss'
 
 export default function GroupdCard({
-  id,
-  name,
+  group_id,
+  title,
   description,
-  splash,
   members,
   location,
+  link
 }) {
   return (
-    <Card sx={{ maxWidth: 380, maxHeight:400 }}  className="groupCard">
+    <Card sx={{ maxWidth: 380, maxHeight:450 }}  className="groupCard">
       <CardMedia
         component="img"
         alt="Group Image"
@@ -32,7 +32,7 @@ export default function GroupdCard({
         <Grid container>
           <Grid item xs={12} className="cardHeader">
             <Typography gutterBottom variant="h5" component="div">
-              {name}
+              {title}
             </Typography>
           </Grid>
         </Grid>
@@ -45,16 +45,17 @@ export default function GroupdCard({
               <AccountCircleIcon />
               {members} members
             </Typography>
+            <LearnMoreButton link={link}/>
           </Grid>
           <Grid item xs={8}>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" color="text.secondary" overflowY='hidden'>
               {description}
             </Typography>
           </Grid>
         </Grid>
       </CardContent>
       <CardActions>
-        <LearnMoreButton />
+
       </CardActions>
     </Card>
   );
