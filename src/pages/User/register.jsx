@@ -1,7 +1,6 @@
 import "./Register.css";
 import BasicTextField from "../../components/User/Register/BasicTextField";
 import CrendetialsTextField from "../../components/User/Register/CredentialsTextField";
-import Link from "@mui/material/Link";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import { NavLink } from "react-router-dom";

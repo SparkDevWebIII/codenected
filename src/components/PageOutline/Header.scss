@@ -6,6 +6,10 @@
 // body {
 //   background: linear-gradient(180deg, #051625 0%, #132b41 49.48%, #051320 100%);
 // }
+a:link,
+a:visited {
+  text-decoration: none;
+}
 .header {
   font-family: "Plus Jakarta Sans";
   position: fixed;
@@ -52,8 +56,10 @@
       margin-inline: 15px;
       color: #cab7cf;
     }
-    a:hover {
-      background-size: 0 0.1em, 100% 0.1em;
+    .navbar__pages {
+      a:hover {
+        background-size: 0 0.1em, 100% 0.1em;
+      }
     }
   }
 }
@@ -79,12 +85,17 @@
 
 @media only screen and (max-width: 1000px) {
   .header {
-    background: rgba($color: #000000, $alpha: 1);
+    background: rgba($color: #000000, $alpha: 0.85);
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-right: 10px;
-    .logo_container > img {
-      width: 220px;
+    align-items: center;
+    padding-right: 5%;
+    .logo_container {
+      margin: 0;
+      img {
+        width: 220px;
+        padding-top: 4%;
+      }
     }
     .navbar {
       display: inline;
@@ -96,19 +107,21 @@
       width: 100vw;
       max-height: 65vh;
       overflow-y: auto;
-      background-color: black;
+      background-color: rgba($color: #000000, $alpha: 0.75);
       flex-direction: column;
       box-shadow: 7px 0px 3px rgba(0, 0, 0, 0.5);
     }
     .navbar__pages--collapse {
       backface-visibility: hidden;
       transform-origin: top;
+      visibility: hidden;
       transform: scale(1, 0);
       transition: transform 0.3s ease-out;
     }
     .navbar__pages--opened {
       backface-visibility: hidden;
       transform-origin: top;
+      visibility: visible;
       transform: scale(1, 1);
       transition: transform 0.3s ease-out;
     }

@@ -3,60 +3,37 @@ import MemberCard from "./MemberCard/MemberCard";
 
 import "./People.scss";
 
-export default function People() {
-  const data = [
-    {
-      id: 0,
-      name: "John Smith",
-      role: "CEO",
-      img: "assets/images/Avatar.png",
-    },
-    {
-      id: 1,
-      name: "John Smith",
-      role: "CEO",
-      img: "assets/images/Avatar.png",
-    },
-    {
-      id: 2,
-      name: "John Smith",
-      role: "CEO",
-      img: "assets/images/Avatar.png",
-    },
-    {
-      id: 3,
-      name: "John Smith",
-      role: "CEO",
-      img: "assets/images/Avatar.png",
-    },
-    {
-      id: 4,
-      name: "John Smith",
-      role: "CEO",
-      img: "assets/images/Avatar.png",
-    },
-  ];
-
+export default function People(props) {
+  const data = props.data;
+  
   const mappedMembers = data.map((member) => (
     <MemberCard
-      key={member.id}
+      member_id={member.member_id}
       name={member.name}
-      role={member.role}
-      img={member.img}
+      role={member.position}
+      img={member.profileImage}
+      
     ></MemberCard>
   ));
 
   return (
     <div className="people_container">
-      <h1 className="site_main_header">People</h1>
+      <h1 className="site_main_header">Members</h1>
       <div className="members_container">
         <div className="memberheadings_container">
           {" "}
-          <h3>Members</h3>
-          <a href="">See all</a>
         </div>
 
         <div className="mapped_members">{mappedMembers}</div>
+        <div className="mapped_members_small">
+          <div className="mem_smdiv1">
+            {mappedMembers.slice(0,6)}
+          </div>
+          <div className="mem_smdiv2">
+            {mappedMembers.slice(6,12)}
+          </div>
+        
+        </div>
       </div>
     </div>
   );

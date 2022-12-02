@@ -27,11 +27,9 @@ export default function Header(props) {
       <div className="header">
         <div className="logo_container">
           {" "}
-          <img
-            src="https://imgur.com/1SAVxx0.png"
-            alt="logo"
-            className="logo"
-          />
+          <NavLink to="/">
+            <img src="https://i.imgur.com/1SAVxx0.png" alt="logo" className="logo" />
+          </NavLink>
         </div>
 
         {/* the two containers below appears on smaller screens */}
@@ -54,7 +52,6 @@ export default function Header(props) {
               isDrawerOpen ? "navbar__pages--opened" : "navbar__pages--collapse"
             }`}
           >
-            <NavLink to="/">Home</NavLink>
             {primaryRoutes.map(({ name, path }, index) => (
               <NavLink key={index} to={path}>
                 {name}

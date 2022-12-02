@@ -1,9 +1,39 @@
-.inline_components {
+.home_inline_components1{
     display: flex;
+    justify-content: center;
+    .home_communities {
+        margin-right: 5vw;
+    }
 }
 
-@media only screen and (max-width: 830px) {
-    .inline_components {
+.home_inline_components2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+    .home_courses {
+        width: 40vw;
+        height: 70vh;
+        margin-right: 10vw;
+    }
+    .home_events {
+        width: 38vw;
+        height: 70vh;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .home_inline_components1 {
         display: block;
+        text-align: center;
+        .home_people {
+            margin-top: 50px;
+        }
+    }
+    .home_inline_components2 {
+        display: block;
+        margin-left: 15vw;
+        .home_courses, .home_events {
+            width: 70vw;
+        }
     }
   }

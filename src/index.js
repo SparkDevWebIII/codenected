@@ -12,12 +12,25 @@ import Project from "./pages/Project/Project";
 import ProjectError from "./pages/Project/ProjectError";
 import { getProject, getProjectList } from "./utils/projectQueries";
 import "typeface-roboto";
+import { getData } from "./utils/getData";
 import { getMemberCard, getMemberDetail } from "./utils/profileQueries";
 import ProfileCard from "./pages/Profile/ProfileCard";
 import { json } from "react-router-dom";
 
 // These routes are the ones that appear on the header
 export const primaryRoutes = [
+  {
+    name: "Home",
+    path: "/",
+    element: <Home />,
+    loader: async function n({ params }) {
+      return json({
+        res1: await getData("projectCards"),
+        res2: await getData("memberscards"),
+        res3: await getData("groupcards"),
+      });
+    },
+  },
   {
     name: "Projects",
     path: "/projects",
@@ -46,10 +59,6 @@ export const primaryRoutes = [
     path: "/groups",
   },
   {
-    name: "Connect",
-    path: "/connect",
-  },
-  {
     name: "About",
     path: "/about",
   },
@@ -70,11 +79,6 @@ const router = createBrowserRouter([
         name: "Login",
         path: "/login",
         element: <Login />,
-      },
-      {
-        name: "Home",
-        path: "/",
-        element: <Home />,
       },
       {
         name: "Profile",

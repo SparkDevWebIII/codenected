@@ -2,16 +2,16 @@ import React from "react";
 
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
-import GradientButton from "../../common/GradientButton";
+import PlainButton from "../../common/PlainButton";
 import "./ProjectCard.scss";
 
 export default function ProjectCard({
-  name,
+  projectId,
   imageUrl,
+  title,
   location,
   members,
-  description,
-  projectId,
+  summary,
 }) {
   const muiIconStyling = {
     color: "rgb(48,42,72)",
@@ -23,7 +23,7 @@ export default function ProjectCard({
     <div className="card_container">
       <img src={imageUrl} alt="splash" />
       <div className="content_container">
-        <h2 className="card_header">{name}</h2>
+        <h2 className="card_header">{title}</h2>
         <div className="left_content">
           <div className="loc_container">
             <LocationOnOutlinedIcon sx={muiIconStyling} />
@@ -34,14 +34,9 @@ export default function ProjectCard({
             <AccountCircleIcon sx={muiIconStyling} />
             <span>{members} members</span>
           </div>
-          <GradientButton
-            // top="-10px" left="-50px" scale="0.5"
-            projectId={projectId}
-          >
-            Learn More
-          </GradientButton>
+          <PlainButton link={`/projects/${projectId}`}>Learn More</PlainButton>
         </div>
-        <p>{description}</p>
+        <p>{summary}</p>
       </div>
     </div>
   );

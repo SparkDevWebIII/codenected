@@ -1,21 +1,22 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 
 import ProjectCard from "./ProjectCard/ProjectCard";
 import "./FeaturedProjects.scss";
-import ProjectCardData from "../../data/projectcard.json";
 import Flickity from "react-flickity-component";
+import { useLoaderData } from "react-router-dom";
+import { useGetData } from "../../utils/getData";
 
-export default function FeaturedProjects() {
-  const mappedProjectCards = ProjectCardData.map((project) => (
-    // projectId is used for redirecting to the correct project page
+export default function FeaturedProjects(props) {
+  const data = props.data;
+
+  const mappedProjectCards = data.map((project) => (
     <ProjectCard
-      key={project.id}
-      name={project.name}
+      projectId={project.project_id}
+      title={project.title}
       imageUrl={project.imageUrl}
       location={project.location}
       members={project.members}
-      description={project.description}
-      projectId={project.projectId}
+      summary={project.summary}
     ></ProjectCard>
   ));
 

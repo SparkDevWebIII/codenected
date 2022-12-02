@@ -1,39 +1,29 @@
 .people_container {
   display: inline-block;
-  
+
   .members_container {
     display: block;
     width: 405px;
     height: 575px;
+    overflow-y: scroll;
     background: rgba(255, 255, 255, 0.45);
     box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
       0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
     border-radius: 20px;
+
     .memberheadings_container {
       display: flex;
       align-items: center;
       justify-content: center;
       h3 {
-        margin: 0;
-        padding: 0;
-        padding-right: 5.5em;
-        margin: 0;
         font-family: "Lato";
         font-weight: 400;
         font-size: 30px;
         color: #ebebeb;
       }
-      a {
-        font-family: "Lato";
-        font-size: 20px;
-        color: #dfdfdf;
-      }
-      a:hover {
-        opacity: 0.5;
-      }
     }
 
-    .mapped_members {
+    .mapped_members, .mapped_members_small {
       margin: 0;
       padding: 0;
       margin-left: 4%;
@@ -46,11 +36,32 @@
       height: 509px;
       border-radius: 20px;
     }
+    .mapped_members_small {
+      display: none;
+    }
+  }
+  .members_container::-webkit-scrollbar {
+    border-radius: 50px;
   }
 }
 
-@media only screen and (max-width: 830px) {
-.people_container {
-  display: none;
-}
+@media only screen and (max-width: 1200px) {
+  .people_container {
+    width: 80vw;
+    .members_container {
+      width: 100%;
+      .mapped_members {
+        display: none;
+      }
+      .mapped_members_small {
+        display: flex;
+        align-items: center;
+        padding-top: 8vh;
+        .mem_smdiv1 {
+          padding-inline: 4vw;
+        }
+
+      }
+    }
+  }
 }

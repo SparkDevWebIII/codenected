@@ -21,6 +21,7 @@ const Footer = () => {
       component="footer"
       maxWidth={false}
       sx={{
+        opacity: .7,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
