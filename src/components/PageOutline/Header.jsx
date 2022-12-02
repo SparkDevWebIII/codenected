@@ -1,84 +1,65 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import DrawerToggleButton from "./DrawerToggleButton";
+import LoginButton from "../common/WhiteButton";
+import Backdrop from "./Backdrop";
+import { primaryRoutes } from "../../index";
 
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
-import CssBaseline from "@mui/material/CssBaseline";
+import "./Header.scss";
 
-import { primaryRoutes as routes } from "../..";
+export default function Header(props) {
+  const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
 
-const Header = (props) => {
+  const toggleDrawer = (open) => (event) => {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
+
+    setIsDrawerOpen(open);
+  };
+
   return (
-    <AppBar position="static" elevation={0}>
-      <CssBaseline />
+    <>
+      {isDrawerOpen && <Backdrop closeDrawer={toggleDrawer(false)} />}
+      <div className="header">
+        <div className="logo_container">
+          {" "}
+          <NavLink to="/">
+            <img src="https://i.imgur.com/1SAVxx0.png" alt="logo" className="logo" />
+          </NavLink>
+        </div>
 
-      <Container
-        maxWidth="false"
-        sx={{
-          height: props.height,
-          position: "fixed",
-          backgroundColor: "black",
-          zIndex: 1,
-        }}
-      >
-        <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: "flex",
-              fontWeight: 700,
-              letterSpacing: ".1rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
+        {/* the two containers below appears on smaller screens */}
+        <div className="login-button-mobile">
+          <LoginButton link="/register" />
+        </div>
+        <div className="toggle-button-container">
+          <DrawerToggleButton
+            toggleDrawer={toggleDrawer((prevState) => !prevState)}
+          />
+        </div>
+
+        <div className="navbar">
+          {/* login-button-desktop disappears on smaller screens */}
+          <div className="login-button-desktop">
+            <LoginButton link="/register" />
+          </div>
+          <div
+            className={`navbar__pages ${
+              isDrawerOpen ? "navbar__pages--opened" : "navbar__pages--collapse"
+            }`}
           >
-            CodeNected
-          </Typography>
-
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {routes.map(({ name, path }) => (
-              <NavLink
-                key={name}
-                to={path}
-                style={{ textDecoration: "none" }}
-                tabIndex="-1"
-              >
-                {({ isActive }) => (
-                  <Button
-                    color={
-                      isActive && window.location.pathname === path
-                        ? "primary"
-                        : "secondary"
-                    }
-                  >
-                    {name}
-                  </Button>
-                )}
+            {primaryRoutes.map(({ name, path }, index) => (
+              <NavLink key={index} to={path}>
+                {name}
               </NavLink>
             ))}
-          </Box>
-          <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
-            <NavLink
-              key="Login"
-              to="/login/"
-              style={{ textDecoration: "none" }}
-              tabIndex="-1"
-            >
-              <Button variant="outlined">LOGIN</Button>
-            </NavLink>
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+          </div>
+        </div>
+      </div>
+    </>
   );
-};
-
-export default Header;
+}
