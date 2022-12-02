@@ -2,28 +2,38 @@
   {
     "member_id": "1",
     "name": "Carlos Matheus",
-    "about": "needed",
+    "about": "Hey! I am Carlos I am a Computer Science student graduating in Spring 2023. I am skilled in Html, CSS, JavaScript, React, Java, C++. Worked with both web-based, multi-threaded applications as well as front-end development using the latest web technologies.",
     "position": "Software Engineer",
     "location": "Miami, FL",
     "dateCreated": "2022-12-2",
-    "email": "",
+    "email": "cimatheus.14@gmail.com",
     "githubRepo": "https://www.github.com/",
-    "skills": ["", "", ""],
-    "projects": [""],
+    "skills": ["Java", "C", "Python", "HTML", "CSS"],
+    "projects": [
+      {
+        "project_id": "1",
+        "title": "Make My Day"
+      }
+    ],
     "groups": ["UPE"],
     "profileImage": "https://secure.meetupstatic.com/photos/member/7/6/7/8/member_267081632.jpeg"
   },
   {
     "member_id": "2",
     "name": "Noel Pereda",
-    "about": "needed",
+    "about": " UX Designer | FIU student. Aspiring to start my journey in UX design. Born in Venezuela. Contact me at: npere299@fiu.edu",
     "position": "UI-UX Designer",
     "location": "Tamarac, FL",
     "dateCreated": "2022-12-2",
-    "email": "",
+    "email": "npere299@fiu.edu",
     "githubRepo": "https://www.github.com/",
-    "skills": ["", "", ""],
-    "projects": [""],
+    "skills": ["Java", "Figma", "UX-UI", "Product Design", "Python", "AdobeXD"],
+    "projects": [
+      {
+        "project_id": "1",
+        "title": "Make My Day"
+      }
+    ],
     "groups": ["UPE"],
     "profileImage": "https://secure.meetupstatic.com/photos/member/7/6/7/8/member_267081632.jpeg"
   },
@@ -34,24 +44,66 @@
     "position": "Software Engineer",
     "location": "Miami, FL",
     "dateCreated": "2022-12-2",
-    "email": "",
+    "email": "mkazm004@fiu.edu",
     "githubRepo": "https://www.github.com/",
-    "skills": ["", "", ""],
-    "projects": [""],
+    "skills": [
+      "Java",
+      "Python",
+      "SQL",
+      "JavaScript",
+      "HTML",
+      "VSCode",
+      "Pycharm",
+      "Eclipse",
+      "Jupyter Notebooks",
+      "SpringBoot",
+      "React"
+    ],
+    "projects": [
+      {
+        "project_id": "1",
+        "title": "Make My Day"
+      }
+    ],
     "groups": ["UPE"],
     "profileImage": "https://secure.meetupstatic.com/photos/member/7/6/7/8/member_267081632.jpeg"
   },
   {
     "member_id": "4",
     "name": "Rey Jairus Marasigan",
-    "about": "needed",
+    "about": "I am an avid and humble programmer that loves to explore many technologies. From Python to C, I willing to build anything if I see potential. I have led many teams in my classes, making multiple substantial projects with industry standard tools such Django and React. Being able to quickly adapt and staying hungry for answers have pushed me into being trustworthy and consistent in my abilities as a programmer and playmaker. ",
     "position": "Software Engineer",
     "location": "Miami, FL",
     "dateCreated": "2022-12-2",
-    "email": "",
+    "email": "rmara020@fiu.edu",
     "githubRepo": "https://www.github.com/",
-    "skills": ["", "", ""],
-    "projects": [""],
+    "skills": [
+      "Python",
+      "C",
+      "Django",
+      "SQL",
+      "HTML",
+      "JS",
+      "Java",
+      "Bootstrap",
+      "React",
+      "React-Native",
+      "Git",
+      "CSS",
+      "NumPy",
+      "Pandas",
+      "Streamlit",
+      "RabbitMQ",
+      "Docker",
+      "Swift",
+      "UIKit"
+    ],
+    "projects": [
+      {
+        "project_id": "1",
+        "title": "Make My Day"
+      }
+    ],
     "groups": ["UPE"],
     "profileImage": "https://secure.meetupstatic.com/photos/member/7/6/7/8/member_267081632.jpeg"
   },
@@ -62,24 +114,34 @@
     "position": "Software Engineer",
     "location": "Miami, FL",
     "dateCreated": "2022-12-2",
-    "email": "",
+    "email": "rchev007@fiu.edu",
     "githubRepo": "https://www.github.com/",
-    "skills": ["", "", ""],
-    "projects": [""],
+    "skills": ["Java", "HTML", "CSS", "JavaScript"],
+    "projects": [
+      {
+        "project_id": "1",
+        "title": "Make My Day"
+      }
+    ],
     "groups": ["UPE"],
     "profileImage": "https://secure.meetupstatic.com/photos/member/7/6/7/8/member_267081632.jpeg"
   },
   {
     "user_id": "2",
     "name": "Fernando Azanza",
-    "about": "We are looking for UX researchers to help us understand the needs of our users and improve our services for genetic testing kits.",
+    "about": "Passionate about technology, innovation, and entrepreneurship, I am an International Computer Science student at Florida International University with the constant search to improve my abilities through hands-on experience. I'm an enthusiastic learner, I like creating things that have an impact, and most of all I enjoy it when I help others with my work.",
     "position": "UI-UX Designer",
     "location": "Miami, FL",
     "dateCreated": "2022-12-2",
-    "email": "miamigenepool@gmail.com",
+    "email": "fernandoazanza387@gmail.com",
     "githubRepo": "https://www.github.com/",
     "skills": ["Excel", "Gmail API", "Django", "Bootstrap"],
-    "projects": ["UX Research", "Backend Developer"],
+    "projects": [
+      {
+        "project_id": "1",
+        "title": "Make My Day"
+      }
+    ],
     "groups": ["UPE"],
     "profileImage": "https://secure.meetupstatic.com/photos/member/7/6/7/8/member_267081632.jpeg"
   },
@@ -90,80 +152,128 @@
     "position": "Software Engineer",
     "location": "Miami, FL",
     "dateCreated": "2022-12-2",
-    "email": "",
+    "email": "mvaz002@fiu.edu",
     "githubRepo": "https://www.github.com/",
-    "skills": ["", "", ""],
-    "projects": [""],
+    "skills": ["Figma", "UI-UX"],
+    "projects": [
+      {
+        "project_id": "1",
+        "title": "Make My Day"
+      }
+    ],
     "groups": ["UPE"],
     "profileImage": "https://secure.meetupstatic.com/photos/member/7/6/7/8/member_267081632.jpeg"
   },
   {
     "member_id": "8",
     "name": "Pablo Rivera",
-    "about": "needed",
+    "about": "Hello everyone! I am an aspiring Junior attending Florida International University, currently pursuing a bachelor's degree in computer science. My current motives apart from general academics is to expand my skillset beyond Back-End into the creative realm of Front-End development to create and deploy new ideas and solutions and learn different technologies throughout that process.",
     "position": "Software Engineer",
     "location": "Miami, FL",
     "dateCreated": "2022-12-2",
-    "email": "",
+    "email": "prive078@fiu.edu",
     "githubRepo": "https://www.github.com/",
-    "skills": ["", "", ""],
-    "projects": [""],
+    "skills": ["Hardware", "C", "Java", "Python"],
+    "projects": [
+      {
+        "project_id": "1",
+        "title": "Make My Day"
+      }
+    ],
     "groups": ["UPE"],
     "profileImage": "https://secure.meetupstatic.com/photos/member/7/6/7/8/member_267081632.jpeg"
   },
   {
     "member_id": "9",
     "name": "Rodrigo Lopes",
-    "about": "needed",
+    "about": "Hello everyone! I am an aspiring Junior attending Florida International University, currently pursuing a bachelor's degree in computer science. My current motives apart from general academics is to expand my skillset beyond Back-End into the creative realm of Front-End development to create and deploy new ideas and solutions and learn different technologies throughout that process. Many of my passions outside my career consist of gaming,weight training, and traveling. As well as developing new bonds with individuals from backgrounds and perspectives in the field of technology",
     "position": "Software Engineer",
     "location": "Miami, FL",
     "dateCreated": "2022-12-2",
-    "email": "",
+    "email": "rodrigocidlopes@gmail.com",
     "githubRepo": "https://www.github.com/",
-    "skills": ["", "", ""],
-    "projects": [""],
+    "skills": ["Java", "JS", "HTML", "CSS", "SQL", "R", "Tableau"],
+    "projects": [
+      {
+        "project_id": "1",
+        "title": "Make My Day"
+      }
+    ],
     "groups": ["UPE"],
     "profileImage": "https://secure.meetupstatic.com/photos/member/7/6/7/8/member_267081632.jpeg"
   },
   {
     "member_id": "10",
     "name": "Emanuel Rivas",
-    "about": "needed",
+    "about": "Hi! I am a curious and ambitious programmer who strives to learn more about the technologies that make up the digital world that I find myself immersed in. My curiosity has taken me into learning multiple different languages and skillsets and I have built/collaborated on projects using Java, C#, Javascript, and React. Although there is still much room for growth, I love to learn and I am quick to adapt.",
     "position": "Software Engineer",
     "location": "Miami, FL",
     "dateCreated": "2022-12-2",
-    "email": "",
+    "email": "eriva027@fiu.edu",
     "githubRepo": "https://www.github.com/",
-    "skills": ["", "", ""],
-    "projects": [""],
+    "skills": [
+      "Java",
+      "HTML",
+      "CSS",
+      "BootStrap",
+      "JavaScript",
+      "Unity",
+      "Python"
+    ],
+    "projects": [
+      {
+        "project_id": "1",
+        "title": "Make My Day"
+      }
+    ],
     "groups": ["UPE"],
     "profileImage": "https://secure.meetupstatic.com/photos/member/7/6/7/8/member_267081632.jpeg"
   },
   {
     "member_id": "11",
     "name": "Danny Lawrence",
-    "about": "needed",
+    "about": "Hello! I am a Freshman at Florida International University studying Computer Science. I found myself falling in love with Computer Science because I love to unravel how things work. Many of my passions value the process more than the finish line. For example I love to work out because I can always get stronger, I like to read because there is always more to read, and I love to code because there is always more to create. If you'd like to stay in touch email me at dlawr034@fiu.edu",
     "position": "UI-UX Designer",
     "location": "Miami, FL",
     "dateCreated": "2022-12-2",
-    "email": "",
+    "email": "dlawr034@fiu.edu",
     "githubRepo": "https://www.github.com/",
-    "skills": ["", "", ""],
-    "projects": [""],
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Python",
+      "SQL",
+      "VSCode",
+      "Dreamweaver",
+      "Git",
+      "MySQL"
+    ],
+    "projects": [
+      {
+        "project_id": "1",
+        "title": "Make My Day"
+      }
+    ],
     "groups": ["UPE"],
     "profileImage": "https://secure.meetupstatic.com/photos/member/7/6/7/8/member_267081632.jpeg"
   },
   {
     "member_id": "12",
     "name": "Nicole Gentil",
-    "about": "needed",
+    "about": "Hello, I am Nicole Gentil and I am a computer science major at Florida International University. Technologies I am familiar with are Java, Python, C, Javascript, HTML, CSS, MySQL, Flask and Express. I specialize in back-end development, but currently working in learning full stack development. I am very passionate, I always strive to produce the best of my abilities. I try to make my code as efficient as possible and I am eager to learning new skills and tool.",
     "position": "Software Engineer",
     "location": "Miami, FL",
     "dateCreated": "2022-12-2",
-    "email": "",
+    "email": "ngent004@fiu.edu",
     "githubRepo": "https://www.github.com/",
-    "skills": ["", "", ""],
-    "projects": [""],
+    "skills": ["Java", "C", "Python", "HTML", "CSS"],
+    "projects": [
+      {
+        "project_id": "1",
+        "title": "Make My Day"
+      }
+    ],
     "groups": ["UPE"],
     "profileImage": "https://secure.meetupstatic.com/photos/member/7/6/7/8/member_267081632.jpeg"
   }
