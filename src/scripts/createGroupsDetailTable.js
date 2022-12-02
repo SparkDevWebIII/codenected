@@ -7,7 +7,7 @@ AWS.config.update({
 const dynamodb = new AWS.DynamoDB();
 
 const params = {
-  TableName: "groupsDetail",
+  TableName: "groupDetail",
   KeySchema: [
     // Partition Key
     { AttributeName: "group_id", KeyType: "HASH" },
