@@ -1,0 +1,35 @@
+.plain_button_container {
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 225px;
+  height: 65px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+
+  background: linear-gradient(to left, #1976d2 50%, #ffffff 50%) right;
+  background-size: 200% 100%;
+  background-position: right;
+  transition: all 0.5s ease;
+
+  .button_text {
+    color: #e5cee9;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+
+  }
+}
+
+.plain_button_container:hover {
+  background-position: left;
+  .button_text {
+    color: #1976d2;
+    transition: 0.5s;
+  }
+}

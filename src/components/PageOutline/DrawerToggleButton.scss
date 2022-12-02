@@ -4,7 +4,7 @@
   justify-content: space-around;
   height: 45px;
   background: transparent;
-  border: 2px solid #e5e5e5;
+  border: 2px solid rgba($color: #e5e5e5, $alpha: 0.75);
   border-radius: 5px;
   cursor: pointer;
   padding: 4px 10px;
@@ -14,6 +14,15 @@
 
 .toggle-button:focus {
   outline: none;
+}
+.toggle-button:hover {
+  background-color: white;
+  transition: all 0.5s ease;
+  .toggle-button__line {
+    width: 30px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.5);
+  }
 }
 
 .toggle-button__line {

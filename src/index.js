@@ -6,10 +6,11 @@ import Home from "./pages/Home/Home";
 import FindProjects from "./pages/FindProjects/FindProjects";
 import Profile from "./pages/Profile/Profile";
 import PageOutline from "./pages/PageOutline";
-import Register from "./pages/User/Register";
+import Register from "./pages/User/register";
 import Project from "./pages/Project/Project";
 import { getProject, getProjectList } from "./utils/projectQueries";
 import "typeface-roboto";
+import { getData } from "./utils/getData";
 import { getMemberCard, getMemberDetail } from "./utils/profileQueries";
 import ProfileCard from "./pages/Profile/ProfileCard";
 import { json } from "react-router-dom";
@@ -67,6 +68,13 @@ const router = createBrowserRouter([
         name: "Home",
         path: "/",
         element: <Home />,
+        loader: async function n({ params }) {
+          return json({
+            res1: await getData("projectCards"),
+            res2: await getData("memberscards"),
+            res3: await getData("groupcards"),
+          });
+        },
       },
       {
         name: "Profile",

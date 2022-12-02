@@ -1,15 +1,17 @@
 .courses_container {
   width: 500px;
-  margin-inline: 15vw;
   .course_slide {
     height: 454px;
     background: #47425c;
     border-radius: 50px;
     margin-inline: 2vw;
-
+    .course_splash {
+      width: 100%;
+      border-radius: 50px 50px 0 0;
+    }
     .course_info_1 {
       padding-top: 15px;
-      padding-bottom: 20px;
+      padding-bottom: 10px;
       display: flex;
       h2 {
         padding-inline: 5%;
@@ -25,7 +27,8 @@
         font-weight: 700;
         font-size: 15px;
         line-height: 20px;
-
+        width: 80%;
+        padding-right: 6px;
         color: #d6d5d5;
         span {
           font-weight: 100;
@@ -33,9 +36,9 @@
       }
     }
     .course_info_2 {
-      padding-left: 18px;
       display: flex;
       align-items: center;
+
       p {
         padding-left: 15px;
         font-family: "Lato";
@@ -47,6 +50,7 @@
         margin-left: 13px;
         width: 15px;
       }
+
       .courses_rating_text {
         font-family: "Lato";
         font-weight: normal;
@@ -126,10 +130,10 @@
     border-radius: 50%;
   }
   .flickity-prev-next-button.previous {
-    left: 370px;
+    left: 350px;
   }
   .flickity-prev-next-button.next {
-    right: 20px;
+    right: 45px;
   }
   .flickity-rtl .flickity-prev-next-button.previous {
     left: auto;

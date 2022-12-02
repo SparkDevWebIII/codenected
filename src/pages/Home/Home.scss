@@ -1,8 +1,29 @@
-.inline_components {
+.home_inline_components1, .home_inline_components2{
     display: flex;
+    justify-content: center;
+    .home_communities {
+        margin-right: 5vw;
+    }
+    .home_courses {
+        margin-right: 10vw;
+    }
 }
 
+.home_inline_components2{
+    margin-bottom: 10vh;
+}
+
+@media only screen and (max-width: 1600px) {
+    .inline_components {
+        display: block;
+    }
+  }
 @media only screen and (max-width: 830px) {
+    .inline_components {
+        display: block;
+    }
+  }
+  @media only screen and (max-width: 830px) {
     .inline_components {
         display: block;
     }

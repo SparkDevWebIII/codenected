@@ -27,7 +27,9 @@ export default function Header(props) {
       <div className="header">
         <div className="logo_container">
           {" "}
-          <img src="https://i.imgur.com/1SAVxx0.png" alt="logo" className="logo" />
+          <NavLink to="/">
+            <img src="https://i.imgur.com/1SAVxx0.png" alt="logo" className="logo" />
+          </NavLink>
         </div>
 
         {/* the two containers below appears on smaller screens */}
@@ -51,9 +53,10 @@ export default function Header(props) {
             }`}
           >
             <NavLink to="/">Home</NavLink>
-            {primaryRoutes.map(({ name, path }) => (
-              <NavLink to={path}>{name}</NavLink>
-            ))}
+            <NavLink to="/projects">Projects</NavLink>
+            <NavLink to="/groups">Groups</NavLink>
+            <NavLink to="/connect">Connect</NavLink>
+            <NavLink to="/about">About</NavLink>
           </div>
         </div>
       </div>

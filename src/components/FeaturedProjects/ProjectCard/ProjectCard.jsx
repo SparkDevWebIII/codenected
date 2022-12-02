@@ -1,21 +1,21 @@
 import React from "react";
 
-import GradientButton from "../../common/GradientButton";
+import PlainButton from "../../common/PlainButton";
 import "./ProjectCard.scss";
 
 export default function ProjectCard({
-  splash = "assets/images/hero1.png",
-  name,
+  projectId,
+  imageUrl,
+  title,
   location,
   members,
-  description,
-  projectId
+  summary,
 }) {
   return (
     <div className="card_container">
-      <img src={splash} alt="splash" />
+      <img src={imageUrl} alt="splash" />
       <div className="content_container">
-        <h2 className="card_header">{name}</h2>
+        <h2 className="card_header">{title}</h2>
         <div className="left_content">
           <div className="loc_container">
             <img src="assets/images/location.png" alt="loc"></img>
@@ -25,14 +25,13 @@ export default function ProjectCard({
             <img src="assets/images/members.png" alt="mem"></img>
             <span>{members} members</span>
           </div>
-          <GradientButton
-            // top="-10px" left="-50px" scale="0.5"
-            projectId={projectId}
+          <PlainButton
+            link={`/projects/${projectId}`}
           >
             Learn More
-          </GradientButton>
+          </PlainButton>
         </div>
-        <p>{description}</p>
+        <p>{summary}</p>
       </div>
     </div>
   );
