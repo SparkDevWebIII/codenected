@@ -10,6 +10,9 @@ import Register from "./pages/User/Register";
 import Project from "./pages/Project/Project";
 import { getProject, getProjectList } from "./utils/projectQueries";
 import "typeface-roboto";
+import { getMemberCard, getMemberDetail } from "./utils/profileQueries";
+import ProfileCard from "./pages/Profile/ProfileCard";
+import { json } from "react-router-dom";
 
 // These routes are the ones that appear on the header
 export const primaryRoutes = [
@@ -36,15 +39,15 @@ export const primaryRoutes = [
     ],
   },
   {
-    name: "Events",
-    path: "/events",
+    name: "Groups",
+    path: "/groups",
   },
   {
     name: "Connect",
     path: "/connect",
   },
   {
-    name: "About Us",
+    name: "About",
     path: "/about",
   },
 ];
@@ -68,8 +71,25 @@ const router = createBrowserRouter([
       {
         name: "Profile",
         path: "/profile",
-        element: <Profile />,
+        children: [
+          {
+            name: "Profile",
+            path: ":memberId",
+            element: <Profile />,
+            loader: async function loader({ params }) {
+              return getMemberDetail(params.memberId);
+            },
+          },
+        ],
       },
+      /* {
+        name: "Profile",
+        path: "/profile",
+        element: <Profile />,
+        loader: ({params}) => {
+          return getMemberCards(params.memberId);
+        },
+      }, */
     ],
   },
 ]);

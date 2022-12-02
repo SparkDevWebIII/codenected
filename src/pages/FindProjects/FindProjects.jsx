@@ -10,18 +10,18 @@ import ProjectCard from "../../components/FeaturedProjects/ProjectCard/ProjectCa
 // filters
 const industries = [
   "Web Development",
-  "Software Engineering",
-  "UI/UX",
-  "Agriculture",
-  "Machine Learning",
+  "AI",
+  "App Development",
+  "VR",
+  "Game Development",
+  "IT"
 ];
 
 const roles = [
   "Frontend Developer",
   "Backend Developer",
-  "Full stack Developer",
-  "Data Analyst",
-  "Farmer",
+  "Full Stack Developer",
+  "UX Researcher",
 ];
 
 const locations = [
@@ -32,6 +32,13 @@ const locations = [
 ];
 
 const technologies = [
+  "Streamlit",
+  "Scikit-learn",
+  "MatPlotLib",
+  "Excel",
+  "Gmail API",
+  "Material UI",
+  "AngularJS",
   "Django",
   "Bootstrap",
   "RabbitMQ",
@@ -46,27 +53,6 @@ const technologies = [
 ];
 
 const FindProjects = () => {
-  // const poo = fetch(
-  //   "https://r7fu8gohdd.execute-api.us-east-1.amazonaws.com/projectDetail",
-  //   {
-  //     mode: "cors",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //       Accept: "application/json",
-  //     },
-  //   }
-  // )
-  //   .then((response) => {
-  //     console.log(response);
-  //     return response.json();
-  //   })
-  //   .then((json) => {
-  //     console.log("yo");
-  //     return json;
-  //   })
-  //   .catch(console.log("poop"));
-  // console.log(poo);
-
   // layout
   const theme = useTheme();
   const headerSearchBarHeight = "150px";
@@ -86,7 +72,7 @@ const FindProjects = () => {
     if (
       project.title.toLowerCase().includes(query.toLowerCase()) &&
       (checkedIndustries.length === 0 ||
-        checkedIndustries.some((val) => project.domains.includes(val))) &&
+        checkedIndustries.some((val) => project.domain.includes(val))) &&
       (checkedRoles.length === 0 ||
         checkedRoles.some((val) =>
           project.rolesNeeded.some((e) => e.position === val)
@@ -261,7 +247,7 @@ const FindProjects = () => {
             }}
           >
             {filteredProjects.map(
-              ({ title, summary, location, projectId, members }, index) => {
+              ({ title, summary, location, project_id, members }, index) => {
                 return (
                   <Box
                     sx={{
@@ -300,7 +286,7 @@ const FindProjects = () => {
                       location={location}
                       members={members.length}
                       description={summary}
-                      projectId={projectId}
+                      projectId={project_id}
                     />
                   </Box>
                 );
