@@ -14,7 +14,18 @@
     "goal": "Our goal as of now is to complete more research as effectively as possible. We are trying to find solutions for unknown diagnoses along with comprehending diagnoses and genes that may assist us in different forms. With the information we currently have we are struggling to analyze the information properly. We are looking to find research about genetics in addition to effectively sorting this information on a database.",
     "currentsystem": "Currently we have a system that logs information on Google Excel and Documents. We are looking to track this information on another private database. In addition with hosting this information we are looking for research to be conducted, especially with creating charts and finding patterns within diagnoses.",
     "technologies": ["Excel", "Gmail API", "Django", "Bootstrap"],
-    "rolesNeeded": ["Backend Developer"],
+    "rolesNeeded": [
+      {
+        "position": "Project Manager",
+        "domain": "Software Development",
+        "description": "The project manager is responsible for the overall success of the project. They are responsible for the project schedule, budget, and quality. They are also responsible for the project team and the project environment. The project manager is the primary point of contact for the client and the project team."
+      },
+      {
+        "position": "Software Developer",
+        "domain": "Software Development",
+        "description": "The software developer is responsible for the development of the software. They are responsible for the design, implementation, and testing of the software. They are also responsible for the documentation of the software."
+      }
+    ],
     "members": [
       { "name": "Rajiv Chevannes", "role": "Developer" },
       { "name": "Danny Lawrence", "role": "Developer" }
@@ -59,7 +70,18 @@
       "MySQL",
       "AngularJS"
     ],
-    "rolesNeeded": ["Full Stack Developer"],
+    "rolesNeeded": [
+      {
+        "position": "Software Developer",
+        "domain": "Software Development",
+        "description": "The software developer is responsible for the development of the software. They are responsible for the design, implementation, and testing of the software. They are also responsible for the documentation of the software."
+      },
+      {
+        "position": "Software Tester",
+        "domain": "Software Development",
+        "description": "The software tester is responsible for the testing of the software. They are responsible for the testing of the software and the documentation of the testing results. They are also responsible for the testing environment."
+      }
+    ],
     "projectProgression": [
       {
         "phase": "UX Phase",
@@ -102,7 +124,28 @@
     "goal": "We are currently looking for web designers to help us redefine our website. We would like to make a site that allows for a fully functioning site that gives users an opportunity to purchase our products, while understanding our goal to raise awareness for people in need. In addition to raising awareness we would like to make a fundraiser on our website that gives straight back to people in need. .",
     "currentsystem": "Currently we have a very outdated website. We have very little colors and very little images and it looks simply bland. Sometimes the servers go down when too many users are on the website and the online store function doesn't work. The only use for our current website is to give information on our team.",
     "technologies": ["Excel", "Gmail API", "Django", "Bootstrap"],
-    "rolesNeeded": ["UX Researcher", "Full Stack Developer"],
+    "rolesNeeded": [
+      {
+        "position": "Project Manager",
+        "domain": "Software Development",
+        "description": "The project manager is responsible for the overall success of the project. They are responsible for the project schedule, budget, and quality. They are also responsible for the project team and the project environment. The project manager is the primary point of contact for the client and the project team."
+      },
+      {
+        "position": "Software Developer",
+        "domain": "Software Development",
+        "description": "The software developer is responsible for the development of the software. They are responsible for the design, implementation, and testing of the software. They are also responsible for the documentation of the software."
+      },
+      {
+        "position": "Software Tester",
+        "domain": "Software Development",
+        "description": "The software tester is responsible for the testing of the software. They are responsible for the testing of the software and the documentation of the testing results. They are also responsible for the testing environment."
+      },
+      {
+        "position": "Software Architect",
+        "domain": "Software Development",
+        "description": "The software architect is responsible for the design of the software. They are responsible for the design of the software and the documentation of the design. They are also responsible for the design environment."
+      }
+    ],
     "members": [
       { "name": "Rajiv Chevannes", "role": "Developer" },
       { "name": "Danny Lawrence", "role": "Developer" }
@@ -140,7 +183,18 @@
     "goal": "We are currently looking for web designers to help us create an app. We would like to make an application that allows for a fully functioning app that gives users an opportunity to track their purchases. This app will calculate the essential purchases and nonessential purchases. Along with this students can account for their income and limit their expenses to reach a certain amount of money invested or saved to reach financial independence or a goal!",
     "currentsystem": "We currently do not have any application. But we do have a website that informs students at FIU about resources on financial literacy. This website is not interactive at all, it can't be used to contact any members on the board, it's purpose is to simply inform students on information",
     "technologies": ["Excel", "Gmail API", "Django", "Bootstrap"],
-    "rolesNeeded": ["UX Researcher", "Full Stack Developer"],
+    "rolesNeeded": [
+      {
+        "position": "Software Tester",
+        "domain": "Software Development",
+        "description": "The software tester is responsible for the testing of the software. They are responsible for the testing of the software and the documentation of the testing results. They are also responsible for the testing environment."
+      },
+      {
+        "position": "Software Architect",
+        "domain": "Software Development",
+        "description": "The software architect is responsible for the design of the software. They are responsible for the design of the software and the documentation of the design. They are also responsible for the design environment."
+      }
+    ],
     "members": [
       { "name": "Rajiv Chevannes", "role": "Developer" },
       { "name": "Danny Lawrence", "role": "Developer" }
