@@ -17,11 +17,14 @@
       padding-top: 21px;
       padding-left: 45px;
     }
-    .event_splash {
-      width: 100%;
+    .event_splash_container {
+      .event_splash {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      height: 200px;
       background-color: rgba(255, 255, 255, 0.7);
-      margin: 0px;
-      padding: 0px;
     }
 
     .event_info {

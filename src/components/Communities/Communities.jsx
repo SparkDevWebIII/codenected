@@ -11,7 +11,7 @@ export default function Communities(props) {
       <CommunityCard
         group_id={group.group_id}
         name={group.title}
-        splash='assets/images/upe.jpg'
+        splash={group.imageUrl}
         description={group.description}
         members={group.members}
       ></CommunityCard>
@@ -23,7 +23,7 @@ export default function Communities(props) {
       <div className="communities_card_container">
         {mappedCommunities}
       </div>
-      <GradientButton top="-105px" left="310px" link="">
+      <GradientButton top="-105px" left="310px" link="/groups">
         Get Started
       </GradientButton>
     </div>

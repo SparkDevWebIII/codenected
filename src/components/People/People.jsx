@@ -6,7 +6,7 @@ import "./People.scss";
 export default function People(props) {
   const data = props.data;
   
-  const mappedMembers = data.slice(0,5).map((member) => (
+  const mappedMembers = data.map((member) => (
     <MemberCard
       member_id={member.member_id}
       name={member.name}
@@ -18,12 +18,10 @@ export default function People(props) {
 
   return (
     <div className="people_container">
-      <h1 className="site_main_header">People</h1>
+      <h1 className="site_main_header">Members</h1>
       <div className="members_container">
         <div className="memberheadings_container">
           {" "}
-          <h3>Members</h3>
-          <a href="/connect">See all</a>
         </div>
 
         <div className="mapped_members">{mappedMembers}</div>

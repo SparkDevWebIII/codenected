@@ -8,30 +8,43 @@ export default function Events() {
   const eventData = [
     {
       key: 0,
-      img: "assets/images/meta.png",
-      name: "Meta APAC Robyn Hackathon 2022",
-      date: "Sep. 28 - Nov. 09 2022",
+      img: "assets/images/azure.png",
+      name: "Microsoft Azure Innovation Challenge",
+      date: "Nov. 01 - Dec. 08 2022",
       mode: "Virtual",
-      participants: 143,
-      prizes: 8000,
-      desc: "Robyn -  is an open sourced Marketing Mix Modeling (MMM) R-package, developed by Meta Marketing Science team.",
+      participants: 328,
+      prizes: 10000,
+      desc: "Build an open-source application prototype which leverages Azure Bot Service alongside other Azure services to improve healthcare outcomes for underserved communities. ",
+      link: "https://health-innovationchallenge.devpost.com/?ref_feature=challenge&ref_medium=discover"
     },
     {
       key: 1,
-      img: "assets/images/meta.png",
-      name: "Meta APAC Robyn Hackathon 2022",
-      date: "Sep. 28 - Nov. 09 2022",
+      img: "assets/images/web3.png",
+      name: "Web3 Stack Hack",
+      date: "Oct. 21 - Dec. 05, 2022",
       mode: "Virtual",
-      participants: 143,
-      prizes: 8000,
-      desc: "Robyn -  is an open sourced Marketing Mix Modeling (MMM) R-package, developed by Meta Marketing Science team.",
+      participants: 319,
+      prizes: 15000,
+      desc: "Oort and Storj invite builders to migrate their apps from Web2 to Web3 or create new creative Web3 applications.",
+      link: "https://web3-stack-hack.devpost.com/?ref_feature=challenge&ref_medium=discover"
+    },
+    {
+      key: 2,
+      img: "assets/images/kore.png",
+      name: "Kore.ai Botathon",
+      date: "Nov. 17 - Dec. 15, 2022",
+      mode: "Virtual",
+      participants: 644,
+      prizes: 10000,
+      desc: "We invite you to join the creative challenge of designing a bot using the XO platform, in honor of our commitment to developers.",
+      link: "https://web3-stack-hack.devpost.com/?ref_feature=challenge&ref_medium=discover"
     },
   ];
 
   const eventInfo = eventData.map((info) => (
     <div className="event_slide">
       <h2>{info.name}</h2>
-      <img className="event_splash" src={info.img}></img>{" "}
+      <div className="event_splash_container"><img className="event_splash" src={info.img}></img></div>
       <div className="event_info">
         {" "}
         <div className="event_subinfo">

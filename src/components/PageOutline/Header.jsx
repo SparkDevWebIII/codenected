@@ -26,7 +26,9 @@ export default function Header(props) {
       <div className="header">
         <div className="logo_container">
           {" "}
-          <img src="assets/images/logo.png" alt="logo" className="logo" />
+          <NavLink to="/">
+            <img src="assets/images/logo.png" alt="logo" className="logo" />
+          </NavLink>
         </div>
 
         {/* the two containers below appears on smaller screens */}
@@ -52,7 +54,6 @@ export default function Header(props) {
             <NavLink to="/">Home</NavLink>
             <NavLink to="/projects">Projects</NavLink>
             <NavLink to="/groups">Groups</NavLink>
-            <NavLink to="/connect">Connect</NavLink>
             <NavLink to="/about">About</NavLink>
           </div>
         </div>

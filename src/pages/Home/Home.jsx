@@ -18,15 +18,19 @@ export default function Home() {
   return (
     <div>
       <IntroCarousel />
-      <FeaturedProjects data={projectData}/>
-      <div className="inline_components">
+      <FeaturedProjects data={projectData} />
+      <div className="home_inline_components1">
         {" "}
-        <Communities data={groupData}></Communities>
-        <People data={memberData}></People>
+        <div className="home_communities">
+          {" "}
+          <Communities data={groupData}></Communities>
+        </div>
+        <People className="home_people" data={memberData}></People>
       </div>
-      <div className="inline_components">
-        <Courses></Courses>
-        <Events></Events>
+      <div className="home_inline_components2">
+        <div className="home_courses"><Courses /></div>
+
+        <Events className="home_events"></Events>
       </div>
     </div>
   );

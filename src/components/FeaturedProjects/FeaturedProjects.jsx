@@ -12,7 +12,7 @@ export default function FeaturedProjects(props) {
 
   const mappedProjectCards = data.map((project) => (
     <ProjectCard
-      project_id={project.id}
+      projectId={project.project_id}
       title={project.title}
       imageUrl={project.imageUrl}
       location={project.location}
