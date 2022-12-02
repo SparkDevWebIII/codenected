@@ -1,5 +1,56 @@
 [
   {
+    "member_id": "13",
+    "name": "Corey Duke",
+    "about": "Hey! I am Corey, a software engineer and love to learn and develop with technologies that have the ability to enhance the lives of people. I am a passionate learner and love to share my knowledge with others. I am a tech enthusiast and love to dream of ways that we may use innovation to solve our most pressing challenges.",
+    "position": "Software Engineer",
+    "location": "Miami, FL",
+    "dateCreated": "2022-12-2",
+    "email": "cdukedev@gmail.com",
+    "githubRepo": "https://www.github.com/cdukedev",
+    "skills": [
+      "HTML",
+      "CSS",
+      "SCSS",
+      "JavaScript",
+      "React.js",
+      "Axios",
+      "Java",
+      "Python",
+      "Postman",
+      "Thunder Client",
+      "RESTApi's",
+      "MySQL",
+      "Express",
+      "Node.js",
+      "AWS",
+      "Google Developer Platform",
+      "Microsoft Azure",
+      "GitHub",
+      "GitFlow",
+      "Agile",
+      "Figma",
+      "Visual Studio Code",
+      "IntelliJ",
+      "Cypress.io",
+      "CI/CD",
+      "Kronos",
+      "Microsoft Office Suite"
+    ],
+    "projects": [
+      {
+        "project_id": "2",
+        "title": "Gene pool"
+      },
+      {
+        "project_id": "3",
+        "title": "My Coffee Cup"
+      }
+    ],
+    "groups": ["UPE"],
+    "profileImage": "https://secure.meetupstatic.com/photos/member/7/6/7/8/member_267081632.jpeg"
+  },
+  {
     "member_id": "1",
     "name": "Carlos Matheus",
     "about": "Hey! I am Carlos I am a Computer Science student graduating in Spring 2023. I am skilled in Html, CSS, JavaScript, React, Java, C++. Worked with both web-based, multi-threaded applications as well as front-end development using the latest web technologies.",
@@ -11,8 +62,12 @@
     "skills": ["Java", "C", "Python", "HTML", "CSS"],
     "projects": [
       {
-        "project_id": "1",
-        "title": "Make My Day"
+        "project_id": "2",
+        "title": "Gene pool"
+      },
+      {
+        "project_id": "3",
+        "title": "My Coffee Cup"
       }
     ],
     "groups": ["UPE"],
@@ -30,8 +85,12 @@
     "skills": ["Java", "Figma", "UX-UI", "Product Design", "Python", "AdobeXD"],
     "projects": [
       {
-        "project_id": "1",
-        "title": "Make My Day"
+        "project_id": "2",
+        "title": "Gene pool"
+      },
+      {
+        "project_id": "3",
+        "title": "My Coffee Cup"
       }
     ],
     "groups": ["UPE"],
@@ -63,6 +122,10 @@
       {
         "project_id": "1",
         "title": "Make My Day"
+      },
+      {
+        "project_id": "4",
+        "title": "Designer Santa"
       }
     ],
     "groups": ["UPE"],
@@ -100,8 +163,12 @@
     ],
     "projects": [
       {
-        "project_id": "1",
-        "title": "Make My Day"
+        "project_id": "4",
+        "title": "Designer Santa"
+      },
+      {
+        "project_id": "5",
+        "title": "Funny Money"
       }
     ],
     "groups": ["UPE"],
@@ -119,8 +186,12 @@
     "skills": ["Java", "HTML", "CSS", "JavaScript"],
     "projects": [
       {
-        "project_id": "1",
-        "title": "Make My Day"
+        "project_id": "6",
+        "title": "Project Go Miami!"
+      },
+      {
+        "project_id": "5",
+        "title": "Funny Money"
       }
     ],
     "groups": ["UPE"],
@@ -138,8 +209,8 @@
     "skills": ["Excel", "Gmail API", "Django", "Bootstrap"],
     "projects": [
       {
-        "project_id": "1",
-        "title": "Make My Day"
+        "project_id": "6",
+        "title": "Project Go Miami!"
       }
     ],
     "groups": ["UPE"],
@@ -176,8 +247,12 @@
     "skills": ["Hardware", "C", "Java", "Python"],
     "projects": [
       {
-        "project_id": "1",
-        "title": "Make My Day"
+        "project_id": "7",
+        "title": "Your Boo in Miami"
+      },
+      {
+        "project_id": "8",
+        "title": "Save the Turtles"
       }
     ],
     "groups": ["UPE"],
@@ -195,8 +270,12 @@
     "skills": ["Java", "JS", "HTML", "CSS", "SQL", "R", "Tableau"],
     "projects": [
       {
-        "project_id": "1",
-        "title": "Make My Day"
+        "project_id": "9",
+        "title": "Bob the Builder"
+      },
+      {
+        "project_id": "10",
+        "title": "Dancing Queen"
       }
     ],
     "groups": ["UPE"],
@@ -222,8 +301,8 @@
     ],
     "projects": [
       {
-        "project_id": "1",
-        "title": "Make My Day"
+        "project_id": "11",
+        "title": "Viral Pox"
       }
     ],
     "groups": ["UPE"],
@@ -251,8 +330,16 @@
     ],
     "projects": [
       {
-        "project_id": "1",
-        "title": "Make My Day"
+        "project_id": "12",
+        "title": "Project PinkPanther"
+      },
+      {
+        "project_id": "13",
+        "title": "Project Go Miami!"
+      },
+      {
+        "project_id": "13",
+        "title": "My Cat Batman"
       }
     ],
     "groups": ["UPE"],
@@ -270,8 +357,12 @@
     "skills": ["Java", "C", "Python", "HTML", "CSS"],
     "projects": [
       {
-        "project_id": "1",
-        "title": "Make My Day"
+        "project_id": "14",
+        "title": "PhyMath"
+      },
+      {
+        "project_id": "15",
+        "title": "PieceOfCake"
       }
     ],
     "groups": ["UPE"],
