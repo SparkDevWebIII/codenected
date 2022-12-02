@@ -12,7 +12,7 @@ const groupData = JSON.parse(
   fs.readFileSync("../../public/data/groupCards.json", "utf8")
 );
 
-groupData.forEach(function(group) {
+groupData.forEach(function (group) {
   const params = {
     TableName: "groupCards",
     Item: {
@@ -21,7 +21,8 @@ groupData.forEach(function(group) {
       location: group.location,
       members: group.members,
       description: group.description,
-      link: group.link
+      imageUrl: group.imageUrl,
+      link: group.link,
     },
   };
 

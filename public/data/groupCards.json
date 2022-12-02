@@ -1,83 +1,137 @@
 [
   {
-    "group_id": "1",
-    "title": "CodePath Students",
-    "location": "Online",
-    "members": "9",
-    "description": "We are a group of passionate students who support themselves doing codepath coursework. If you are a codepath student who is looking to improve your work on a group, join us!",
-    "imageUrl": "https://s3.amazonaws.com/codepath-group-images/1.jpg",
-    "link": "https://www.democracylab.org/groups/29"
-  },
-  {
     "group_id": "2",
     "title": "Jacksonville help",
     "location": "Online",
-    "members": "5",
-    "description": "Set on helping  Jacksonville and the rest of Florida area through a diverse and inclusive group of volunteers. By working to put civic oriented, open source technologies to work, in service of our local communities.",
-    "link": "https://www.democracylab.org/groups/33"
+    "members": "52",
+    "description": "Set on helping Jacksonville and the rest of Florida area through a diverse and inclusive group of volunteers. By working to put civic oriented, open source technologies to work, in service of our local communities.",
+    "imageUrl": "https://i.imgur.com/CkijT4M.png",
+    "link": "https://jaxbeam.org/"
   },
   {
     "group_id": "3",
     "title": "Code for Orlando",
     "location": "Orlando, FL, USA",
-    "members": "5",
+    "members": "59",
     "description": "Code for Orlando helps residents and community partners use technology to address issues in Orlando and surrounding regions.",
-    "link": "https://www.democracylab.org/groups/27"
+    "imageUrl": "https://i.imgur.com/Aj0xsfq.png",
+    "link": "https://codefororlando.com/"
   },
   {
     "group_id": "4",
     "title": "Tampa Coding",
     "location": "Online",
-    "members": "11",
+    "members": "110",
     "description": "Tampa Coding is a community of coders, programmers, and developers who are building Tampa with our skills. We are looking for students who want to use their coding skills to build projects for Tampa",
+    "imageUrl": "https://i.imgur.com/ZGOzxFr.png",
     "link": "https://www.democracylab.org/groups/5"
   },
   {
     "group_id": "5",
     "title": "Fort Lauderdale Tech",
-    "location": "For Lauderdale FL",
-    "members": "",
+    "location": "Fort Lauderdale, FL",
+    "members": "68",
     "description": "We want to empower young talent in south florida. Our mission is to give our students the opportunity to grow and develop into successful professionals, hosting workshops and connecting them with mentors!!",
-    "link": "https://www.democracylab.org/groups/10"
+    "imageUrl": "https://i.imgur.com/fwHv33L.png",
+    "link": "https://www.fortlauderdale.gov/government/departments-i-z/information-technology-services"
   },
   {
     "group_id": "6",
     "title": "Bustin.tech",
-    "location": "Tallahassee",
-    "members": "8",
+    "location": "Miami",
+    "members": "85",
     "description": "Bustin.tech is a career-focused company that helps students who want to become developers. We do this by providing the necessary skills to become a developer, and by creating an ecosystem of empowerment that allows young talent to learn and grow in their craft.",
+    "imageUrl": "https://i.imgur.com/pUbXbnp.png",
     "link": "https://www.democracylab.org/groups/12"
   },
   {
     "group_id": "7",
     "title": "Lyst",
-    "location": "Lyst",
-    "members": "4",
+    "location": "Miami",
+    "members": "49",
     "description": "Lyst brings together civic-minded volunteers who build digital products, programs and services for the Boca Raton community.",
-    "link": "https://www.democracylab.org/groups/17"
+    "imageUrl": "https://i.imgur.com/EhoDqFE.png",
+    "link": "https://lyst-tech.com/#/dynamic-run-page"
   },
   {
     "group_id": "8",
     "title": "Init",
     "location": "Miami",
-    "members": "4",
+    "members": "41",
     "description": "Empowering diverse students to launch successful careers in tech. Coming soon to a campus near you! Brought to you by UPE",
-    "link": ""
+    "imageUrl": "",
+    "link": "https://www.linkedin.com/company/initofficial/"
   },
   {
     "group_id": "9",
     "title": "Deco.org",
-    "location": "Tallahassee",
-    "members": "6",
-    "description": "We volunteer to help design, develop, and improve civic systems in Tallahassee. Whether you are a professional coder or a community member with an idea, everyone interested in making Tallahassee better is welcome!",
-    "link": "https://www.democracylab.org/groups/8"
+    "location": "Miami",
+    "members": "656",
+    "description": "We volunteer to help design, develop, and improve civic systems in Miami. Whether you are a professional coder or a community member with an idea, everyone interested in making Miami better is welcome!",
+    "imageUrl": "https://i.imgur.com/GkFdVGh.png",
+    "link": "https://www.nature.com/articles/nrn2961"
   },
   {
     "group_id": "10",
     "title": "Unix",
     "location": "Orlando",
-    "members": "9",
+    "members": "95",
     "description": "At UNIX, we believe that all people have the power to change their own lives and the world around them. We're looking to help young entrepreneurs build their businesses and create a community of like-minded thinkers who want to make a difference in the world.",
-    "link": ""
+    "imageUrl": "https://i.imgur.com/Cx6eXbJ.png",
+    "link": "https://unix.org/"
+  },
+  {
+    "group_id": "11",
+    "title": "Code for America",
+    "location": "Miami",
+    "members": "5000",
+    "description": "A Code for America Network program designed to create opportunities for Brigades to strengthen partnerships and catalyze local impact",
+    "imageUrl": "https://i.imgur.com/4RK9oKZ.png",
+    "link": "https://www.democracylab.org/groups/codeforamerica"
+  },
+  {
+    "group_id": "12",
+    "title": "Women in Computer Science",
+    "location": "Miami Dade-County, FIU ",
+    "members": "2570",
+    "description": "Women in Computer Science is an organization for women, by women. Our mission is to create a nurturing environment that will provide academic, professional, and emotional support to female students in the field and therefore create more opportunities for women in the Knight Foundation School of Computing and Information Sciences to succeed.",
+    "imageUrl": "https://i.imgur.com/4RK9oKZ.png",
+    "link": "https://wics.cs.fiu.edu/"
+  },
+  {
+    "group_id": "13",
+    "title": "StartUp FIU",
+    "location": "Miami Dade-County, FIU",
+    "members": "1450",
+    "description": "StartUP FIU is a university-wide innovation hub that fosters and develops entrepreneurship and innovation to help our students, researchers, and community connect, contribute to, and thrive in today's fast-changing world. ",
+    "imageUrl": "https://i.imgur.com/2JfBrTh.png",
+    "link": "https://startup.fiu.edu/"
+  },
+  {
+    "group_id": "14",
+    "title": "Society of Hispanic Professional Engineers",
+    "location": "Miami Dade-County, FIU ",
+    "members": "1293",
+    "description": "Our goal is to help build the Hispanic community in STEM while increasing representation in engineering. We do this through building a network of connected SHPE members, alumni, and professionals who help advance one another. ",
+    "imageUrl": "https://i.imgur.com/iuzdhPP.png",
+    "link": "https://shpe.fiu.edu/about/"
+  },
+  {
+    "group_id": "15",
+    "title": "Google Developer Club",
+    "location": "Miami Dade-County, FIU",
+    "members": "1164",
+    "description": "Our mission is to train thousands of student developers to work with their communities to solve real-life problems. By joining DSC, you’ll grow your knowledge in a peer-to-peer learning environment and build solutions for local businesses and your community. Students of ALL majors with an interest in growing as a developer are welcomed!",
+    "imageUrl": "https://i.imgur.com/XqRm0Zx.png",
+    "link": "https://gdsc.community.dev/florida-international-university/"
+  },
+  {
+    "group_id": "16",
+    "title": "Upsilon Pi Epsilon",
+    "location": "Miami Dade-County, FIU",
+    "members": "2365",
+    "description": "UPE is the largest student organization for technology at Florida International University (FIU). Our mission is to provide students with the opportunities to develop technically and professionally. To do so, we aim to build a community where any student, no matter the major or skill level, can learn and develop with technology.",
+    "imageUrl": "https://i.imgur.com/z68JBtO.png",
+    "link": "https://upe.cs.fiu.edu/"
   }
 ]
