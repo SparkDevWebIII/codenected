@@ -1,33 +1,36 @@
 const AWS = require("aws-sdk");
 
 AWS.config.update({
-  region: "us-east-1"
+  region: "us-east-1",
 });
 
 const dynamodb = new AWS.DynamoDB();
 
 const params = {
-  TableName: "usersDetail",
+  TableName: "memberDetail",
   KeySchema: [
     // Partition Key
-    { AttributeName: "user_id", KeyType: "HASH" },
+    { AttributeName: "member_id", KeyType: "HASH" },
     // Sort Keys
-    { AttributeName: "name", KeyType: "RANGE"}  
+    { AttributeName: "name", KeyType: "RANGE" },
   ],
   AttributeDefinitions: [
-    { AttributeName: "user_id", AttributeType: "S" },
+    { AttributeName: "member_id", AttributeType: "S" },
     { AttributeName: "name", AttributeType: "S" },
   ],
- 
+
   ProvisionedThroughput: {
     ReadCapacityUnits: 10,
-    WriteCapacityUnits: 10
-  }
+    WriteCapacityUnits: 10,
+  },
 };
 
 dynamodb.createTable(params, function(err, data) {
   if (err)
-    console.error("Unable to create table: ", JSON.stringify(err, null, 2))
+    console.error("Unable to create table: ", JSON.stringify(err, null, 2));
   else
-    console.log("Created table with description: ", JSON.stringify(data, null, 2))
+    console.log(
+      "Created table with description: ",
+      JSON.stringify(data, null, 2)
+    );
 });
