@@ -23,7 +23,7 @@
       }
     }
 
-    .mapped_members {
+    .mapped_members, .mapped_members_small {
       margin: 0;
       padding: 0;
       margin-left: 4%;
@@ -36,14 +36,32 @@
       height: 509px;
       border-radius: 20px;
     }
+    .mapped_members_small {
+      display: none;
+    }
   }
   .members_container::-webkit-scrollbar {
     border-radius: 50px;
   }
 }
 
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 1200px) {
   .people_container {
-    display: none;
+    width: 80vw;
+    .members_container {
+      width: 100%;
+      .mapped_members {
+        display: none;
+      }
+      .mapped_members_small {
+        display: flex;
+        align-items: center;
+        padding-top: 8vh;
+        .mem_smdiv1 {
+          padding-inline: 4vw;
+        }
+
+      }
+    }
   }
 }

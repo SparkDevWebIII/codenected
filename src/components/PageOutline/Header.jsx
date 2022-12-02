@@ -55,7 +55,6 @@ export default function Header(props) {
             <NavLink to="/">Home</NavLink>
             <NavLink to="/projects">Projects</NavLink>
             <NavLink to="/groups">Groups</NavLink>
-            <NavLink to="/connect">Connect</NavLink>
             <NavLink to="/about">About</NavLink>
           </div>
         </div>

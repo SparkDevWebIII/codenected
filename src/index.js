@@ -44,10 +44,6 @@ export const primaryRoutes = [
     path: "/groups",
   },
   {
-    name: "Connect",
-    path: "/connect",
-  },
-  {
     name: "About",
     path: "/about",
   },

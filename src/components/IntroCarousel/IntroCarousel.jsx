@@ -8,9 +8,9 @@ import { IDLE_FETCHER } from "@remix-run/router";
 export default function IntroCarousel() {
   const imageData = [
     { key: 0, img: "assets/images/hero1.png" },
-    { key: 1, img: "assets/images/yellow.jpg" },
-    { key: 2, img: "assets/images/green.png" },
-    { key: 3, img: "assets/images/red.jpg" },
+    { key: 1, img: "assets/images/hero2.jpg" },
+    { key: 2, img: "assets/images/hero3.jpg" },
+    { key: 3, img: "assets/images/hero4.jpg" },
   ];
 
   const [slide, setSlide] = useState(0);
@@ -68,7 +68,7 @@ export default function IntroCarousel() {
           A space to create and find local group projects while gaining
           knowledge and connections on the way!
         </h3>
-        <GradientButton top="-700px" left="100px" link="/register">
+        <GradientButton top="-500px" left="100px" link="/register">
           Get Started
         </GradientButton>
         {renderArrow()}

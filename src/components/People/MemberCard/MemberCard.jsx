@@ -4,7 +4,7 @@ import "./MemberCard.scss";
 
 export default function MemberCard(props) {
   return (
-    <a href={`/members/${props.member_id}`}>
+    <a href={`/profile/${props.member_id}`}>
       {" "}
       <div className="membercard_container">
         <div className="membertext_container">

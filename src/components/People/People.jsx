@@ -25,6 +25,15 @@ export default function People(props) {
         </div>
 
         <div className="mapped_members">{mappedMembers}</div>
+        <div className="mapped_members_small">
+          <div className="mem_smdiv1">
+            {mappedMembers.slice(0,6)}
+          </div>
+          <div className="mem_smdiv2">
+            {mappedMembers.slice(6,12)}
+          </div>
+        
+        </div>
       </div>
     </div>
   );

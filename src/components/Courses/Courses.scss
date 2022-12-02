@@ -1,5 +1,5 @@
 .courses_container {
-  width: 500px;
+  width: 100%;
   .course_slide {
     height: 454px;
     background: #47425c;
@@ -7,6 +7,8 @@
     margin-inline: 2vw;
     .course_splash {
       width: 100%;
+      height: 50%;
+      object-fit: cover;
       border-radius: 50px 50px 0 0;
     }
     .course_info_1 {
@@ -17,7 +19,9 @@
         padding-inline: 5%;
         font-family: "Source Sans Pro";
         font-weight: 700;
-        font-size: 17px;
+        font-size: 1.5rem;
+        height: 80px;
+        overflow: hidden;
         color: #d6d5d5;
         text-align: center;
       }
@@ -25,10 +29,12 @@
         font-family: "Lato";
         font-style: normal;
         font-weight: 700;
-        font-size: 15px;
+        font-size: 1rem;
         line-height: 20px;
         width: 80%;
-        padding-right: 6px;
+        height: 80px;
+        overflow: hidden;
+        padding-right: 5%;
         color: #d6d5d5;
         span {
           font-weight: 100;
@@ -38,26 +44,31 @@
     .course_info_2 {
       display: flex;
       align-items: center;
-
+      justify-content: center;
+      padding-top: 10px;
       p {
-        padding-left: 15px;
+        margin-left: 10%;
         font-family: "Lato";
         font-weight: 300;
-        font-size: 12px;
+        font-size: 1rem;
+        white-space: nowrap;
+        overflow: hidden;
         color: #d6d5d5;
+
+        padding-right: 20px;
       }
       img {
-        margin-left: 13px;
+        margin-left: 10%;
+
         width: 15px;
       }
 
       .courses_rating_text {
         font-family: "Lato";
         font-weight: normal;
-        font-size: 12px;
+        font-size: .75rem;
         color: #d6d5d5;
         padding: 0 0 0 5px;
-        margin-bottom: 5px;
       }
     }
   }
@@ -72,7 +83,6 @@
     overflow: hidden;
     position: relative;
     height: 100%;
-
   }
   .flickity-slider {
     position: absolute;
@@ -124,13 +134,14 @@
     fill: #333;
   }
   .flickity-prev-next-button {
+    position: absolute;
     top: 4%;
     width: 44px;
     height: 44px;
     border-radius: 50%;
   }
   .flickity-prev-next-button.previous {
-    left: 350px;
+    right: 100px;
   }
   .flickity-prev-next-button.next {
     right: 45px;
@@ -176,10 +187,4 @@
   .flickity-page-dots .dot.is-selected {
     opacity: 1;
   }
-}
-
-@media only screen and (max-width: 830px) {
-.people_container {
-  display: none;
-}
 }
