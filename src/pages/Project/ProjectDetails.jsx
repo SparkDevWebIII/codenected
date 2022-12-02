@@ -14,7 +14,12 @@ const ProjectDetails = ({
   const theme = useTheme();
 
   return (
-    <Grid container id="project-details" sx={{ px: "4.25em" }} spacing={4}>
+    <Grid
+      container
+      id="project-details"
+      sx={{ px: { xs: "1em", md: "4.25em" } }}
+      spacing={4}
+    >
       <Grid item xs={12} md={8}>
         <ContentContainer
           sx={{

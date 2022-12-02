@@ -14,7 +14,7 @@ const industries = [
   "App Development",
   "VR",
   "Game Development",
-  "IT"
+  "IT",
 ];
 
 const roles = [
@@ -26,9 +26,13 @@ const roles = [
 
 const locations = [
   "Miami, FL",
-  "New York City, NY",
-  "San Francisco, CA",
-  "Omaha, NE",
+  // "New York City, NY",
+  // "San Francisco, CA",
+  "Brickell, FL",
+  "Doral, FL",
+  "FIU, FL",
+  "Kendall, FL",
+  "Virtual",
 ];
 
 const technologies = [
@@ -42,7 +46,6 @@ const technologies = [
   "Django",
   "Bootstrap",
   "RabbitMQ",
-  "Gmail API",
   "MySQL",
   "React",
   "Node",
@@ -73,10 +76,12 @@ const FindProjects = () => {
       project.title.toLowerCase().includes(query.toLowerCase()) &&
       (checkedIndustries.length === 0 ||
         checkedIndustries.some((val) => project.domain.includes(val))) &&
+      // (checkedRoles.length === 0 ||
+      //   checkedRoles.some((val) =>
+      //     project.rolesNeeded.some((e) => e.position === val)
+      //   )) &&
       (checkedRoles.length === 0 ||
-        checkedRoles.some((val) =>
-          project.rolesNeeded.some((e) => e.position === val)
-        )) &&
+        checkedRoles.some((val) => project.rolesNeeded.includes(val))) &&
       (checkedLocations.length === 0 ||
         checkedLocations.includes(project.location)) &&
       (checkedTech.length === 0 ||
@@ -247,7 +252,10 @@ const FindProjects = () => {
             }}
           >
             {filteredProjects.map(
-              ({ title, imageUrl, summary, location, project_id, members }, index) => {
+              (
+                { title, summary, imageUrl, location, project_id, members },
+                index
+              ) => {
                 return (
                   <Box
                     sx={{
@@ -283,9 +291,9 @@ const FindProjects = () => {
                   >
                     <ProjectCard
                       title={title}
-                      location={location}
                       imageUrl={imageUrl}
-                      members={members}
+                      location={location}
+                      members={members.length}
                       summary={summary}
                       projectId={project_id}
                     />

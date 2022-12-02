@@ -6,8 +6,10 @@ import Home from "./pages/Home/Home";
 import FindProjects from "./pages/FindProjects/FindProjects";
 import Profile from "./pages/Profile/Profile";
 import PageOutline from "./pages/PageOutline";
-import Register from "./pages/User/register";
+import Login from "./pages/User/Login";
+import Register from "./pages/User/Register";
 import Project from "./pages/Project/Project";
+import ProjectError from "./pages/Project/ProjectError";
 import { getProject, getProjectList } from "./utils/projectQueries";
 import "typeface-roboto";
 import { getData } from "./utils/getData";
@@ -18,8 +20,21 @@ import { json } from "react-router-dom";
 // These routes are the ones that appear on the header
 export const primaryRoutes = [
   {
+    name: "Home",
+    path: "/",
+    element: <Home />,
+    loader: async function n({ params }) {
+      return json({
+        res1: await getData("projectCards"),
+        res2: await getData("memberscards"),
+        res3: await getData("groupcards"),
+      });
+    },
+  },
+  {
     name: "Projects",
     path: "/projects",
+    errorElement: <ProjectError />,
     children: [
       {
         index: "true",
@@ -52,7 +67,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <PageOutline />,
-    // errorElement: <ErrorPage />,
+    // errorElement: <PageOutline />,
     children: [
       ...primaryRoutes,
       {
@@ -61,16 +76,9 @@ const router = createBrowserRouter([
         element: <Register />,
       },
       {
-        name: "Home",
-        path: "/",
-        element: <Home />,
-        loader: async function n({ params }) {
-          return json({
-            res1: await getData("projectCards"),
-            res2: await getData("memberscards"),
-            res3: await getData("groupcards"),
-          });
-        },
+        name: "Login",
+        path: "/login",
+        element: <Login />,
       },
       {
         name: "Profile",
@@ -86,14 +94,6 @@ const router = createBrowserRouter([
           },
         ],
       },
-      /* {
-        name: "Profile",
-        path: "/profile",
-        element: <Profile />,
-        loader: ({params}) => {
-          return getMemberCards(params.memberId);
-        },
-      }, */
     ],
   },
 ]);

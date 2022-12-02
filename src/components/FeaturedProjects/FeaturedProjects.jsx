@@ -2,7 +2,6 @@ import { React, useState, useEffect } from "react";
 
 import ProjectCard from "./ProjectCard/ProjectCard";
 import "./FeaturedProjects.scss";
-import ProjectCardData from "../../data/projectcard.json";
 import Flickity from "react-flickity-component";
 import { useLoaderData } from "react-router-dom";
 import { useGetData } from "../../utils/getData";

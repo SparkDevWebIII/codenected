@@ -15,7 +15,12 @@ const OverviewTab = ({ member, projects }) => {
       <Grid container justifyContent="center" alignItems="flex-start">
         {/*ABOUT BOX*/}
         <ProfileCard data={member} />
-        <Box display="flex" flexDirection="column" sx={{ width: "775px", ml: "84px" }} wrap="wrap">
+        <Box
+          display="flex"
+          flexDirection="column"
+          sx={{ width: "775px", ml: "84px" }}
+          wrap="wrap"
+        >
           <Typography fontSize="24px" sx={{ mb: "9px" }}>
             About
           </Typography>
@@ -32,60 +37,97 @@ const OverviewTab = ({ member, projects }) => {
             <Box display="flex" flex-direction="row" justifyContent="start">
               <Typography fontSize="24px">Featured Projects</Typography>
             </Box>
-            {/* FEATURED PROJECTS CARD */}
-
-            {/* Project Cards */}
             <Box
               sx={{
-                mt: "20px",
-                "& .card_container": {
-                  mx: 0,
-                  width: "100%",
-                  // 360 x 300 aspect ratio, from figma specifications
-                  height: "auto",
-                  aspectRatio: {
-                    xs: "1.2/1",
-                    md: "1.2/1",
-                  },
-                  // used maxWidth for responsive design
-                  maxWidth: {
-                    xs: "100%",
-                    md: cardWidth,
-                  },
-                  "& > img": {
-                    height: "45%",
-                  },
-                  "& .content_container": {
-                    mx: { xs: "30px", sm: "15px", md: "30px" },
-                    "& a": {
-                      scale: { xs: "0.6", sm: "0.45" },
-                    },
-                  },
-                  "& .card_header": {
-                    fontSize: "1.5em",
-                  },
+                display: "grid",
+                gap: 2,
+                width: {
+                  // when screen size < 900px, make the layout of project cards as wide as the screen
+                  xs: "100%",
+                  md: "auto",
+                },
+                gridTemplateColumns: {
+                  xs: "100%",
+                  sm: "1fr 1fr",
+                  lg: "1fr 1fr 1fr",
                 },
               }}
-              // key={index}
             >
-              <Box container display="flex" gap={5}>
-                <ProjectCard
-                //   name={title}
-                //   location={location}
-                //   members={members.length}
-                //   description={summary}
-                //  projectId={projectId}
-                />
-                <ProjectCard
-                //   name={title}
-                //   location={location}
-                //   members={members.length}
-                //   description={summary}
-                //  projectId={projectId}
-                />
-              </Box>
+              {projects.map(
+                (
+                  { title, summary, imageUrl, location, project_id, members },
+                  index
+                ) => {
+                  return (
+                    <Box
+                      sx={{
+                        "& .card_container": {
+                          mx: 0,
+                          width: "100%",
+                          // 360 x 300 aspect ratio, from figma specifications
+                          height: "auto",
+                          aspectRatio: {
+                            xs: "1.2/1",
+                            md: "1.2/1",
+                          },
+                          // used maxWidth for responsive design
+                          maxWidth: {
+                            xs: "100%",
+                            md: cardWidth,
+                          },
+                          "& > img": {
+                            height: "45%",
+                          },
+                          "& .content_container": {
+                            mx: { xs: "30px", sm: "15px", md: "30px" },
+                            "& a": {
+                              scale: { xs: "0.6", sm: "0.45" },
+                            },
+                          },
+                          "& .card_header": {
+                            fontSize: "1.5em",
+                          },
+                        },
+                      }}
+                      key={index}
+                    >
+                      <ProjectCard
+                        name={title}
+                        imageUrl={imageUrl}
+                        location={location}
+                        members={members.length}
+                        description={summary}
+                        projectId={project_id}
+                      />
+                    </Box>
+                  );
+                }
+              )}
+              {projects.length === 0 && (
+                <>
+                  <Box sx={{ width: "100%" }}>
+                    Sorry, there are no project with those criteria!
+                  </Box>
+                  <ActionAreaCard
+                    sx={{
+                      visibility: "hidden",
+                      aspectRatio: "1.2/1",
+                      maxWidth: {
+                        xs: "100%",
+                        md: cardWidth,
+                      },
+                      p: 1,
+                    }}
+                  />
+                </>
+              )}
             </Box>
-            <Box display="flex" flex-direction="row" justifyContent="start" sx={{ mt: "34px" }}>
+            <Box
+              display="flex"
+              flex-direction="row"
+              justifyContent="start"
+              sx={{ mt: "34px" }}
+            >
               <Typography fontSize="24px">Groups</Typography>
               <Box container display="flex" sx={{ ml: "-100px", mt: "20px" }}>
                 <CommunityCard
@@ -114,7 +156,12 @@ const cardWidth = 360;
 const ProjectsTab = ({ member, projects }) => {
   return (
     <React.Fragment>
-      <Grid container direction="row" justifyContent="center" alignItems="flex-start">
+      <Grid
+        container
+        direction="row"
+        justifyContent="center"
+        alignItems="flex-start"
+      >
         <ProfileCard data={member} />
 
         {/* Project Cards */}
@@ -135,53 +182,61 @@ const ProjectsTab = ({ member, projects }) => {
             },
           }}
         >
-          {projects.map(({ title, summary, location, project_id, members }, index) => {
-            return (
-              <Box
-                sx={{
-                  "& .card_container": {
-                    mx: 0,
-                    width: "100%",
-                    // 360 x 300 aspect ratio, from figma specifications
-                    height: "auto",
-                    aspectRatio: {
-                      xs: "1.2/1",
-                      md: "1.2/1",
-                    },
-                    // used maxWidth for responsive design
-                    maxWidth: {
-                      xs: "100%",
-                      md: cardWidth,
-                    },
-                    "& > img": {
-                      height: "45%",
-                    },
-                    "& .content_container": {
-                      mx: { xs: "30px", sm: "15px", md: "30px" },
-                      "& a": {
-                        scale: { xs: "0.6", sm: "0.45" },
+          {projects.map(
+            (
+              { title, summary, imageUrl, location, project_id, members },
+              index
+            ) => {
+              return (
+                <Box
+                  sx={{
+                    "& .card_container": {
+                      mx: 0,
+                      width: "100%",
+                      // 360 x 300 aspect ratio, from figma specifications
+                      height: "auto",
+                      aspectRatio: {
+                        xs: "1.2/1",
+                        md: "1.2/1",
+                      },
+                      // used maxWidth for responsive design
+                      maxWidth: {
+                        xs: "100%",
+                        md: cardWidth,
+                      },
+                      "& > img": {
+                        height: "45%",
+                      },
+                      "& .content_container": {
+                        mx: { xs: "30px", sm: "15px", md: "30px" },
+                        "& a": {
+                          scale: { xs: "0.6", sm: "0.45" },
+                        },
+                      },
+                      "& .card_header": {
+                        fontSize: "1.5em",
                       },
                     },
-                    "& .card_header": {
-                      fontSize: "1.5em",
-                    },
-                  },
-                }}
-                key={index}
-              >
-                <ProjectCard
-                  name={title}
-                  location={location}
-                  members={members.length}
-                  description={summary}
-                  projectId={project_id}
-                />
-              </Box>
-            );
-          })}
+                  }}
+                  key={index}
+                >
+                  <ProjectCard
+                    name={title}
+                    imageUrl={imageUrl}
+                    location={location}
+                    members={members.length}
+                    description={summary}
+                    projectId={project_id}
+                  />
+                </Box>
+              );
+            }
+          )}
           {projects.length === 0 && (
             <>
-              <Box sx={{ width: "100%" }}>Sorry, there are no project with those criteria!</Box>
+              <Box sx={{ width: "100%" }}>
+                Sorry, there are no project with those criteria!
+              </Box>
               <ActionAreaCard
                 sx={{
                   visibility: "hidden",
@@ -206,27 +261,31 @@ const Profile = (tabMarginLeft) => {
   const [projects, setProjects] = useState([]);
 
   const loadProjects = async () => {
-    const resp = await fetch("https://r7fu8gohdd.execute-api.us-east-1.amazonaws.com/projectCards");
+    const resp = await fetch(
+      "https://r7fu8gohdd.execute-api.us-east-1.amazonaws.com/projectCards"
+    );
     let jsonData = await resp.json();
-    // projects = jsonData.filter((project) => {
-    //   if member.projects.some((val) =>
-    //   project.rolesNeeded.some((e) => e.position === val)
-    // )
-    // })
-
-    setProjects(jsonData);
+    const projects = jsonData.filter((project) => {
+      if (
+        member.projects.some(
+          (memberProject) => memberProject.project_id === project.project_id
+        )
+      ) {
+        return project;
+      }
+      return;
+    });
+    setProjects(projects);
   };
 
   useEffect(() => {
     loadProjects();
   }, []);
 
-  console.log(projects);
-  console.log(member.projects);
   const tabs = [
     {
       title: "Overview",
-      component: <OverviewTab member={member} projects={projects} />,
+      component: <OverviewTab member={member} projects={projects.slice(0,2)} />,
     },
     {
       title: "Projects",

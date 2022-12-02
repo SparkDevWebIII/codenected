@@ -16,17 +16,3 @@ export const getProjectList = () => {
       return json;
     });
 };
-
-// export const getProjectList = () => {
-//   return fetch("./../data/projects.json", {
-//     headers: {
-//       "Content-Type": "application/json",
-//       Accept: "application/json",
-//     },
-//   })
-//     .then((response) => response.json())
-//     .then((json) => {
-//       console.log(json);
-//       return json;
-//     });
-// };

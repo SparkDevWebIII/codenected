@@ -52,10 +52,11 @@ export default function Header(props) {
               isDrawerOpen ? "navbar__pages--opened" : "navbar__pages--collapse"
             }`}
           >
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/projects">Projects</NavLink>
-            <NavLink to="/groups">Groups</NavLink>
-            <NavLink to="/about">About</NavLink>
+            {primaryRoutes.map(({ name, path }, index) => (
+              <NavLink key={index} to={path}>
+                {name}
+              </NavLink>
+            ))}
           </div>
         </div>
       </div>
