@@ -92,11 +92,11 @@ const OverviewTab = ({ member, projects }) => {
                       key={index}
                     >
                       <ProjectCard
-                        name={title}
+                        title={title}
                         imageUrl={imageUrl}
                         location={location}
                         members={members.length}
-                        description={summary}
+                        summary={summary}
                         projectId={project_id}
                       />
                     </Box>
@@ -221,11 +221,11 @@ const ProjectsTab = ({ member, projects }) => {
                   key={index}
                 >
                   <ProjectCard
-                    name={title}
+                    title={title}
                     imageUrl={imageUrl}
                     location={location}
                     members={members.length}
-                    description={summary}
+                    summary={summary}
                     projectId={project_id}
                   />
                 </Box>
