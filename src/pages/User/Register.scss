@@ -1,0 +1,94 @@
+.register {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.register-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55çvw;
+  margin-top: 2.5%;
+  height: 60vh;
+  padding-block: 2vh;
+  background: linear-gradient(
+    90.48deg,
+    #5b5379 1.83%,
+    #4a426f 22.5%,
+    #47425c 40.15%,
+    #4e476b 56.79%,
+    #47425c 73.93%,
+    #4d466b 93.09%
+  );
+
+  border-radius: 2.3%;
+}
+
+.textTitleCodenected {
+  flex-direction: column;
+  top: 5%;
+  left: 0%;
+  width: 50%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 220%;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: white;
+}
+
+/* First & Last Name section */
+.nameFields {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-block: 1vh;
+  .boxFirstName {
+    width: 31%;
+    margin-right: 2vw;
+  }
+  .boxLastName {
+    width: 31%;
+  }
+}
+
+/* Credentials */
+.boxGmail {
+  width: 65%;
+  margin-block: 1vh;
+}
+
+.boxDOB {
+  width: 65%;
+  margin-block: 1vh;
+}
+
+.boxPassword {
+
+  width: 65%;
+  margin-block: 1vh;
+}
+
+/* Description for Hyperlink to logging */
+.TextUserHasAccount {
+  font-size: smaller;
+  font-family: "Roboto";
+  font-style: normal;
+  color: white;
+  margin-top: 2vh;
+}
+/* Logging Hyperlink */
+.TextMakeAcc {
+  display: flex;
+  top: 22%;
+  left: 9%;
+  font-size: smaller;
+}
+/* Create account button */
+.signUpButton {
+  margin-top: 2vh;
+}
+
+@media only screen and (max-width: 1000px) {
+}

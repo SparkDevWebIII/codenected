@@ -16,33 +16,14 @@ import {
   GitHub,
   InsertDriveFile,
 } from "@mui/icons-material";
-import { useLoaderData } from "react-router-dom";
 
 export default function ProfileCard(props) {
   const data = props.data;
 
   let userInfo = {
-    member_id: 2,
-    profilePic:
-      "https://dogtime.com/assets/uploads/2011/03/puppy-development.jpg",
-    name: "Carlos Matheus",
-    location: "Davie",
-    state: "FL",
     school: "Florida International University",
-    github: "https://www.github.com/carlosmathe",
-    linkedin: "https://www.linkedin.com/in/carlosmathe/",
-    CV: "https://www.google.com",
-    skill: [
-      "Java",
-      "PHP",
-      "Figma",
-      "React",
-      "Html",
-      "CSS",
-      "JavaScript",
-      "Node.js",
-      ".Net",
-    ],
+    github: "https://www.github.com/",
+    linkedin: "https://www.linkedin.com/",
   };
 
   return (

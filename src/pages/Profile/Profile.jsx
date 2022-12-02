@@ -65,7 +65,7 @@ const OverviewTab = ({ member, projects }) => {
                           mx: 0,
                           width: "100%",
                           // 360 x 300 aspect ratio, from figma specifications
-                          height: "auto",
+                          height: "327px",
                           aspectRatio: {
                             xs: "1.2/1",
                             md: "1.2/1",
@@ -285,7 +285,9 @@ const Profile = (tabMarginLeft) => {
   const tabs = [
     {
       title: "Overview",
-      component: <OverviewTab member={member} projects={projects.slice(0,2)} />,
+      component: (
+        <OverviewTab member={member} projects={projects.slice(0, 2)} />
+      ),
     },
     {
       title: "Projects",
