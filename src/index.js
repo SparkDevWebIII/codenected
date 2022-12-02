@@ -7,11 +7,14 @@ import FindProjects from "./pages/FindProjects/FindProjects";
 import Profile from "./pages/Profile/Profile";
 import PageOutline from "./pages/PageOutline";
 import Login from "./pages/User/Login";
+import Groups from "./pages/ViewGroups/Group_Page/Groups";
+import About from "./pages/About/About";
 import Register from "./pages/User/Register";
 import Project from "./pages/Project/Project";
 import ProjectError from "./pages/Project/ProjectError";
 import { getProject, getProjectList } from "./utils/projectQueries";
 import "typeface-roboto";
+import { getGroupCards, getGroupList } from "./utils/groupQueries";
 import { getData } from "./utils/getData";
 import { getMemberCard, getMemberDetail } from "./utils/profileQueries";
 import ProfileCard from "./pages/Profile/ProfileCard";
@@ -56,16 +59,19 @@ export const primaryRoutes = [
   },
   {
     name: "Groups",
-    path: "/groups",
+    path: "/groups/",
+    element: <Groups />,
+    loader: () => {
+      return getGroupList();
+    },
   },
   {
     name: "About",
     path: "/about",
-  },
-  {
-    name: "Groups",
-    path: "/groups/",
-    element: <Groups/>,
+    element: <About />,
+    loader: () => {
+      return getData("memberscards");
+    },
   },
 ];
 const router = createBrowserRouter([

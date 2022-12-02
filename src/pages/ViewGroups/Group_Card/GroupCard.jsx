@@ -7,56 +7,59 @@ import LearnMoreButton from "../Button/LearnMoreButton";
 import Typography from "@mui/material/Typography";
 import { flexbox } from "@mui/system";
 import Grid from "@mui/material/Grid";
-import GroupImage from "../../../Assets/GroupImage.png";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { Button } from "@mui/material";
-import styles from './GroupCardStyles.scss'
+import styles from "./GroupCardStyles.scss";
 
 export default function GroupdCard({
-  id,
-  name,
+  group_id,
+  title,
   description,
-  splash,
+  imageUrl,
   members,
   location,
+  link,
 }) {
   return (
-    <Card sx={{ maxWidth: 380 }} className="groupCard">
+    <Card sx={{ maxWidth: 380, maxHeight: 450 }} className="groupCard">
       <CardMedia
         component="img"
         alt="Group Image"
         height="190"
-        image={GroupImage}
+        src={imageUrl}
       />
       <CardContent>
         <Grid container>
           <Grid item xs={12} className="cardHeader">
             <Typography gutterBottom variant="h5" component="div">
-              {name}
+              {title}
             </Typography>
           </Grid>
         </Grid>
         <Grid container>
           <Grid item xs={4}>
-            <Typography gutterBottom variant="h7" component="div">
+            <Typography gutterBottom variant="body2" component="div">
               <LocationOnIcon /> {location}
             </Typography>
-            <Typography gutterBottom variant="body2" component="div">
+            <Typography variant="body2" component="div">
               <AccountCircleIcon />
               {members} members
             </Typography>
+            <LearnMoreButton link={link} />
           </Grid>
           <Grid item xs={8}>
-            <Typography variant="body2" color="text.secondary">
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              overflowY="hidden"
+            >
               {description}
             </Typography>
           </Grid>
         </Grid>
       </CardContent>
-      <CardActions>
-        <LearnMoreButton />
-      </CardActions>
+      <CardActions></CardActions>
     </Card>
   );
 }
