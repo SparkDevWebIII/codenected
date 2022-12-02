@@ -51,7 +51,7 @@ const Project = () => {
               height: overviewHeight,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
-              backgroundImage: `url(assets/defaultprojectimage.png), linear-gradient(#eb01a5, #d13531)`,
+              backgroundImage: `url(https://imgur.com/DFMqMNl.png), linear-gradient(#eb01a5, #d13531)`,
               backgroundPosition: "center",
               opacity: 0.14,
             }}

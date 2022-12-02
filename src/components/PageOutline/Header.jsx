@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import DrawerToggleButton from "./DrawerToggleButton";
 import LoginButton from "../common/WhiteButton";
 import Backdrop from "./Backdrop";
+import { primaryRoutes } from "../../index";
 
 import "./Header.scss";
 
@@ -27,7 +28,7 @@ export default function Header(props) {
         <div className="logo_container">
           {" "}
           <NavLink to="/">
-            <img src="assets/images/logo.png" alt="logo" className="logo" />
+            <img src="https://i.imgur.com/1SAVxx0.png" alt="logo" className="logo" />
           </NavLink>
         </div>
 
@@ -54,6 +55,7 @@ export default function Header(props) {
             <NavLink to="/">Home</NavLink>
             <NavLink to="/projects">Projects</NavLink>
             <NavLink to="/groups">Groups</NavLink>
+            <NavLink to="/connect">Connect</NavLink>
             <NavLink to="/about">About</NavLink>
           </div>
         </div>

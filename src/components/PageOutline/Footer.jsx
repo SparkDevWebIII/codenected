@@ -10,7 +10,6 @@ import {
   Button,
   CssBaseline,
 } from "@mui/material";
-import logo from "../../assets/logo.png";
 import { NavLink } from "react-router-dom";
 import { primaryRoutes as routes } from "../..";
 import HorizontalDivider from "../design/HorizontalDivider";
@@ -46,7 +45,7 @@ const Footer = () => {
         >
           CodeNected
         </Typography> */}
-        <img src={logo} href="/#" alt="Codenected logo" />
+        <img src="assets/images/logo.png" href="/#" alt="Codenected logo" />
       </Box>
 
       <Box
