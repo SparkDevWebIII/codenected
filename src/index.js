@@ -6,16 +6,22 @@ import Home from "./pages/Home/Home";
 import FindProjects from "./pages/FindProjects/FindProjects";
 import Profile from "./pages/Profile/Profile";
 import PageOutline from "./pages/PageOutline";
+import Login from "./pages/User/Login";
 import Register from "./pages/User/Register";
 import Project from "./pages/Project/Project";
+import ProjectError from "./pages/Project/ProjectError";
 import { getProject, getProjectList } from "./utils/projectQueries";
 import "typeface-roboto";
+import { getMemberCard, getMemberDetail } from "./utils/profileQueries";
+import ProfileCard from "./pages/Profile/ProfileCard";
+import { json } from "react-router-dom";
 
 // These routes are the ones that appear on the header
 export const primaryRoutes = [
   {
     name: "Projects",
     path: "/projects",
+    errorElement: <ProjectError />,
     children: [
       {
         index: "true",
@@ -52,13 +58,18 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <PageOutline />,
-    // errorElement: <ErrorPage />,
+    // errorElement: <PageOutline />,
     children: [
       ...primaryRoutes,
       {
         name: "Register",
         path: "/register",
         element: <Register />,
+      },
+      {
+        name: "Login",
+        path: "/login",
+        element: <Login />,
       },
       {
         name: "Home",
@@ -68,7 +79,16 @@ const router = createBrowserRouter([
       {
         name: "Profile",
         path: "/profile",
-        element: <Profile />,
+        children: [
+          {
+            name: "Profile",
+            path: ":memberId",
+            element: <Profile />,
+            loader: async function loader({ params }) {
+              return getMemberDetail(params.memberId);
+            },
+          },
+        ],
       },
     ],
   },

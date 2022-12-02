@@ -76,22 +76,9 @@ const PageOutline = () => {
           },
         },
       },
-      // MuiButton: {
-      //   variants: [
-      //     {
-      //       props: { variant: "contained" },
-      //       style: {
-      //         backgroundColor: "white",
-      //         color: "black",
-      //         borderRadius: 10,
-      //       },
-      //     },
-      //   ],
-      // },
       MuiChip: {
         styleOverrides: {
           root: {
-            // color: "white",
             backgroundColor: tertiary,
           },
         },

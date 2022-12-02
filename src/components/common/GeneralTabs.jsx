@@ -50,7 +50,7 @@ export default function GeneralTabs({ tabs, tabMarginLeft }) {
   return (
     <Box sx={{ width: "100%" }}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-        <Tabs value={value} onChange={handleChange} aria-label="general tabs" sx={{ml: `${tabMarginLeft}`}}>
+        <Tabs value={value} onChange={handleChange} aria-label="general tabs" sx={{ml: `${tabMarginLeft}`, maxWidth:'100%'}}>
           {tabs.map(({ title }, index) => (
             <Tab label={title} key={title} {...a11yProps(index)} />
           ))}
