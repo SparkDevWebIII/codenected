@@ -62,6 +62,11 @@ export const primaryRoutes = [
     name: "About",
     path: "/about",
   },
+  {
+    name: "Groups",
+    path: "/groups/",
+    element: <Groups/>,
+  },
 ];
 const router = createBrowserRouter([
   {
