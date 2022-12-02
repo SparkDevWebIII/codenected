@@ -49,7 +49,7 @@ const Groups = () => {
       </Box>
       <Grid container spacing={1} columnSpacing={1} className="bodySection">
         <Grid
-          sx={{ mx: "auto" }}
+          sx={{ mx: 13 }}
           container
           xs={12}
           columnSpacing={4}
