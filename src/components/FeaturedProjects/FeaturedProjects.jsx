@@ -7,13 +7,15 @@ import Flickity from "react-flickity-component";
 
 export default function FeaturedProjects() {
   const mappedProjectCards = ProjectCardData.map((project) => (
+    // projectId is used for redirecting to the correct project page
     <ProjectCard
       key={project.id}
       name={project.name}
-      splash={project.splash}
+      imageUrl={project.imageUrl}
       location={project.location}
       members={project.members}
       description={project.description}
+      projectId={project.projectId}
     ></ProjectCard>
   ));
 

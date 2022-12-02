@@ -4,16 +4,16 @@ import GradientButton from "../../common/GradientButton";
 import "./ProjectCard.scss";
 
 export default function ProjectCard({
-  splash = "assets/images/hero1.png",
   name,
+  imageUrl,
   location,
   members,
   description,
-  projectId
+  projectId,
 }) {
   return (
     <div className="card_container">
-      <img src={splash} alt="splash" />
+      <img src={imageUrl} alt="splash" />
       <div className="content_container">
         <h2 className="card_header">{name}</h2>
         <div className="left_content">

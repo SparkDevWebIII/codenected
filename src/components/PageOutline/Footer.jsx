@@ -44,7 +44,11 @@ const Footer = () => {
         >
           CodeNected
         </Typography> */}
-        <img src="assets/images/logo.png" href="/#" alt="Codenected logo" />
+        <img
+          src="https://imgur.com/1SAVxx0.png"
+          href="/#"
+          alt="Codenected logo"
+        />
       </Box>
 
       <Box
