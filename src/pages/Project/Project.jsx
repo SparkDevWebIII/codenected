@@ -12,7 +12,7 @@ import RolesNeeded from "./RolesNeeded";
 import ProjectProgression from "./ProjectProgression";
 
 const Project = () => {
-  const overviewHeight = "350px";
+  const overviewHeight = { xs: "500px", md: "350px" };
   const theme = useTheme();
   const data = useLoaderData();
 
@@ -51,7 +51,8 @@ const Project = () => {
               height: overviewHeight,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
-              backgroundImage: `url(assets/defaultprojectimage.png), linear-gradient(#eb01a5, #d13531)`,
+              // project image
+              backgroundImage: `url(${data.projectImage}), linear-gradient(#eb01a5, #d13531)`,
               backgroundPosition: "center",
               opacity: 0.14,
             }}
@@ -70,10 +71,10 @@ const Project = () => {
             <Typography
               variant="subtitle1"
               sx={{
-                fontSize: "1.5em",
+                fontSize: { xs: "1.2em", lg: "1.5em" },
                 fontWeight: 500,
                 mt: "0.4em",
-                mx: "3.3em",
+                mx: { xs: "1em", md: "3.3em" },
               }}
             >
               {data.summary}
@@ -83,6 +84,8 @@ const Project = () => {
                 position: "absolute",
                 bottom: 15,
                 mx: "3.3em",
+                display: "flex",
+                flexDirection: { xs: "column", md: "row" },
                 "& > *": {
                   display: "inline",
                   mr: "1.25em",
@@ -120,15 +123,17 @@ const Project = () => {
         {/* section for jumping to a section in the page */}
         <Box
           sx={{
-            height: "2.75em",
+            height: { xs: "6.8em", sm: "2.75em" },
             backgroundColor: theme.palette.primary.main,
             color: "white",
             px: "3.625em",
             py: "0.75em",
+            display: "flex",
+            alignItems: "center",
+            flexDirection: { xs: "column", sm: "row" },
             "& .MuiLink-root": {
               fontSize: "1.25em",
               mr: 2,
-              lineHeight: "0.5em",
             },
           }}
         >

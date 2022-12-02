@@ -8,16 +8,36 @@ import Profile from "./pages/Profile/Profile";
 import PageOutline from "./pages/PageOutline";
 import Login from "./pages/User/login";
 import Groups from "./pages/ViewGroups/Group_Page/Groups";
+import Login from "./pages/User/Login";
+import Register from "./pages/User/Register";
 import Project from "./pages/Project/Project";
+import ProjectError from "./pages/Project/ProjectError";
 import { getProject, getProjectList } from "./utils/projectQueries";
 import "typeface-roboto";
 import { getGroupCards, getGroupList } from "./utils/groupQueries";
+import { getData } from "./utils/getData";
+import { getMemberCard, getMemberDetail } from "./utils/profileQueries";
+import ProfileCard from "./pages/Profile/ProfileCard";
+import { json } from "react-router-dom";
 
 // These routes are the ones that appear on the header
 export const primaryRoutes = [
   {
+    name: "Home",
+    path: "/",
+    element: <Home />,
+    loader: async function n({ params }) {
+      return json({
+        res1: await getData("projectCards"),
+        res2: await getData("memberscards"),
+        res3: await getData("groupcards"),
+      });
+    },
+  },
+  {
     name: "Projects",
     path: "/projects",
+    errorElement: <ProjectError />,
     children: [
       {
         index: "true",
@@ -38,15 +58,11 @@ export const primaryRoutes = [
     ],
   },
   {
-    name: "Events",
-    path: "/events",
+    name: "Groups",
+    path: "/groups",
   },
   {
-    name: "Connect",
-    path: "/connect",
-  },
-  {
-    name: "About Us",
+    name: "About",
     path: "/about",
   },
   {
@@ -62,23 +78,32 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <PageOutline />,
-    // errorElement: <ErrorPage />,
+    // errorElement: <PageOutline />,
     children: [
       ...primaryRoutes,
+      {
+        name: "Register",
+        path: "/register",
+        element: <Register />,
+      },
       {
         name: "Login",
         path: "/login",
         element: <Login />,
       },
       {
-        name: "Home",
-        path: "/",
-        element: <Home />,
-      },
-      {
         name: "Profile",
         path: "/profile",
-        element: <Profile />,
+        children: [
+          {
+            name: "Profile",
+            path: ":memberId",
+            element: <Profile />,
+            loader: async function loader({ params }) {
+              return getMemberDetail(params.memberId);
+            },
+          },
+        ],
       },
     ],
   },

@@ -6,7 +6,7 @@ export default function GradientButton(props) {
   return (
     <NavLink
       style={{ left: props.left, top: props.top, scale: props.scale }}
-      to={`/projects/${props.projectId}`}
+      to={`${props.link}`}
       className="button_container"
     >
       <span className="button_text">{props.children}</span>

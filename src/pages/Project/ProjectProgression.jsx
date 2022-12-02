@@ -30,7 +30,7 @@ const ProjectProgression = ({ projectProgression }) => {
       sx={{
         // trying to remove the scrollbar but it is not working
         p: "0.625em",
-        mx: "4.25em",
+        mx: { xs: "1em", md: "4.25em" },
         overflowX: "hidden",
       }}
     >

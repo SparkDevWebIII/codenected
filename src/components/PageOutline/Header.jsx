@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import DrawerToggleButton from "./DrawerToggleButton";
 import LoginButton from "../common/WhiteButton";
 import Backdrop from "./Backdrop";
+import { primaryRoutes } from "../../index";
 
 import "./Header.scss";
 
@@ -26,7 +27,9 @@ export default function Header(props) {
       <div className="header">
         <div className="logo_container">
           {" "}
-          <img src="assets/images/logo.png" alt="logo" className="logo" />
+          <NavLink to="/">
+            <img src="https://i.imgur.com/1SAVxx0.png" alt="logo" className="logo" />
+          </NavLink>
         </div>
 
         {/* the two containers below appears on smaller screens */}
@@ -49,11 +52,11 @@ export default function Header(props) {
               isDrawerOpen ? "navbar__pages--opened" : "navbar__pages--collapse"
             }`}
           >
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/projects">Projects</NavLink>
-            <NavLink to="/groups">Groups</NavLink>
-            <NavLink to="/connect">Connect</NavLink>
-            <NavLink to="/about">About</NavLink>
+            {primaryRoutes.map(({ name, path }, index) => (
+              <NavLink key={index} to={path}>
+                {name}
+              </NavLink>
+            ))}
           </div>
         </div>
       </div>

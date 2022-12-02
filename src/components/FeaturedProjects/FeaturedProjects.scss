@@ -63,7 +63,7 @@
     position: absolute;
     background: hsla(0, 0%, 100%, 0);
     border: none;
-    color: #333;
+    color: rgb(221, 221, 221);
   }
 
   .flickity-button:focus {
@@ -99,6 +99,7 @@
   .flickity-rtl .flickity-prev-next-button.previous {
     left: auto;
     right: 10px;
+
   }
   .flickity-rtl .flickity-prev-next-button.next {
     right: auto;
@@ -139,3 +140,9 @@
   }
 }
 
+@media only screen and (max-width: 1000px) {
+   .featured_container {
+    margin-inline: 0;
+   }
+
+}

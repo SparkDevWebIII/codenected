@@ -1,13 +1,13 @@
 .events_container {
-  width: 500px;
-
+  width: 100%;
+  position: relative;
   .event_slide {
     margin-inline: 50px;
     width: 100%;
     color: white;
 
     h2 {
-      width: 500px;
+      width: 100%;
       height: 73px;
       background: #47425c;
       border-radius: 50px 50px 0px 0px;
@@ -17,11 +17,14 @@
       padding-top: 21px;
       padding-left: 45px;
     }
-    .event_splash {
-      width: 100%;
+    .event_splash_container {
+      .event_splash {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      height: 200px;
       background-color: rgba(255, 255, 255, 0.7);
-      margin: 0px;
-      padding: 0px;
     }
 
     .event_info {
@@ -54,8 +57,11 @@
         font-size: 15px;
       }
       p {
+        padding-block: 5px;
         color: black;
         width: 48%;
+        height: 15vh;
+        overflow: hidden;
         font-family: "Lato";
         font-weight: bold;
         font-size: 18px;
@@ -139,7 +145,7 @@
     border-radius: 50%;
   }
   .flickity-prev-next-button.previous {
-    left: 370px;
+    right: 90px;
   }
   .flickity-prev-next-button.next {
     right: 20px;
