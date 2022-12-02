@@ -6,7 +6,7 @@ import Home from "./pages/Home/Home";
 import FindProjects from "./pages/FindProjects/FindProjects";
 import Profile from "./pages/Profile/Profile";
 import PageOutline from "./pages/PageOutline";
-import Register from "./pages/User/Register";
+import Register from "./pages/User/register";
 import Project from "./pages/Project/Project";
 import { getProject, getProjectList } from "./utils/projectQueries";
 import "typeface-roboto";
