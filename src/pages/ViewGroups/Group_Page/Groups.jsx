@@ -34,7 +34,7 @@ const Groups = () => {
       </Box>
       <Grid container spacing={1} columnSpacing={1} className="bodySection">
         <Grid
-          sx={{ pl: 6 }}
+          sx={{ mx: 'auto' }}
           container
           xs={12}
           columnSpacing={4}
@@ -46,7 +46,7 @@ const Groups = () => {
               group_id,
               title,
               description,
-              splash,
+              imageUrl,
               members,
               location,
               link,
@@ -59,6 +59,7 @@ const Groups = () => {
                     members={members}
                     location={location}
                     link={link}
+                    imageUrl={imageUrl}
                   />
                 </Grid>
               );

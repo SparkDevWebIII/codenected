@@ -16,6 +16,7 @@ export default function GroupdCard({
   group_id,
   title,
   description,
+  imageUrl,
   members,
   location,
   link,
@@ -26,7 +27,7 @@ export default function GroupdCard({
         component="img"
         alt="Group Image"
         height="190"
-        src="assets/images/GroupImage.png"
+        src={imageUrl}
       />
       <CardContent>
         <Grid container>
@@ -38,10 +39,10 @@ export default function GroupdCard({
         </Grid>
         <Grid container>
           <Grid item xs={4}>
-            <Typography gutterBottom variant="h7" component="div">
+            <Typography gutterBottom variant="body2" component="div">
               <LocationOnIcon /> {location}
             </Typography>
-            <Typography gutterBottom variant="body2" component="div">
+            <Typography variant="body2" component="div">
               <AccountCircleIcon />
               {members} members
             </Typography>
