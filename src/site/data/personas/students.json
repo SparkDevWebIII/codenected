@@ -1,0 +1,28 @@
+{
+    "Persona": {
+        "Age": 19,
+        "Education": "Junior CS student",
+        "Hometown": "Miami",
+        "Family": "Single, lives with parents",
+        "Occupation": "Student with a part-time job"
+    },
+    "Goals": [
+        "Gain experience through projects.",
+        "Attending tech-related workshops and gathering knowledge of tech through them.",
+        "Finding projects/events locally.",
+        "Connecting with people with similar areas of interest through social media.",
+        "Balancing school and work life."
+    ],
+    "Frustrations": [
+        "Not having sufficient experience in tech projects.",
+        "I don't know where I can learn more.",
+        "“I don't want to look unprepared.”",
+        "“Sometimes I don't find what I'm looking for.”",
+        "“I have trouble finding projects I like.”",
+        "“None of my friends want to work with me.”"
+    ],
+    "Biography": {
+        "Title": "Biography",
+        "Text": "Erick Rodriguez is a computer science junior who wants to work in tech. He takes classes full-time and works in the evening as a server. He is interested in improving his coding skills and attends events he finds on social media and through friends. He finds it intimidating to apply to internships that interest him because he feels he hasn't acquired enough experience. He has tried to work on projects but doesn't have connections that want to work with him or the knowledge to work alone."
+    }
+}

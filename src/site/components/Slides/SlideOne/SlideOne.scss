@@ -1,0 +1,38 @@
+
+.contained{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+    background-color:"black";
+}
+.top{
+    height: 50%;
+    width: 70%;
+    font-size: 1.25rem;
+    background-color: rgba(0, 107, 179, 0.15);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem;
+    
+}
+.bottom{
+    height: 50%;
+    width: 70%;
+    font-size: 1.25rem;
+    background-color: rgba(0, 107, 179, 0.15);
+    backdrop-filter: blur(10px);
+    display: flex;
+    backdrop-filter: blur(8px);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 15px;
+}

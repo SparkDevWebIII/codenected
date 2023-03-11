@@ -12,6 +12,7 @@ import About from "./pages/About/About";
 import Register from "./pages/User/Register";
 import Project from "./pages/Project/Project";
 import ProjectError from "./pages/Project/ProjectError";
+import HomeSite from "./site/pages/Home/Home";
 import { getProject, getProjectList } from "./utils/projectQueries";
 import "typeface-roboto";
 import { getGroupCards, getGroupList } from "./utils/groupQueries";
@@ -33,6 +34,11 @@ export const primaryRoutes = [
         res3: await getData("groupcards"),
       });
     },
+  },
+  {
+    name: "Our Plans",
+    path: "/plans",
+    element: <HomeSite />,
   },
   {
     name: "Projects",

@@ -1,0 +1,73 @@
+.small-business {
+    height: 97%;
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #000;
+        margin: 0;
+        padding: 0;
+        padding-left: 2rem;
+    }
+    &__list{
+        display: flex;
+        
+        &__items {
+            width: 85%;
+            height: 85%;
+        }
+      }
+    &__header {
+        display: flex;
+        flex-direction: row;
+        height: 35%;
+        width: 100%;
+        justify-content: space-evenly;
+        margin-bottom: 8vh;
+        &-img{
+            width: 50%;
+            height: 100%;
+        }
+    }
+    &__body-container {
+        display: flex;
+        flex-direction: row;
+        height: 35%;
+        width: 100%;
+        margin-bottom: 4vh;
+    }
+    &__bio {
+        width: 100%;
+        height: 35%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        &-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        &-text {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    
+    &__card {
+        width: 100%;
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+    }
+}

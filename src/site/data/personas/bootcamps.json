@@ -1,0 +1,28 @@
+{
+  "Persona": {
+    "Age": 40,
+    "Education": "Master's degree in Computer Science",
+    "Hometown": "San Francisco",
+    "Family": "Married, two children",
+    "Occupation": "Technical Bootcamp Director"
+  },
+  "Goals": [
+    "Provide top-notch technical education to students",
+    "Improve job placement for graduates",
+    "Partner with companies to provide real-world projects for students",
+    "Attract and retain top students and faculty",
+    "Ensure the sustainability and competitiveness of the bootcamp in the long term"
+  ],
+  "Frustrations": [
+    "Competition with other educators",
+    "Concerns about the sustainability and competitiveness of the education in the long term",
+    "Providing students with meaningful opportunities to network with industry",
+    "Difficulty in attracting and retaining top students and faculty",
+    "Creating opportunities for students to collaborate across disciplines",
+    "Lack of funding or support from government and industry partners"
+  ],
+  "Biography": {
+    "Title": "Biography",
+    "Text": "Tom Brown is the Director of a technical bootcamp in San Francisco. He is passionate about providing top-notch technical education to students and is dedicated to improving job placement for graduates. With a Master's degree in Computer Science, Tom has the knowledge and skills to run a successful bootcamp, but faces challenges such as competition with other educators, concerns about sustainability and competitiveness, and difficulty in attracting and retaining top students and faculty. Despite these challenges, Tom remains determined to provide students with meaningful opportunities to network with industry and to ensure the sustainability and competitiveness of his bootcamp in the long term."
+  }
+}

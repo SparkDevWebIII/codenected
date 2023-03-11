@@ -1,0 +1,28 @@
+{
+    "Persona": {
+    "Age": 35,
+    "Education": "MBA degree",
+    "Hometown": "Detroit",
+    "Family": "Married, two children",
+    "Occupation": "Executive Director of a non-profit organization"
+    },
+    "Goals": [
+    "Improve the impact of the non-profit organization",
+    "Find new and innovative ways to provide services to the community",
+    "Seek funding opportunities to support the organization's programs",
+    "Build a network of like-minded individuals and organizations",
+    "Ensure financial sustainability of the organization"
+    ],
+    "Frustrations": [
+    "Lack of support and mentorship in the technology space",
+    "Finding technology solutions that meet the unique needs of their organization",
+    "Financial barriers to access resources and mentorship opportunities",
+    "Bringing ideas to life due to a lack of tools and support",
+    "Adopting and utilizing technology to improve operations and reach goals",
+    "Managing the organization's finances while supporting programs and services"
+    ],
+    "Biography": {
+    "Title": "Biography",
+    "Text": "Sarah Johnson is the Executive Director of a non-profit organization in Detroit. She is dedicated to improving the lives of those in her community and is constantly seeking new and innovative ways to do so. With an MBA degree, she has the knowledge and skills to run the organization, but struggles with finding technology solutions that meet the unique needs of her organization. Sarah is also faced with financial barriers that limit her ability to access resources and mentorship opportunities. Despite these challenges, she remains determined to bring her ideas to life and improve the impact of her organization."
+    }
+    }
