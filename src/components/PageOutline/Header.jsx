@@ -28,7 +28,11 @@ export default function Header(props) {
         <div className="logo_container">
           {" "}
           <NavLink to="/">
-            <img src="https://i.imgur.com/1SAVxx0.png" alt="logo" className="logo" />
+            <img
+              src="https://i.imgur.com/1SAVxx0.png"
+              alt="logo"
+              className="logo"
+            />
           </NavLink>
         </div>
 
@@ -57,6 +61,7 @@ export default function Header(props) {
                 {name}
               </NavLink>
             ))}
+            <a href="https://main.d2tb1l5gisdl3q.amplifyapp.com/">Our Plans</a>
           </div>
         </div>
       </div>
