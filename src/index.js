@@ -37,8 +37,16 @@ export const primaryRoutes = [
   },
   {
     name: "Our Plans",
-    path: "/plans",
-    element: <HomeSite />,
+    path: "https://main.d2tb1l5gisdl3q.amplifyapp.com/",
+    element: (
+      <a
+        href="https://main.d2tb1l5gisdl3q.amplifyapp.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Our Plans
+      </a>
+    ),
   },
   {
     name: "Projects",
