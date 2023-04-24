@@ -61,7 +61,7 @@ export default function Header(props) {
                 {name}
               </NavLink>
             ))}
-            <a href="https://main.d2tb1l5gisdl3q.amplifyapp.com/">Our Plans</a>
+            <a href="https://main.d3eohh3d9xnzt9.amplifyapp.com/">Our Plans</a>
           </div>
         </div>
       </div>
