@@ -1,21 +1,30 @@
 import React from "react";
 import { Button } from "@mui/material";
-import styles from './ButtonStyles.scss'
+import styles from "./ButtonStyles.scss";
 
-const LearnMoreButton = () => {
+const LearnMoreButton = ({ link }) => {
+  console.log({ link });
   return (
-    <Button
-      className="learnMore"
-      variant="contained"
-      sx={{
-        ":hover": {
-          bgcolor: "#BF026D", // theme.palette.primary.main
-          color: "white",
-        },
-      }}
-    >
-      Learn More
-    </Button>
+    <div>
+      <Button
+        className="learnMore"
+        variant="contained"
+        size="small"
+        sx={{
+          mt: 3,
+          ":hover": {
+            bgcolor: "#BF026D", // theme.palette.primary.main
+            color: "white",
+          },
+        }}
+        a
+        target="_blank"
+        rel="noopener noreferrer"
+        href={link}
+      >
+        Learn More
+      </Button>
+    </div>
   );
 };
 
